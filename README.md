@@ -131,12 +131,19 @@ lifeos-claude-dashboard/
 
 ## ⚡ Before / After
 
+### Life OS System (Full Pipeline)
+| Component | Traditional | Claude Code | Improvement |
+|-----------|-------------|-------------|-------------|
+| **Email Processing Pipeline** | 2-3 weeks | 1 week | **67% reduction** |
+| **Notion Database Design** | 1 week | 3 days | **57% reduction** |
+| **GAS Integration** | 1 week | 2 days | **71% reduction** |
+
+### Dashboard Visualization (This Repo)
 | Metric | Traditional | Claude Code | Improvement |
 |--------|-------------|-------------|-------------|
-| **Development Time** | 2 weeks | 3 hours | **96% reduction** |
+| **Streamlit Development** | 1 week | 1 hour | **99% reduction** |
 | **Data Generation** | 2 days | 20 minutes | **93% reduction** |
-| **4-Page Dashboard** | 1 week | 2 hours | **94% reduction** |
-| **Documentation** | 2 days | 20 minutes | **93% reduction** |
+| **Documentation** | 1 day | 15 minutes | **98% reduction** |
 
 ---
 
