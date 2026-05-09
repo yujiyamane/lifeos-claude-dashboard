@@ -77,6 +77,15 @@ def chart_cfg(fig, h=380, mt=40, mb=30, ml=None):
                       plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
     return fig
 
+def hex_to_rgba(hex_color, alpha=0.3):
+    """Convert hex color to rgba with alpha"""
+    if hex_color.startswith("#"):
+        hex_color = hex_color[1:]
+    r = int(hex_color[0:2], 16)
+    g = int(hex_color[2:4], 16)
+    b = int(hex_color[4:6], 16)
+    return f"rgba({r},{g},{b},{alpha})"
+
 @st.cache_data
 def load_data():
     base = os.path.dirname(__file__)
@@ -155,29 +164,12 @@ def page_command(todos, events, routines, rlog, journal):
         activity = activity.merge(t_daily, on="date", how="left").merge(e_daily, on="date", how="left")
         activity = activity.merge(r_daily, on="date", how="left").merge(j_daily, on="date", how="left").fillna(0)
 
-        def hex_to_rgba(hex_color, alpha=0.3):
-            """Convert hex color to rgba with alpha"""
-            if hex_color.startswith("#"):
-                hex_color = hex_color[1:]
-            r = int(hex_color[0:2], 16)
-            g = int(hex_color[2:4], 16)
-            b = int(hex_color[4:6], 16)
-            return f"rgba({r},{g},{b},{alpha})"
-
         fig = go.Figure()
         for col, name, color in [("routines", "Routines", TEAL), ("tasks", "Tasks", P), ("events", "Events", PU), ("journal", "Journal", A)]:
-            # Convert to rgba with alpha
-            if color.startswith("#"):
-                fill_color = hex_to_rgba(color, 0.3)
-            elif "rgb" in color:
-                fill_color = color.replace(")", ",0.3)").replace("rgb", "rgba")
-            else:
-                fill_color = f"rgba(0,0,0,0.3)"  # fallback
-
             fig.add_trace(go.Scatter(
                 x=activity["date"], y=activity[col].rolling(7).mean(),
                 name=name, mode="lines", stackgroup="one",
-                line=dict(width=0.5, color=color), fillcolor=fill_color
+                line=dict(width=0.5, color=color), fillcolor=hex_to_rgba(color, 0.3)
             ))
         fig = chart_cfg(fig, h=320)
         fig.update_layout(legend=dict(orientation="h", y=1.08, font=dict(size=10)), yaxis_title="7-Day Rolling Avg")
@@ -237,8 +229,8 @@ def page_productivity(todos):
             cum_completed.append(len(todos[(todos["status"] == "Done") & (todos["date_actioned"].notna()) & (todos["date_actioned"] <= d)]))
 
         fig = go.Figure()
-        fig.add_trace(go.Scatter(x=date_range, y=cum_created, name="Created (cumulative)", line=dict(color=P, width=2.5), fill="tozeroy", fillcolor=P+"15"))
-        fig.add_trace(go.Scatter(x=date_range, y=cum_completed, name="Completed (cumulative)", line=dict(color=G, width=2.5), fill="tozeroy", fillcolor=G+"15"))
+        fig.add_trace(go.Scatter(x=date_range, y=cum_created, name="Created (cumulative)", line=dict(color=P, width=2.5), fill="tozeroy", fillcolor=hex_to_rgba(P, 0.08)))
+        fig.add_trace(go.Scatter(x=date_range, y=cum_completed, name="Completed (cumulative)", line=dict(color=G, width=2.5), fill="tozeroy", fillcolor=hex_to_rgba(G, 0.08)))
         fig = chart_cfg(fig, h=350)
         fig.update_layout(legend=dict(orientation="h", y=1.08, font=dict(size=10)))
         st.plotly_chart(fig, use_container_width=True)
@@ -398,7 +390,7 @@ def page_habits(routines, rlog):
             r=tod["rate"] * 100,
             theta=tod["time"],
             fill="toself",
-            fillcolor=TEAL + "30",
+            fillcolor=hex_to_rgba(TEAL, 0.19),
             line=dict(color=TEAL, width=3),
             marker=dict(size=10),
             text=[f"{r:.0%}" for r in tod["rate"]],
@@ -486,7 +478,7 @@ def page_wellbeing(journal, todos, rlog):
 
         fig = go.Figure(data=go.Scatterpolar(
             r=dow_mood["score"], theta=dow_mood["day"],
-            fill="toself", fillcolor=PU + "20", line=dict(color=PU, width=2.5),
+            fill="toself", fillcolor=hex_to_rgba(PU, 0.13), line=dict(color=PU, width=2.5),
             marker=dict(size=8, color=[G if s >= 3.5 else A if s >= 3.0 else R for s in dow_mood["score"]])
         ))
         fig = chart_cfg(fig, h=320)
