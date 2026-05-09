@@ -10,7 +10,7 @@
 
 ## 🚀 Live Demo
 
-**[→ Open Dashboard](https://lifeos-claude-dashboard.streamlit.app)**
+**[→ Open Dashboard](https://lifeos-claude-dashboard-gppbqbstnycryefokhn95g.streamlit.app/)**
 
 ---
 
