@@ -142,8 +142,8 @@ lifeos-claude-dashboard/
 | Metric | Traditional | Claude Code | Improvement |
 |--------|-------------|-------------|-------------|
 | **Streamlit Development** | 1 week | 1 hour | **99% reduction** |
-| **Data Generation** | 2 days | 20 minutes | **93% reduction** |
-| **Documentation** | 1 day | 15 minutes | **98% reduction** |
+| **Data Generation** | 2 days | 2 minutes | **99.9% reduction** |
+| **Documentation** | 1 day | 2 minutes | **99.9% reduction** |
 
 ---
 
