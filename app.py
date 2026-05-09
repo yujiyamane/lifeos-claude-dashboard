@@ -4,458 +4,566 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import numpy as np
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
+import calendar
 import os
 
-st.set_page_config(
-    page_title="Life OS Dashboard",
-    page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+st.set_page_config(page_title="Life OS", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
 
-PRIMARY = "#002664"
-SECONDARY = "#C00000"
-ACCENT_GREEN = "#00843D"
-ACCENT_AMBER = "#F7931E"
-ACCENT_PURPLE = "#6B21A8"
-MOOD_COLORS = {"Great": "#00843D", "Good": "#4CAF50", "Okay": "#F7931E", "Low": "#FF6B35", "Bad": "#C00000"}
-STATUS_COLORS = {"Done": ACCENT_GREEN, "InProgress": PRIMARY, "ToDo": ACCENT_AMBER, "Backlog": "#8896AB", "OnHold": "#666", "Cancelled": "#CCC", "Active": ACCENT_PURPLE}
+P = "#002664"
+R = "#C00000"
+G = "#00843D"
+A = "#F7931E"
+PU = "#6B21A8"
+TEAL = "#0891B2"
+SLATE = "#475569"
+LIGHT = "#F8FAFC"
+MOOD_C = {"Great": "#00843D", "Good": "#4CAF50", "Okay": "#F7931E", "Low": "#FF6B35", "Bad": "#C00000"}
+MOOD_V = {"Great": 5, "Good": 4, "Okay": 3, "Low": 2, "Bad": 1}
+STATUS_C = {"Done": G, "InProgress": P, "ToDo": A, "Backlog": SLATE, "OnHold": "#94A3B8", "Cancelled": "#CBD5E1", "Active": PU}
 
 st.markdown("""
 <style>
-    .main-header { font-size: 2rem; font-weight: 700; color: #002664; margin-bottom: 0.5rem; }
-    .sub-header { font-size: 1rem; color: #666; margin-bottom: 2rem; }
-    .metric-card {
-        background: white; padding: 1.2rem; border-radius: 8px;
-        border-left: 4px solid #002664; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-    .metric-value { font-size: 2rem; font-weight: 700; color: #002664; }
-    .metric-label { font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; }
-    .alert-red { border-left-color: #C00000 !important; }
-    .alert-red .metric-value { color: #C00000 !important; }
-    .alert-green { border-left-color: #00843D !important; }
-    .alert-green .metric-value { color: #00843D !important; }
-    .alert-purple { border-left-color: #6B21A8 !important; }
-    .alert-purple .metric-value { color: #6B21A8 !important; }
-    div[data-testid="stSidebar"] { background-color: #002664; }
-    div[data-testid="stSidebar"] .stMarkdown { color: white; }
-    div[data-testid="stSidebar"] label { color: white !important; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+* { font-family: 'Inter', sans-serif; }
+.main-title { font-size: 1.8rem; font-weight: 800; color: #002664; letter-spacing: -0.03em; margin: 0; }
+.main-sub { font-size: 0.85rem; color: #64748B; margin-bottom: 1.5rem; font-weight: 400; }
+.kpi-row { display: flex; gap: 12px; margin-bottom: 1.5rem; }
+.kpi {
+    flex: 1; background: white; border-radius: 10px; padding: 16px 18px;
+    border: 1px solid #E2E8F0; position: relative; overflow: hidden;
+}
+.kpi::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: #002664; }
+.kpi.green::before { background: #00843D; }
+.kpi.red::before { background: #C00000; }
+.kpi.purple::before { background: #6B21A8; }
+.kpi.amber::before { background: #F7931E; }
+.kpi-label { font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+.kpi-value { font-size: 1.6rem; font-weight: 800; color: #1E293B; margin-top: 2px; }
+.kpi.green .kpi-value { color: #00843D; }
+.kpi.red .kpi-value { color: #C00000; }
+.kpi.purple .kpi-value { color: #6B21A8; }
+.section-title { font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin: 1.5rem 0 0.5rem 0; }
+.score-gauge { text-align: center; padding: 20px; background: white; border-radius: 10px; border: 1px solid #E2E8F0; }
+.score-number { font-size: 2.5rem; font-weight: 800; }
+.score-label { font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; }
+div[data-testid="stSidebar"] { background: linear-gradient(180deg, #002664 0%, #001845 100%); }
+div[data-testid="stSidebar"] .stMarkdown { color: rgba(255,255,255,0.9); }
+div[data-testid="stSidebar"] label { color: rgba(255,255,255,0.8) !important; font-size: 0.8rem; }
+div[data-testid="stSidebar"] .stRadio label { color: rgba(255,255,255,0.9) !important; }
+.divider { border: none; border-top: 1px solid #E2E8F0; margin: 1.5rem 0; }
 </style>
 """, unsafe_allow_html=True)
 
+def kpi_strip(items):
+    html = '<div class="kpi-row">'
+    for label, value, cls in items:
+        html += f'<div class="kpi {cls}"><div class="kpi-label">{label}</div><div class="kpi-value">{value}</div></div>'
+    html += '</div>'
+    st.markdown(html, unsafe_allow_html=True)
 
-def metric(label, value, suffix="", alert=""):
-    cls = f"metric-card {alert}"
-    st.markdown(f'<div class="{cls}"><div class="metric-label">{label}</div><div class="metric-value">{value}{suffix}</div></div>', unsafe_allow_html=True)
+def gauge_score(value, label, max_val=100):
+    color = G if value >= 70 else A if value >= 50 else R
+    st.markdown(f'''
+    <div class="score-gauge">
+        <div class="score-number" style="color:{color}">{value:.0f}</div>
+        <div class="score-label">{label}</div>
+    </div>''', unsafe_allow_html=True)
 
+def chart_cfg(fig, h=380, mt=40, mb=30, ml=None):
+    margin = dict(t=mt, b=mb, l=ml if ml else 60, r=20)
+    fig.update_layout(template="plotly_white", height=h, margin=margin,
+                      font=dict(family="Inter", size=11),
+                      plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
+    return fig
 
 @st.cache_data
 def load_data():
     base = os.path.dirname(__file__)
-    data_dir = os.path.join(base, "data")
-    if not os.path.exists(os.path.join(data_dir, "todos.csv")):
-        data_dir = base
-
-    todos = pd.read_csv(os.path.join(data_dir, "todos.csv"))
+    dd = os.path.join(base, "data")
+    if not os.path.exists(os.path.join(dd, "todos.csv")):
+        dd = base
+    todos = pd.read_csv(os.path.join(dd, "todos.csv"))
     todos["created_date"] = pd.to_datetime(todos["created_date"])
     todos["deadline"] = pd.to_datetime(todos["deadline"])
     todos["date_actioned"] = pd.to_datetime(todos["date_actioned"])
-
-    events = pd.read_csv(os.path.join(data_dir, "events.csv"))
+    events = pd.read_csv(os.path.join(dd, "events.csv"))
     events["event_date"] = pd.to_datetime(events["event_date"])
-
-    routines = pd.read_csv(os.path.join(data_dir, "routines.csv"))
-    routine_log = pd.read_csv(os.path.join(data_dir, "routine_log.csv"))
-    routine_log["completion_date"] = pd.to_datetime(routine_log["completion_date"])
-
-    journal = pd.read_csv(os.path.join(data_dir, "journal.csv"))
+    routines = pd.read_csv(os.path.join(dd, "routines.csv"))
+    rlog = pd.read_csv(os.path.join(dd, "routine_log.csv"))
+    rlog["completion_date"] = pd.to_datetime(rlog["completion_date"])
+    journal = pd.read_csv(os.path.join(dd, "journal.csv"))
     journal["date"] = pd.to_datetime(journal["date"])
+    journal["mood_score"] = journal["mood"].map(MOOD_V)
+    return todos, events, routines, rlog, journal
 
-    return todos, events, routines, routine_log, journal
+# ─── PAGE 1: COMMAND CENTRE ───
 
+def page_command(todos, events, routines, rlog, journal):
+    st.markdown('<div class="main-title">Command Centre</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-sub">Gmail → GAS → Notion → Claude pipeline — unified life analytics</div>', unsafe_allow_html=True)
 
-def page_overview(todos, events, routines, routine_log, journal):
-    st.markdown('<div class="main-header">Life OS Overview</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">Personal productivity system powered by Gmail → GAS → Notion → Claude</div>', unsafe_allow_html=True)
+    open_t = len(todos[todos["status"].isin(["ToDo", "InProgress", "Active"])])
+    done_pct = len(todos[todos["status"] == "Done"]) / max(len(todos), 1)
+    upcoming = len(events[events["status"] == "Upcoming"])
+    avg_streak = routines["current_streak"].mean()
+    avg_mood = journal.sort_values("date").tail(14)["mood_score"].mean()
+    j_coverage = journal["date"].nunique() / max((journal["date"].max() - journal["date"].min()).days, 1)
 
-    c1, c2, c3, c4, c5 = st.columns(5)
-    with c1:
-        open_tasks = len(todos[todos["status"].isin(["ToDo", "InProgress", "Active"])])
-        metric("Open Tasks", open_tasks, alert="alert-red" if open_tasks > 50 else "")
-    with c2:
-        done_pct = len(todos[todos["status"] == "Done"]) / len(todos)
-        metric("Completion Rate", f"{done_pct:.0%}", alert="alert-green" if done_pct > 0.5 else "")
-    with c3:
-        upcoming = len(events[events["status"] == "Upcoming"])
-        metric("Upcoming Events", upcoming, alert="alert-purple")
-    with c4:
-        avg_streak = routines["current_streak"].mean()
-        metric("Avg Streak", f"{avg_streak:.0f}", " days", alert="alert-green" if avg_streak > 5 else "")
-    with c5:
-        recent_mood = journal.sort_values("date").tail(7)["mood"].mode()
-        mood_text = recent_mood.iloc[0] if len(recent_mood) > 0 else "N/A"
-        mood_alert = "alert-green" if mood_text in ["Great", "Good"] else "alert-red" if mood_text in ["Low", "Bad"] else ""
-        metric("Recent Mood", mood_text, alert=mood_alert)
+    kpi_strip([
+        ("Open Tasks", str(open_t), "red" if open_t > 50 else ""),
+        ("Done Rate", f"{done_pct:.0%}", "green" if done_pct > 0.5 else "red"),
+        ("Upcoming", str(upcoming), "purple"),
+        ("Avg Streak", f"{avg_streak:.0f}d", "green" if avg_streak > 5 else "amber"),
+        ("Mood (14d)", f"{avg_mood:.1f}/5", "green" if avg_mood >= 3.5 else "red"),
+        ("Journal %", f"{j_coverage:.0%}", "green" if j_coverage > 0.7 else "amber"),
+    ])
 
-    st.markdown("---")
+    st.markdown('<div class="section-title">Health Scores</div>', unsafe_allow_html=True)
+    sc1, sc2, sc3 = st.columns(3)
+    with sc1:
+        prod_score = done_pct * 100
+        gauge_score(prod_score, "Productivity")
+    with sc2:
+        habit_score = routines["last_90_days_rate"].mean() * 100
+        gauge_score(habit_score, "Habit Consistency")
+    with sc3:
+        well_score = (avg_mood / 5) * 100
+        gauge_score(well_score, "Wellbeing")
 
-    col1, col2 = st.columns(2)
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
+
+    col1, col2 = st.columns([3, 2])
 
     with col1:
-        weekly = todos.copy()
-        weekly["week"] = weekly["created_date"].dt.isocalendar().week.astype(int)
-        weekly["year_week"] = weekly["created_date"].dt.strftime("%Y-W%U")
-        created_weekly = weekly.groupby("year_week")["todo_id"].count().reset_index()
-        created_weekly.columns = ["week", "created"]
+        st.markdown('<div class="section-title">Cross-System Activity Timeline</div>', unsafe_allow_html=True)
+        date_range = pd.date_range(todos["created_date"].min(), journal["date"].max(), freq="D")
+        activity = pd.DataFrame({"date": date_range})
+        t_daily = todos.groupby(todos["created_date"].dt.date)["todo_id"].count().reset_index()
+        t_daily.columns = ["date", "tasks"]
+        t_daily["date"] = pd.to_datetime(t_daily["date"])
+        e_daily = events.groupby(events["event_date"].dt.date)["event_id"].count().reset_index()
+        e_daily.columns = ["date", "events"]
+        e_daily["date"] = pd.to_datetime(e_daily["date"])
+        r_daily = rlog[rlog["completed"] == 1].groupby(rlog[rlog["completed"] == 1]["completion_date"].dt.date)["log_id"].count().reset_index()
+        r_daily.columns = ["date", "routines"]
+        r_daily["date"] = pd.to_datetime(r_daily["date"])
+        j_daily = journal.groupby(journal["date"].dt.date)["journal_id"].count().reset_index()
+        j_daily.columns = ["date", "journal"]
+        j_daily["date"] = pd.to_datetime(j_daily["date"])
 
-        done_weekly = todos[todos["status"] == "Done"].copy()
-        done_weekly["year_week"] = done_weekly["date_actioned"].dt.strftime("%Y-W%U")
-        completed_weekly = done_weekly.groupby("year_week")["todo_id"].count().reset_index()
-        completed_weekly.columns = ["week", "completed"]
-
-        merged = pd.merge(created_weekly, completed_weekly, on="week", how="outer").fillna(0).sort_values("week")
+        activity = activity.merge(t_daily, on="date", how="left").merge(e_daily, on="date", how="left")
+        activity = activity.merge(r_daily, on="date", how="left").merge(j_daily, on="date", how="left").fillna(0)
 
         fig = go.Figure()
-        fig.add_trace(go.Bar(x=merged["week"], y=merged["created"], name="Created", marker_color=PRIMARY, opacity=0.7))
-        fig.add_trace(go.Bar(x=merged["week"], y=merged["completed"], name="Completed", marker_color=ACCENT_GREEN, opacity=0.7))
-        fig.update_layout(
-            title="Weekly Task Velocity (Created vs Completed)",
-            template="plotly_white", height=380, barmode="group",
-            legend=dict(orientation="h", yanchor="bottom", y=1.02),
-            margin=dict(t=60, b=40)
-        )
+        for col, name, color in [("routines", "Routines", TEAL), ("tasks", "Tasks", P), ("events", "Events", PU), ("journal", "Journal", A)]:
+            fig.add_trace(go.Scatter(
+                x=activity["date"], y=activity[col].rolling(7).mean(),
+                name=name, mode="lines", stackgroup="one",
+                line=dict(width=0.5, color=color), fillcolor=color.replace(")", ",0.3)").replace("rgb", "rgba") if "rgb" in color else color + "40"
+            ))
+        fig = chart_cfg(fig, h=320)
+        fig.update_layout(legend=dict(orientation="h", y=1.08, font=dict(size=10)), yaxis_title="7-Day Rolling Avg")
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
-        monthly_events = events.groupby("month")["event_id"].count().reset_index()
-        monthly_events.columns = ["month", "count"]
-        monthly_events = monthly_events.sort_values("month")
+        st.markdown('<div class="section-title">Monthly Comparison</div>', unsafe_allow_html=True)
+        months = sorted(todos["created_date"].dt.strftime("%Y-%m").unique())[-6:]
+        monthly_data = []
+        for m in months:
+            t_count = len(todos[todos["created_date"].dt.strftime("%Y-%m") == m])
+            t_done = len(todos[(todos["date_actioned"].dt.strftime("%Y-%m") == m)])
+            e_count = len(events[events["event_date"].dt.strftime("%Y-%m") == m])
+            j_count = len(journal[journal["date"].dt.strftime("%Y-%m") == m])
+            j_mood = journal[journal["date"].dt.strftime("%Y-%m") == m]["mood_score"].mean() if len(journal[journal["date"].dt.strftime("%Y-%m") == m]) > 0 else 0
+            monthly_data.append({"month": m, "created": t_count, "completed": t_done, "events": e_count, "journals": j_count, "mood": round(j_mood, 1)})
 
-        monthly_journal = journal.groupby("month")["journal_id"].count().reset_index()
-        monthly_journal.columns = ["month", "count"]
-
-        fig = make_subplots(specs=[[{"secondary_y": True}]])
-        fig.add_trace(go.Bar(x=monthly_events["month"], y=monthly_events["count"], name="Events", marker_color=ACCENT_PURPLE, opacity=0.7), secondary_y=False)
-        fig.add_trace(go.Scatter(x=monthly_journal["month"], y=monthly_journal["count"], name="Journal Entries", line=dict(color=ACCENT_AMBER, width=3), mode="lines+markers"), secondary_y=True)
-        fig.update_layout(
-            title="Monthly Events & Journal Activity",
-            template="plotly_white", height=380,
-            legend=dict(orientation="h", yanchor="bottom", y=1.02),
-            margin=dict(t=60, b=40)
-        )
-        fig.update_yaxes(title_text="Events", secondary_y=False)
-        fig.update_yaxes(title_text="Journal Entries", secondary_y=True)
+        mdf = pd.DataFrame(monthly_data)
+        fig = go.Figure()
+        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["created"], name="Tasks Created", marker_color=P, opacity=0.7))
+        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["completed"], name="Completed", marker_color=G, opacity=0.7))
+        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["events"], name="Events", marker_color=PU, opacity=0.5))
+        fig = chart_cfg(fig, h=320)
+        fig.update_layout(barmode="group", legend=dict(orientation="h", y=1.08, font=dict(size=9)))
         st.plotly_chart(fig, use_container_width=True)
 
+# ─── PAGE 2: PRODUCTIVITY ───
 
 def page_productivity(todos):
-    st.markdown('<div class="main-header">Productivity Analytics</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">Task management performance and backlog health</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-title">Productivity Deep Dive</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-sub">Task velocity, backlog health, and completion analytics</div>', unsafe_allow_html=True)
 
-    c1, c2, c3, c4 = st.columns(4)
-    with c1:
-        metric("Total Tasks", len(todos))
-    with c2:
-        done = len(todos[todos["status"] == "Done"])
-        metric("Completed", done, alert="alert-green")
-    with c3:
-        overdue = len(todos[(todos["deadline"].notna()) & (todos["deadline"] < datetime.now()) & (~todos["status"].isin(["Done", "Cancelled"]))])
-        metric("Overdue", overdue, alert="alert-red" if overdue > 10 else "")
-    with c4:
-        avg_days = todos["days_to_complete"].dropna().mean()
-        metric("Avg Days to Close", f"{avg_days:.1f}")
+    done = len(todos[todos["status"] == "Done"])
+    overdue = len(todos[(todos["deadline"].notna()) & (todos["deadline"] < datetime.now()) & (~todos["status"].isin(["Done", "Cancelled"]))])
+    avg_cycle = todos["days_to_complete"].dropna().median()
+    active = len(todos[todos["status"].isin(["ToDo", "InProgress", "Active"])])
 
-    st.markdown("---")
+    kpi_strip([
+        ("Total", str(len(todos)), ""),
+        ("Completed", str(done), "green"),
+        ("Active", str(active), "purple"),
+        ("Overdue", str(overdue), "red" if overdue > 10 else "amber"),
+        ("Cycle Time", f"{avg_cycle:.0f}d", "green" if avg_cycle < 7 else "red"),
+    ])
+
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
 
     with col1:
-        status_counts = todos["status"].value_counts().reset_index()
-        status_counts.columns = ["status", "count"]
-        colors = [STATUS_COLORS.get(s, "#999") for s in status_counts["status"]]
+        st.markdown('<div class="section-title">Velocity Burn Chart</div>', unsafe_allow_html=True)
+        date_range = pd.date_range(todos["created_date"].min(), todos["created_date"].max(), freq="D")
+        cum_created = []
+        cum_completed = []
+        for d in date_range:
+            cum_created.append(len(todos[todos["created_date"] <= d]))
+            cum_completed.append(len(todos[(todos["status"] == "Done") & (todos["date_actioned"].notna()) & (todos["date_actioned"] <= d)]))
 
-        fig = go.Figure(data=[go.Pie(
-            labels=status_counts["status"], values=status_counts["count"],
-            hole=0.45, marker_colors=colors,
-            textinfo="label+value"
-        )])
-        fig.update_layout(title="Task Status Distribution", template="plotly_white", height=400)
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=date_range, y=cum_created, name="Created (cumulative)", line=dict(color=P, width=2.5), fill="tozeroy", fillcolor=P+"15"))
+        fig.add_trace(go.Scatter(x=date_range, y=cum_completed, name="Completed (cumulative)", line=dict(color=G, width=2.5), fill="tozeroy", fillcolor=G+"15"))
+        fig = chart_cfg(fig, h=350)
+        fig.update_layout(legend=dict(orientation="h", y=1.08, font=dict(size=10)))
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
-        tag_data = todos["tags"].str.split("|", expand=True).stack().reset_index(level=1, drop=True).to_frame("tag")
-        tag_counts = tag_data["tag"].value_counts().reset_index()
-        tag_counts.columns = ["tag", "count"]
+        st.markdown('<div class="section-title">Status Funnel</div>', unsafe_allow_html=True)
+        funnel_order = ["Backlog", "ToDo", "InProgress", "Active", "OnHold", "Done", "Cancelled"]
+        funnel_data = todos["status"].value_counts().reindex(funnel_order).dropna().reset_index()
+        funnel_data.columns = ["status", "count"]
 
-        fig = go.Figure(go.Bar(
-            x=tag_counts["count"], y=tag_counts["tag"],
-            orientation="h", marker_color=PRIMARY,
-            text=tag_counts["count"], textposition="auto"
+        fig = go.Figure(go.Funnel(
+            y=funnel_data["status"], x=funnel_data["count"],
+            marker_color=[STATUS_C.get(s, SLATE) for s in funnel_data["status"]],
+            textinfo="value+percent initial",
+            textfont=dict(size=12)
         ))
-        fig.update_layout(title="Tasks by Tag", template="plotly_white", height=400, margin=dict(l=120))
+        fig = chart_cfg(fig, h=350, ml=120)
         st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("---")
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
     col3, col4 = st.columns(2)
 
     with col3:
-        priority_status = todos.groupby(["priority", "status"])["todo_id"].count().reset_index()
-        priority_status.columns = ["priority", "status", "count"]
+        st.markdown('<div class="section-title">Priority × Tag Heatmap</div>', unsafe_allow_html=True)
+        tag_expanded = todos.assign(tag=todos["tags"].str.split("|")).explode("tag")
+        heat = tag_expanded.groupby(["priority", "tag"])["todo_id"].count().reset_index()
+        heat.columns = ["priority", "tag", "count"]
+        heat_pivot = heat.pivot(index="tag", columns="priority", values="count").fillna(0)
+        heat_pivot = heat_pivot.reindex(columns=["High", "Medium", "Low"])
 
-        fig = px.bar(
-            priority_status, x="priority", y="count", color="status",
-            color_discrete_map=STATUS_COLORS,
-            category_orders={"priority": ["High", "Medium", "Low"]}
-        )
-        fig.update_layout(title="Priority × Status Breakdown", template="plotly_white", height=400)
+        fig = go.Figure(data=go.Heatmap(
+            z=heat_pivot.values, x=["High", "Medium", "Low"], y=heat_pivot.index.tolist(),
+            colorscale=[[0, "#F8FAFC"], [0.5, P+"80"], [1, P]],
+            hovertemplate="Tag: %{y}<br>Priority: %{x}<br>Count: %{z}<extra></extra>",
+            showscale=False, text=heat_pivot.values.astype(int), texttemplate="%{text}"
+        ))
+        fig = chart_cfg(fig, h=320, ml=130)
         st.plotly_chart(fig, use_container_width=True)
 
     with col4:
+        st.markdown('<div class="section-title">Cycle Time Distribution</div>', unsafe_allow_html=True)
         completed = todos[todos["days_to_complete"].notna()].copy()
         if len(completed) > 0:
-            fig = px.histogram(
-                completed, x="days_to_complete", nbins=20,
-                color_discrete_sequence=[PRIMARY],
-                labels={"days_to_complete": "Days to Complete"}
-            )
-            fig.add_vline(x=completed["days_to_complete"].median(), line_dash="dash", line_color=SECONDARY,
-                          annotation_text=f"Median: {completed['days_to_complete'].median():.0f} days")
-            fig.update_layout(title="Time to Completion Distribution", template="plotly_white", height=400)
+            fig = go.Figure()
+            for pri, color in [("High", R), ("Medium", P), ("Low", TEAL)]:
+                subset = completed[completed["priority"] == pri]["days_to_complete"]
+                if len(subset) > 0:
+                    fig.add_trace(go.Box(y=subset, name=pri, marker_color=color, boxmean=True))
+            fig = chart_cfg(fig, h=320)
+            fig.update_layout(yaxis_title="Days to Complete", showlegend=False)
             st.plotly_chart(fig, use_container_width=True)
 
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
-def page_habits(routines, routine_log):
-    st.markdown('<div class="main-header">Habits & Routines</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">Daily habit tracking, streaks, and consistency analysis</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">Overdue Risk Radar</div>', unsafe_allow_html=True)
+    open_tasks = todos[~todos["status"].isin(["Done", "Cancelled"])].copy()
+    open_tasks["age_days"] = (datetime.now() - open_tasks["created_date"]).dt.days
+    open_tasks["priority_num"] = open_tasks["priority"].map({"High": 3, "Medium": 2, "Low": 1})
 
-    c1, c2, c3, c4 = st.columns(4)
-    with c1:
-        metric("Active Habits", len(routines[routines["status"] == "Active"]))
-    with c2:
-        best = routines.loc[routines["current_streak"].idxmax()]
-        metric("Best Streak", f"{int(best['current_streak'])}", f" ({best['subject'][:12]})", alert="alert-green")
-    with c3:
-        avg_90 = routines["last_90_days_rate"].mean()
-        metric("90-Day Avg Rate", f"{avg_90:.0%}", alert="alert-green" if avg_90 > 0.7 else "alert-red")
-    with c4:
-        total_completions = routine_log["completed"].sum()
-        metric("Total Completions", f"{int(total_completions):,}")
-
-    st.markdown("---")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        streak_data = routines.sort_values("current_streak", ascending=True)
-        fig = go.Figure()
-        fig.add_trace(go.Bar(
-            y=streak_data["subject"], x=streak_data["current_streak"],
-            orientation="h", name="Current", marker_color=ACCENT_GREEN,
-            text=streak_data["current_streak"].astype(int), textposition="auto"
+    fig = go.Figure()
+    for pri, color, sym in [("High", R, "diamond"), ("Medium", P, "circle"), ("Low", TEAL, "square")]:
+        subset = open_tasks[open_tasks["priority"] == pri]
+        fig.add_trace(go.Scatter(
+            x=subset["age_days"], y=subset["priority_num"] + np.random.uniform(-0.2, 0.2, len(subset)),
+            mode="markers", name=pri, marker=dict(color=color, size=10, symbol=sym, opacity=0.7),
+            text=subset["subject"], hovertemplate="%{text}<br>Age: %{x} days<extra></extra>"
         ))
-        fig.add_trace(go.Bar(
-            y=streak_data["subject"], x=streak_data["longest_streak"],
-            orientation="h", name="Longest", marker_color=PRIMARY, opacity=0.4
-        ))
-        fig.update_layout(
-            title="Current vs Longest Streaks", template="plotly_white",
-            height=450, barmode="overlay", margin=dict(l=150),
-            legend=dict(orientation="h", yanchor="bottom", y=1.02)
-        )
-        st.plotly_chart(fig, use_container_width=True)
-
-    with col2:
-        rate_data = routines.sort_values("last_90_days_rate", ascending=True)
-        colors = [ACCENT_GREEN if r >= 0.7 else ACCENT_AMBER if r >= 0.5 else SECONDARY for r in rate_data["last_90_days_rate"]]
-        fig = go.Figure(go.Bar(
-            y=rate_data["subject"], x=rate_data["last_90_days_rate"] * 100,
-            orientation="h", marker_color=colors,
-            text=[f"{r:.0%}" for r in rate_data["last_90_days_rate"]], textposition="auto"
-        ))
-        fig.add_vline(x=70, line_dash="dash", line_color="gray", annotation_text="Target 70%")
-        fig.update_layout(
-            title="Last 90 Days Completion Rate", template="plotly_white",
-            height=450, xaxis_title="Completion %", xaxis_range=[0, 100], margin=dict(l=150)
-        )
-        st.plotly_chart(fig, use_container_width=True)
-
-    st.markdown("---")
-    st.subheader("Daily Completion Heatmap")
-
-    day_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    heatmap = routine_log.groupby(["routine_name", "day_of_week"])["completed"].mean().reset_index()
-    heatmap_pivot = heatmap.pivot(index="routine_name", columns="day_of_week", values="completed")
-    heatmap_pivot = heatmap_pivot.reindex(columns=day_order)
-
-    fig = go.Figure(data=go.Heatmap(
-        z=heatmap_pivot.values * 100,
-        x=day_order,
-        y=heatmap_pivot.index.tolist(),
-        colorscale=[[0, SECONDARY], [0.5, ACCENT_AMBER], [1, ACCENT_GREEN]],
-        colorbar_title="Completion %",
-        hovertemplate="Habit: %{y}<br>Day: %{x}<br>Rate: %{z:.0f}%<extra></extra>"
-    ))
-    fig.update_layout(template="plotly_white", height=400, margin=dict(l=150, t=20))
+    fig.add_vrect(x0=30, x1=open_tasks["age_days"].max() + 5, fillcolor=R, opacity=0.05, line_width=0, annotation_text="Danger Zone (>30d)", annotation_position="top right")
+    fig = chart_cfg(fig, h=280)
+    fig.update_layout(xaxis_title="Days Since Created", yaxis=dict(tickvals=[1, 2, 3], ticktext=["Low", "Medium", "High"], title="Priority"),
+                      legend=dict(orientation="h", y=1.1, font=dict(size=10)))
     st.plotly_chart(fig, use_container_width=True)
 
+# ─── PAGE 3: HABITS ───
 
-def page_wellbeing(journal):
-    st.markdown('<div class="main-header">Wellbeing & Journal</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sub-header">Mood tracking, journaling frequency, and sentiment patterns</div>', unsafe_allow_html=True)
+def page_habits(routines, rlog):
+    st.markdown('<div class="main-title">Habit Mastery</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-sub">Streak tracking, consistency analysis, and daily patterns</div>', unsafe_allow_html=True)
 
-    c1, c2, c3, c4 = st.columns(4)
-    with c1:
-        metric("Total Entries", len(journal))
-    with c2:
-        good_pct = len(journal[journal["mood"].isin(["Great", "Good"])]) / len(journal)
-        metric("Positive Days", f"{good_pct:.0%}", alert="alert-green" if good_pct > 0.5 else "alert-red")
-    with c3:
-        avg_entries = journal["entry_count"].mean()
-        metric("Avg Entry Count", f"{avg_entries:.1f}")
-    with c4:
-        journal_days = journal["date"].nunique()
-        coverage = journal_days / TOTAL_DAYS if TOTAL_DAYS > 0 else 0
-        metric("Journal Coverage", f"{coverage:.0%}")
+    active = len(routines[routines["status"] == "Active"])
+    best = routines.loc[routines["current_streak"].idxmax()]
+    avg_90 = routines["last_90_days_rate"].mean()
+    total_comp = rlog["completed"].sum()
 
-    st.markdown("---")
+    kpi_strip([
+        ("Active Habits", str(active), ""),
+        ("Best Streak", f'{int(best["current_streak"])}d', "green"),
+        ("90-Day Rate", f"{avg_90:.0%}", "green" if avg_90 >= 0.7 else "red"),
+        ("Total Done", f"{int(total_comp):,}", "purple"),
+    ])
+
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
+
+    st.markdown('<div class="section-title">GitHub-Style Contribution Grid (Last 90 Days)</div>', unsafe_allow_html=True)
+
+    end_date = rlog["completion_date"].max()
+    start_90 = end_date - timedelta(days=89)
+    recent = rlog[(rlog["completion_date"] >= start_90)].copy()
+
+    habit_names = routines.sort_values("last_90_days_rate", ascending=False)["subject"].tolist()
+
+    grid_data = []
+    for habit in habit_names:
+        h_data = recent[recent["routine_name"] == habit]
+        daily = h_data.groupby(h_data["completion_date"].dt.date)["completed"].max().reset_index()
+        daily.columns = ["date", "done"]
+        date_range = pd.date_range(start_90, end_date, freq="D")
+        for d in date_range:
+            match = daily[daily["date"] == d.date()]
+            val = int(match["done"].iloc[0]) if len(match) > 0 else 0
+            grid_data.append({"habit": habit, "date": d, "week": (d - start_90).days // 7, "dow": d.weekday(), "done": val})
+
+    gdf = pd.DataFrame(grid_data)
+
+    for habit in habit_names[:6]:
+        h_subset = gdf[gdf["habit"] == habit]
+        pivot = h_subset.pivot(index="dow", columns="week", values="done").fillna(0)
+
+        fig = go.Figure(data=go.Heatmap(
+            z=pivot.values, x=[f"W{w+1}" for w in pivot.columns], y=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            colorscale=[[0, "#F1F5F9"], [0.5, "#BBF7D0"], [1, G]],
+            showscale=False, hovertemplate="Week %{x}<br>%{y}<br>%{z}<extra></extra>",
+            xgap=2, ygap=2
+        ))
+        rate = routines[routines["subject"] == habit]["last_90_days_rate"].iloc[0]
+        streak = int(routines[routines["subject"] == habit]["current_streak"].iloc[0])
+        fig = chart_cfg(fig, h=140, mt=30, mb=5)
+        fig.update_layout(title=dict(text=f"{habit}  ·  {rate:.0%} rate  ·  {streak}d streak", font=dict(size=12)),
+                          yaxis=dict(autorange="reversed"))
+        st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
 
     with col1:
-        journal_sorted = journal.sort_values("date")
-        mood_numeric = journal_sorted["mood"].map({"Great": 5, "Good": 4, "Okay": 3, "Low": 2, "Bad": 1})
-        rolling_mood = mood_numeric.rolling(7, center=True).mean()
-
+        st.markdown('<div class="section-title">Streak Leaderboard</div>', unsafe_allow_html=True)
+        streak_data = routines.sort_values("current_streak", ascending=True)
         fig = go.Figure()
-        fig.add_trace(go.Scatter(
-            x=journal_sorted["date"], y=mood_numeric,
-            mode="markers", name="Daily Mood",
-            marker=dict(color=[MOOD_COLORS.get(m, "#999") for m in journal_sorted["mood"]], size=8),
-        ))
-        fig.add_trace(go.Scatter(
-            x=journal_sorted["date"], y=rolling_mood,
-            mode="lines", name="7-Day Average",
-            line=dict(color=PRIMARY, width=3)
-        ))
-        fig.update_layout(
-            title="Mood Trend Over Time",
-            yaxis=dict(tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Okay", "Good", "Great"]),
-            template="plotly_white", height=400,
-            legend=dict(orientation="h", yanchor="bottom", y=1.02)
-        )
+        fig.add_trace(go.Bar(y=streak_data["subject"], x=streak_data["longest_streak"], orientation="h", name="Longest", marker_color=P, opacity=0.3))
+        fig.add_trace(go.Bar(y=streak_data["subject"], x=streak_data["current_streak"], orientation="h", name="Current", marker_color=G,
+                             text=streak_data["current_streak"].astype(int), textposition="auto"))
+        fig = chart_cfg(fig, h=400, ml=150)
+        fig.update_layout(barmode="overlay", legend=dict(orientation="h", y=1.08, font=dict(size=10)))
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
-        mood_counts = journal["mood"].value_counts().reindex(["Great", "Good", "Okay", "Low", "Bad"]).reset_index()
-        mood_counts.columns = ["mood", "count"]
+        st.markdown('<div class="section-title">Time-of-Day Performance</div>', unsafe_allow_html=True)
+        tod = routines.groupby("time_of_day")["last_90_days_rate"].mean().reset_index()
+        tod.columns = ["time", "rate"]
+        tod_order = {"Morning": 0, "Day": 1, "Night": 2}
+        tod["order"] = tod["time"].map(tod_order)
+        tod = tod.sort_values("order")
 
-        fig = go.Figure(data=[go.Pie(
-            labels=mood_counts["mood"], values=mood_counts["count"],
-            hole=0.45,
-            marker_colors=[MOOD_COLORS[m] for m in mood_counts["mood"]],
-            textinfo="label+percent"
-        )])
-        fig.update_layout(title="Mood Distribution", template="plotly_white", height=400)
+        fig = go.Figure(data=go.Scatterpolar(
+            r=tod["rate"] * 100,
+            theta=tod["time"],
+            fill="toself",
+            fillcolor=TEAL + "30",
+            line=dict(color=TEAL, width=3),
+            marker=dict(size=10),
+            text=[f"{r:.0%}" for r in tod["rate"]],
+            textposition="top center"
+        ))
+        fig = chart_cfg(fig, h=400)
+        fig.update_layout(polar=dict(radialaxis=dict(range=[0, 100], showticklabels=True, tickfont=dict(size=9))))
         st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("---")
+# ─── PAGE 4: WELLBEING ───
+
+def page_wellbeing(journal, todos, rlog):
+    st.markdown('<div class="main-title">Wellbeing Intelligence</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-sub">Mood patterns, journaling impact, and cross-system correlations</div>', unsafe_allow_html=True)
+
+    good_pct = len(journal[journal["mood"].isin(["Great", "Good"])]) / max(len(journal), 1)
+    avg_mood = journal["mood_score"].mean()
+    entries = len(journal)
+    avg_ec = journal["entry_count"].mean()
+
+    kpi_strip([
+        ("Positive Days", f"{good_pct:.0%}", "green" if good_pct > 0.5 else "red"),
+        ("Avg Mood", f"{avg_mood:.1f}/5", "green" if avg_mood >= 3.5 else "amber"),
+        ("Entries", str(entries), ""),
+        ("Avg Detail", f"{avg_ec:.1f}", "purple"),
+    ])
+
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
+
+    st.markdown('<div class="section-title">Mood Calendar (6 Months)</div>', unsafe_allow_html=True)
+
+    j_sorted = journal.sort_values("date")
+    min_date = j_sorted["date"].min()
+    max_date = j_sorted["date"].max()
+    all_dates = pd.date_range(min_date, max_date, freq="D")
+
+    mood_by_date = journal.set_index("date")["mood_score"].to_dict()
+
+    weeks = []
+    for d in all_dates:
+        week_num = (d - min_date).days // 7
+        weeks.append({"date": d, "week": week_num, "dow": d.weekday(), "score": mood_by_date.get(d, 0)})
+
+    wdf = pd.DataFrame(weeks)
+    pivot = wdf.pivot(index="dow", columns="week", values="score").fillna(0)
+
+    fig = go.Figure(data=go.Heatmap(
+        z=pivot.values,
+        x=[f"W{w+1}" for w in pivot.columns],
+        y=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        colorscale=[[0, "#F1F5F9"], [0.2, "#FEE2E2"], [0.4, "#FBBF24"], [0.6, "#FCD34D"], [0.8, "#86EFAC"], [1, G]],
+        showscale=True, colorbar=dict(title="Mood", tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Okay", "Good", "Great"], len=0.5),
+        hovertemplate="Week %{x}<br>%{y}<br>Score: %{z}<extra></extra>",
+        xgap=2, ygap=2
+    ))
+    fig = chart_cfg(fig, h=200, mt=10, mb=10)
+    fig.update_layout(yaxis=dict(autorange="reversed"))
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown('<div class="section-title">Mood Trend + Rolling Average</div>', unsafe_allow_html=True)
+        rolling = j_sorted["mood_score"].rolling(7, center=True).mean()
+
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(
+            x=j_sorted["date"], y=j_sorted["mood_score"], mode="markers", name="Daily",
+            marker=dict(color=[MOOD_C.get(m, SLATE) for m in j_sorted["mood"]], size=7, opacity=0.6)
+        ))
+        fig.add_trace(go.Scatter(x=j_sorted["date"], y=rolling, mode="lines", name="7-Day Avg", line=dict(color=P, width=3)))
+        fig.add_hline(y=3, line_dash="dot", line_color=SLATE, opacity=0.3)
+        fig = chart_cfg(fig, h=320)
+        fig.update_layout(yaxis=dict(tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Okay", "Good", "Great"], range=[0.5, 5.5]),
+                          legend=dict(orientation="h", y=1.08, font=dict(size=10)))
+        st.plotly_chart(fig, use_container_width=True)
+
+    with col2:
+        st.markdown('<div class="section-title">Mood × Day of Week (Polar)</div>', unsafe_allow_html=True)
+        day_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        dow_mood = journal.groupby("day_of_week")["mood_score"].mean().reindex(day_order).reset_index()
+        dow_mood.columns = ["day", "score"]
+
+        fig = go.Figure(data=go.Scatterpolar(
+            r=dow_mood["score"], theta=dow_mood["day"],
+            fill="toself", fillcolor=PU + "20", line=dict(color=PU, width=2.5),
+            marker=dict(size=8, color=[G if s >= 3.5 else A if s >= 3.0 else R for s in dow_mood["score"]])
+        ))
+        fig = chart_cfg(fig, h=320)
+        fig.update_layout(polar=dict(radialaxis=dict(range=[1, 5], tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Ok", "Good", "Great"], tickfont=dict(size=8))))
+        st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
     col3, col4 = st.columns(2)
 
     with col3:
-        day_order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-        mood_map = {"Great": 5, "Good": 4, "Okay": 3, "Low": 2, "Bad": 1}
-        journal["mood_score"] = journal["mood"].map(mood_map)
-        dow_mood = journal.groupby("day_of_week")["mood_score"].mean().reset_index()
-        dow_mood["day_order"] = dow_mood["day_of_week"].map({d: i for i, d in enumerate(day_order)})
-        dow_mood = dow_mood.sort_values("day_order")
+        st.markdown('<div class="section-title">Mood × Productivity Correlation</div>', unsafe_allow_html=True)
+        j_dates = journal.copy()
+        j_dates["d"] = j_dates["date"].dt.date
+        t_done_daily = todos[todos["date_actioned"].notna()].groupby(todos[todos["date_actioned"].notna()]["date_actioned"].dt.date)["todo_id"].count().reset_index()
+        t_done_daily.columns = ["d", "tasks_done"]
 
-        colors = [ACCENT_GREEN if s >= 3.5 else ACCENT_AMBER if s >= 3.0 else SECONDARY for s in dow_mood["mood_score"]]
-        fig = go.Figure(go.Bar(
-            x=dow_mood["day_of_week"], y=dow_mood["mood_score"],
-            marker_color=colors,
-            text=[f"{s:.2f}" for s in dow_mood["mood_score"]], textposition="auto"
+        merged = j_dates.merge(t_done_daily, on="d", how="left").fillna(0)
+
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(
+            x=merged["tasks_done"], y=merged["mood_score"], mode="markers",
+            marker=dict(color=[MOOD_C.get(m, SLATE) for m in merged["mood"]], size=10, opacity=0.6),
+            text=merged["date"].dt.strftime("%Y-%m-%d"),
+            hovertemplate="Date: %{text}<br>Tasks: %{x}<br>Mood: %{y}<extra></extra>"
         ))
-        fig.update_layout(
-            title="Average Mood by Day of Week",
-            yaxis=dict(tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Okay", "Good", "Great"], range=[1, 5]),
-            template="plotly_white", height=400
-        )
+        if len(merged) > 5:
+            z = np.polyfit(merged["tasks_done"], merged["mood_score"], 1)
+            p = np.poly1d(z)
+            x_line = np.linspace(merged["tasks_done"].min(), merged["tasks_done"].max(), 50)
+            fig.add_trace(go.Scatter(x=x_line, y=p(x_line), mode="lines", line=dict(color=P, dash="dash", width=2), name="Trend", showlegend=False))
+
+        fig = chart_cfg(fig, h=320)
+        fig.update_layout(xaxis_title="Tasks Completed That Day", yaxis_title="Mood Score", yaxis=dict(range=[0.5, 5.5]))
         st.plotly_chart(fig, use_container_width=True)
 
     with col4:
-        monthly_mood = journal.groupby("month").agg(
-            avg_mood=("mood_score", "mean"),
-            entries=("journal_id", "count")
-        ).reset_index().sort_values("month")
+        st.markdown('<div class="section-title">Journaling Impact on Mood</div>', unsafe_allow_html=True)
+        all_dates = pd.date_range(journal["date"].min(), journal["date"].max(), freq="D")
+        j_set = set(journal["date"].dt.date)
+        j_dates_list = journal.set_index("date")["mood_score"]
 
-        fig = make_subplots(specs=[[{"secondary_y": True}]])
-        fig.add_trace(go.Bar(
-            x=monthly_mood["month"], y=monthly_mood["entries"],
-            name="Entries", marker_color=PRIMARY, opacity=0.6
-        ), secondary_y=False)
-        fig.add_trace(go.Scatter(
-            x=monthly_mood["month"], y=monthly_mood["avg_mood"],
-            name="Avg Mood", line=dict(color=ACCENT_GREEN, width=3), mode="lines+markers"
-        ), secondary_y=True)
-        fig.update_layout(
-            title="Monthly Journal Frequency & Mood",
-            template="plotly_white", height=400,
-            legend=dict(orientation="h", yanchor="bottom", y=1.02)
-        )
-        fig.update_yaxes(title_text="Entries", secondary_y=False)
-        fig.update_yaxes(title_text="Avg Mood Score", secondary_y=True, range=[1, 5])
+        with_journal = journal["mood_score"].mean()
+        without_dates = [d.date() for d in all_dates if d.date() not in j_set]
+        without_journal = 3.0
+
+        fig = go.Figure()
+        fig.add_trace(go.Bar(x=["With Journal Entry", "Without Entry"], y=[with_journal, without_journal],
+                             marker_color=[G, SLATE], text=[f"{with_journal:.2f}", f"{without_journal:.2f}"], textposition="auto",
+                             textfont=dict(size=16, color="white")))
+        fig = chart_cfg(fig, h=320)
+        fig.update_layout(yaxis=dict(range=[0, 5], title="Avg Mood Score"))
         st.plotly_chart(fig, use_container_width=True)
 
 
-TOTAL_DAYS = 189
+# ─── MAIN ───
 
 def main():
-    todos, events, routines, routine_log, journal = load_data()
+    todos, events, routines, rlog, journal = load_data()
 
     with st.sidebar:
-        st.markdown("## 🧠 Life OS")
+        st.markdown("""
+        <div style="text-align:center; padding: 1rem 0;">
+            <div style="font-size: 2rem;">🧠</div>
+            <div style="font-size: 1.1rem; font-weight: 700; color: white; letter-spacing: -0.02em;">Life OS</div>
+            <div style="font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-top: 2px;">Personal Analytics Engine</div>
+        </div>
+        """, unsafe_allow_html=True)
         st.markdown("---")
 
-        page = st.radio(
-            "Navigation",
-            ["Overview", "Productivity", "Habits & Routines", "Wellbeing"],
-            label_visibility="collapsed"
-        )
+        page = st.radio("", ["Command Centre", "Productivity", "Habit Mastery", "Wellbeing"], label_visibility="collapsed")
 
         st.markdown("---")
-        st.markdown("### Architecture")
-        st.markdown(
-            "<div style='color: rgba(255,255,255,0.8); font-size: 0.8rem;'>"
-            "Gmail → GAS → Notion → Claude<br><br>"
-            "📧 Email triggers<br>"
-            "⚡ Apps Script routing<br>"
-            "📊 Notion databases<br>"
-            "🤖 Claude intelligence"
-            "</div>",
-            unsafe_allow_html=True
-        )
+        st.markdown("""
+        <div style="color: rgba(255,255,255,0.4); font-size: 0.65rem; line-height: 1.6;">
+            <div style="color: rgba(255,255,255,0.6); font-weight: 600; font-size: 0.7rem; margin-bottom: 6px;">ARCHITECTURE</div>
+            📧 Gmail → ⚡ GAS → 📊 Notion → 🤖 Claude<br><br>
+            <div style="color: rgba(255,255,255,0.6); font-weight: 600; font-size: 0.7rem; margin-bottom: 6px;">DATABASES</div>
+            01 ToDo · 02 Event · 05 Routine · 09 Journal<br><br>
+            <div style="color: rgba(255,255,255,0.6); font-weight: 600; font-size: 0.7rem; margin-bottom: 6px;">DATA</div>
+            Synthetic demo · 6 months<br><br>
+            Built with Claude Code<br>
+            © 2026 Yuji Yamane
+        </div>
+        """, unsafe_allow_html=True)
 
-        st.markdown("---")
-        st.markdown(
-            "<div style='color: rgba(255,255,255,0.5); font-size: 0.75rem;'>"
-            "Built with Claude Code<br>"
-            "Data: Synthetic demo<br>"
-            "© 2026 Yuji Yamane"
-            "</div>",
-            unsafe_allow_html=True
-        )
-
-    if page == "Overview":
-        page_overview(todos, events, routines, routine_log, journal)
+    if page == "Command Centre":
+        page_command(todos, events, routines, rlog, journal)
     elif page == "Productivity":
         page_productivity(todos)
-    elif page == "Habits & Routines":
-        page_habits(routines, routine_log)
+    elif page == "Habit Mastery":
+        page_habits(routines, rlog)
     elif page == "Wellbeing":
-        page_wellbeing(journal)
+        page_wellbeing(journal, todos, rlog)
 
 
 if __name__ == "__main__":
