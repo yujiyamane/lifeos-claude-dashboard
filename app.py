@@ -264,7 +264,7 @@ def page_productivity(todos):
 
         fig = go.Figure(data=go.Heatmap(
             z=heat_pivot.values, x=["High", "Medium", "Low"], y=heat_pivot.index.tolist(),
-            colorscale=[[0, "#F8FAFC"], [0.5, P+"80"], [1, P]],
+            colorscale=[[0, "#F8FAFC"], [0.5, "#8AAED6"], [1, P]],
             hovertemplate="Tag: %{y}<br>Priority: %{x}<br>Count: %{z}<extra></extra>",
             showscale=False, text=heat_pivot.values.astype(int), texttemplate="%{text}"
         ))
