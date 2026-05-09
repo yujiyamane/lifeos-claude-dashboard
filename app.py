@@ -157,10 +157,16 @@ def page_command(todos, events, routines, rlog, journal):
 
         fig = go.Figure()
         for col, name, color in [("routines", "Routines", TEAL), ("tasks", "Tasks", P), ("events", "Events", PU), ("journal", "Journal", A)]:
+            # Convert hex colors to rgba with alpha
+            if color.startswith("#"):
+                fill_color = color + "4D"  # 30% opacity in hex
+            else:
+                fill_color = color.replace(")", ",0.3)").replace("rgb", "rgba") if "rgb" in color else color
+
             fig.add_trace(go.Scatter(
                 x=activity["date"], y=activity[col].rolling(7).mean(),
                 name=name, mode="lines", stackgroup="one",
-                line=dict(width=0.5, color=color), fillcolor=color.replace(")", ",0.3)").replace("rgb", "rgba") if "rgb" in color else color + "40"
+                line=dict(width=0.5, color=color), fillcolor=fill_color
             ))
         fig = chart_cfg(fig, h=320)
         fig.update_layout(legend=dict(orientation="h", y=1.08, font=dict(size=10)), yaxis_title="7-Day Rolling Avg")
