@@ -1,0 +1,13 @@
+routine_id,subject,time_of_day,target_days,status,current_streak,longest_streak,total_completions,last_90_days_count,last_90_days_rate,start_date,person
+1,Morning Reading,Morning,7,Active,4,10,136,67,0.744,2025-11-01,Person A
+2,Journaling,Morning,7,Active,3,13,134,64,0.711,2025-11-01,Person A
+3,Exercise,Morning,5,Active,0,9,98,47,0.522,2025-11-01,Person A
+4,Meditation,Morning,7,Active,0,8,128,66,0.733,2025-11-01,Person A
+5,Property Research,Morning,5,Active,8,8,92,46,0.511,2025-11-01,Person A
+6,Language Study,Day,5,Active,8,9,99,50,0.556,2025-11-01,Person A
+7,Code Practice,Day,3,Active,0,9,53,25,0.278,2025-11-01,Person A
+8,Review Inbox,Day,7,Active,8,9,132,59,0.656,2025-11-01,Person A
+9,Evening Walk,Night,5,Active,7,13,95,48,0.533,2025-11-01,Person A
+10,Gratitude Log,Night,7,Active,2,11,128,62,0.689,2025-11-01,Person A
+11,Stretch Routine,Night,5,Active,1,13,97,49,0.544,2025-11-01,Person A
+12,Weekly Planning,Morning,1,Active,3,3,19,9,0.1,2025-11-01,Person A

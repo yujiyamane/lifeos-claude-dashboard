@@ -1,0 +1,2269 @@
+log_id,routine_name,time_of_day,completion_date,completed,day_of_week,month
+1,Morning Reading,Morning,2025-11-01,1,Saturday,2025-11
+2,Morning Reading,Morning,2025-11-02,1,Sunday,2025-11
+3,Morning Reading,Morning,2025-11-03,1,Monday,2025-11
+4,Morning Reading,Morning,2025-11-04,1,Tuesday,2025-11
+5,Morning Reading,Morning,2025-11-05,1,Wednesday,2025-11
+6,Morning Reading,Morning,2025-11-06,1,Thursday,2025-11
+7,Morning Reading,Morning,2025-11-07,1,Friday,2025-11
+8,Morning Reading,Morning,2025-11-08,0,Saturday,2025-11
+9,Morning Reading,Morning,2025-11-09,0,Sunday,2025-11
+10,Morning Reading,Morning,2025-11-10,1,Monday,2025-11
+11,Morning Reading,Morning,2025-11-11,1,Tuesday,2025-11
+12,Morning Reading,Morning,2025-11-12,1,Wednesday,2025-11
+13,Morning Reading,Morning,2025-11-13,0,Thursday,2025-11
+14,Morning Reading,Morning,2025-11-14,0,Friday,2025-11
+15,Morning Reading,Morning,2025-11-15,0,Saturday,2025-11
+16,Morning Reading,Morning,2025-11-16,1,Sunday,2025-11
+17,Morning Reading,Morning,2025-11-17,1,Monday,2025-11
+18,Morning Reading,Morning,2025-11-18,1,Tuesday,2025-11
+19,Morning Reading,Morning,2025-11-19,1,Wednesday,2025-11
+20,Morning Reading,Morning,2025-11-20,1,Thursday,2025-11
+21,Morning Reading,Morning,2025-11-21,0,Friday,2025-11
+22,Morning Reading,Morning,2025-11-22,1,Saturday,2025-11
+23,Morning Reading,Morning,2025-11-23,1,Sunday,2025-11
+24,Morning Reading,Morning,2025-11-24,1,Monday,2025-11
+25,Morning Reading,Morning,2025-11-25,0,Tuesday,2025-11
+26,Morning Reading,Morning,2025-11-26,1,Wednesday,2025-11
+27,Morning Reading,Morning,2025-11-27,1,Thursday,2025-11
+28,Morning Reading,Morning,2025-11-28,0,Friday,2025-11
+29,Morning Reading,Morning,2025-11-29,1,Saturday,2025-11
+30,Morning Reading,Morning,2025-11-30,0,Sunday,2025-11
+31,Morning Reading,Morning,2025-12-01,1,Monday,2025-12
+32,Morning Reading,Morning,2025-12-02,1,Tuesday,2025-12
+33,Morning Reading,Morning,2025-12-03,0,Wednesday,2025-12
+34,Morning Reading,Morning,2025-12-04,1,Thursday,2025-12
+35,Morning Reading,Morning,2025-12-05,1,Friday,2025-12
+36,Morning Reading,Morning,2025-12-06,1,Saturday,2025-12
+37,Morning Reading,Morning,2025-12-07,1,Sunday,2025-12
+38,Morning Reading,Morning,2025-12-08,1,Monday,2025-12
+39,Morning Reading,Morning,2025-12-09,1,Tuesday,2025-12
+40,Morning Reading,Morning,2025-12-10,1,Wednesday,2025-12
+41,Morning Reading,Morning,2025-12-11,1,Thursday,2025-12
+42,Morning Reading,Morning,2025-12-12,0,Friday,2025-12
+43,Morning Reading,Morning,2025-12-13,1,Saturday,2025-12
+44,Morning Reading,Morning,2025-12-14,1,Sunday,2025-12
+45,Morning Reading,Morning,2025-12-15,1,Monday,2025-12
+46,Morning Reading,Morning,2025-12-16,0,Tuesday,2025-12
+47,Morning Reading,Morning,2025-12-17,1,Wednesday,2025-12
+48,Morning Reading,Morning,2025-12-18,1,Thursday,2025-12
+49,Morning Reading,Morning,2025-12-19,1,Friday,2025-12
+50,Morning Reading,Morning,2025-12-20,0,Saturday,2025-12
+51,Morning Reading,Morning,2025-12-21,1,Sunday,2025-12
+52,Morning Reading,Morning,2025-12-22,0,Monday,2025-12
+53,Morning Reading,Morning,2025-12-23,0,Tuesday,2025-12
+54,Morning Reading,Morning,2025-12-24,0,Wednesday,2025-12
+55,Morning Reading,Morning,2025-12-25,1,Thursday,2025-12
+56,Morning Reading,Morning,2025-12-26,1,Friday,2025-12
+57,Morning Reading,Morning,2025-12-27,1,Saturday,2025-12
+58,Morning Reading,Morning,2025-12-28,0,Sunday,2025-12
+59,Morning Reading,Morning,2025-12-29,1,Monday,2025-12
+60,Morning Reading,Morning,2025-12-30,1,Tuesday,2025-12
+61,Morning Reading,Morning,2025-12-31,1,Wednesday,2025-12
+62,Morning Reading,Morning,2026-01-01,1,Thursday,2026-01
+63,Morning Reading,Morning,2026-01-02,1,Friday,2026-01
+64,Morning Reading,Morning,2026-01-03,1,Saturday,2026-01
+65,Morning Reading,Morning,2026-01-04,1,Sunday,2026-01
+66,Morning Reading,Morning,2026-01-05,0,Monday,2026-01
+67,Morning Reading,Morning,2026-01-06,1,Tuesday,2026-01
+68,Morning Reading,Morning,2026-01-07,1,Wednesday,2026-01
+69,Morning Reading,Morning,2026-01-08,1,Thursday,2026-01
+70,Morning Reading,Morning,2026-01-09,1,Friday,2026-01
+71,Morning Reading,Morning,2026-01-10,0,Saturday,2026-01
+72,Morning Reading,Morning,2026-01-11,1,Sunday,2026-01
+73,Morning Reading,Morning,2026-01-12,1,Monday,2026-01
+74,Morning Reading,Morning,2026-01-13,1,Tuesday,2026-01
+75,Morning Reading,Morning,2026-01-14,0,Wednesday,2026-01
+76,Morning Reading,Morning,2026-01-15,1,Thursday,2026-01
+77,Morning Reading,Morning,2026-01-16,0,Friday,2026-01
+78,Morning Reading,Morning,2026-01-17,1,Saturday,2026-01
+79,Morning Reading,Morning,2026-01-18,1,Sunday,2026-01
+80,Morning Reading,Morning,2026-01-19,1,Monday,2026-01
+81,Morning Reading,Morning,2026-01-20,0,Tuesday,2026-01
+82,Morning Reading,Morning,2026-01-21,1,Wednesday,2026-01
+83,Morning Reading,Morning,2026-01-22,0,Thursday,2026-01
+84,Morning Reading,Morning,2026-01-23,1,Friday,2026-01
+85,Morning Reading,Morning,2026-01-24,1,Saturday,2026-01
+86,Morning Reading,Morning,2026-01-25,1,Sunday,2026-01
+87,Morning Reading,Morning,2026-01-26,0,Monday,2026-01
+88,Morning Reading,Morning,2026-01-27,1,Tuesday,2026-01
+89,Morning Reading,Morning,2026-01-28,0,Wednesday,2026-01
+90,Morning Reading,Morning,2026-01-29,0,Thursday,2026-01
+91,Morning Reading,Morning,2026-01-30,0,Friday,2026-01
+92,Morning Reading,Morning,2026-01-31,1,Saturday,2026-01
+93,Morning Reading,Morning,2026-02-01,0,Sunday,2026-02
+94,Morning Reading,Morning,2026-02-02,0,Monday,2026-02
+95,Morning Reading,Morning,2026-02-03,1,Tuesday,2026-02
+96,Morning Reading,Morning,2026-02-04,1,Wednesday,2026-02
+97,Morning Reading,Morning,2026-02-05,1,Thursday,2026-02
+98,Morning Reading,Morning,2026-02-06,1,Friday,2026-02
+99,Morning Reading,Morning,2026-02-07,1,Saturday,2026-02
+100,Morning Reading,Morning,2026-02-08,1,Sunday,2026-02
+101,Morning Reading,Morning,2026-02-09,1,Monday,2026-02
+102,Morning Reading,Morning,2026-02-10,1,Tuesday,2026-02
+103,Morning Reading,Morning,2026-02-11,1,Wednesday,2026-02
+104,Morning Reading,Morning,2026-02-12,1,Thursday,2026-02
+105,Morning Reading,Morning,2026-02-13,1,Friday,2026-02
+106,Morning Reading,Morning,2026-02-14,1,Saturday,2026-02
+107,Morning Reading,Morning,2026-02-15,1,Sunday,2026-02
+108,Morning Reading,Morning,2026-02-16,1,Monday,2026-02
+109,Morning Reading,Morning,2026-02-17,1,Tuesday,2026-02
+110,Morning Reading,Morning,2026-02-18,0,Wednesday,2026-02
+111,Morning Reading,Morning,2026-02-19,1,Thursday,2026-02
+112,Morning Reading,Morning,2026-02-20,0,Friday,2026-02
+113,Morning Reading,Morning,2026-02-21,1,Saturday,2026-02
+114,Morning Reading,Morning,2026-02-22,1,Sunday,2026-02
+115,Morning Reading,Morning,2026-02-23,1,Monday,2026-02
+116,Morning Reading,Morning,2026-02-24,1,Tuesday,2026-02
+117,Morning Reading,Morning,2026-02-25,1,Wednesday,2026-02
+118,Morning Reading,Morning,2026-02-26,1,Thursday,2026-02
+119,Morning Reading,Morning,2026-02-27,1,Friday,2026-02
+120,Morning Reading,Morning,2026-02-28,1,Saturday,2026-02
+121,Morning Reading,Morning,2026-03-01,1,Sunday,2026-03
+122,Morning Reading,Morning,2026-03-02,0,Monday,2026-03
+123,Morning Reading,Morning,2026-03-03,1,Tuesday,2026-03
+124,Morning Reading,Morning,2026-03-04,1,Wednesday,2026-03
+125,Morning Reading,Morning,2026-03-05,1,Thursday,2026-03
+126,Morning Reading,Morning,2026-03-06,1,Friday,2026-03
+127,Morning Reading,Morning,2026-03-07,0,Saturday,2026-03
+128,Morning Reading,Morning,2026-03-08,1,Sunday,2026-03
+129,Morning Reading,Morning,2026-03-09,1,Monday,2026-03
+130,Morning Reading,Morning,2026-03-10,0,Tuesday,2026-03
+131,Morning Reading,Morning,2026-03-11,1,Wednesday,2026-03
+132,Morning Reading,Morning,2026-03-12,1,Thursday,2026-03
+133,Morning Reading,Morning,2026-03-13,0,Friday,2026-03
+134,Morning Reading,Morning,2026-03-14,0,Saturday,2026-03
+135,Morning Reading,Morning,2026-03-15,1,Sunday,2026-03
+136,Morning Reading,Morning,2026-03-16,1,Monday,2026-03
+137,Morning Reading,Morning,2026-03-17,1,Tuesday,2026-03
+138,Morning Reading,Morning,2026-03-18,1,Wednesday,2026-03
+139,Morning Reading,Morning,2026-03-19,0,Thursday,2026-03
+140,Morning Reading,Morning,2026-03-20,1,Friday,2026-03
+141,Morning Reading,Morning,2026-03-21,0,Saturday,2026-03
+142,Morning Reading,Morning,2026-03-22,0,Sunday,2026-03
+143,Morning Reading,Morning,2026-03-23,1,Monday,2026-03
+144,Morning Reading,Morning,2026-03-24,1,Tuesday,2026-03
+145,Morning Reading,Morning,2026-03-25,1,Wednesday,2026-03
+146,Morning Reading,Morning,2026-03-26,0,Thursday,2026-03
+147,Morning Reading,Morning,2026-03-27,0,Friday,2026-03
+148,Morning Reading,Morning,2026-03-28,1,Saturday,2026-03
+149,Morning Reading,Morning,2026-03-29,0,Sunday,2026-03
+150,Morning Reading,Morning,2026-03-30,1,Monday,2026-03
+151,Morning Reading,Morning,2026-03-31,0,Tuesday,2026-03
+152,Morning Reading,Morning,2026-04-01,1,Wednesday,2026-04
+153,Morning Reading,Morning,2026-04-02,1,Thursday,2026-04
+154,Morning Reading,Morning,2026-04-03,0,Friday,2026-04
+155,Morning Reading,Morning,2026-04-04,1,Saturday,2026-04
+156,Morning Reading,Morning,2026-04-05,1,Sunday,2026-04
+157,Morning Reading,Morning,2026-04-06,1,Monday,2026-04
+158,Morning Reading,Morning,2026-04-07,1,Tuesday,2026-04
+159,Morning Reading,Morning,2026-04-08,1,Wednesday,2026-04
+160,Morning Reading,Morning,2026-04-09,0,Thursday,2026-04
+161,Morning Reading,Morning,2026-04-10,1,Friday,2026-04
+162,Morning Reading,Morning,2026-04-11,1,Saturday,2026-04
+163,Morning Reading,Morning,2026-04-12,0,Sunday,2026-04
+164,Morning Reading,Morning,2026-04-13,1,Monday,2026-04
+165,Morning Reading,Morning,2026-04-14,1,Tuesday,2026-04
+166,Morning Reading,Morning,2026-04-15,0,Wednesday,2026-04
+167,Morning Reading,Morning,2026-04-16,0,Thursday,2026-04
+168,Morning Reading,Morning,2026-04-17,1,Friday,2026-04
+169,Morning Reading,Morning,2026-04-18,0,Saturday,2026-04
+170,Morning Reading,Morning,2026-04-19,1,Sunday,2026-04
+171,Morning Reading,Morning,2026-04-20,0,Monday,2026-04
+172,Morning Reading,Morning,2026-04-21,1,Tuesday,2026-04
+173,Morning Reading,Morning,2026-04-22,0,Wednesday,2026-04
+174,Morning Reading,Morning,2026-04-23,1,Thursday,2026-04
+175,Morning Reading,Morning,2026-04-24,0,Friday,2026-04
+176,Morning Reading,Morning,2026-04-25,0,Saturday,2026-04
+177,Morning Reading,Morning,2026-04-26,0,Sunday,2026-04
+178,Morning Reading,Morning,2026-04-27,1,Monday,2026-04
+179,Morning Reading,Morning,2026-04-28,1,Tuesday,2026-04
+180,Morning Reading,Morning,2026-04-29,1,Wednesday,2026-04
+181,Morning Reading,Morning,2026-04-30,0,Thursday,2026-04
+182,Morning Reading,Morning,2026-05-01,1,Friday,2026-05
+183,Morning Reading,Morning,2026-05-02,0,Saturday,2026-05
+184,Morning Reading,Morning,2026-05-03,0,Sunday,2026-05
+185,Morning Reading,Morning,2026-05-04,1,Monday,2026-05
+186,Morning Reading,Morning,2026-05-05,0,Tuesday,2026-05
+187,Morning Reading,Morning,2026-05-06,1,Wednesday,2026-05
+188,Morning Reading,Morning,2026-05-07,1,Thursday,2026-05
+189,Morning Reading,Morning,2026-05-08,1,Friday,2026-05
+190,Journaling,Morning,2025-11-01,1,Saturday,2025-11
+191,Journaling,Morning,2025-11-02,0,Sunday,2025-11
+192,Journaling,Morning,2025-11-03,1,Monday,2025-11
+193,Journaling,Morning,2025-11-04,1,Tuesday,2025-11
+194,Journaling,Morning,2025-11-05,1,Wednesday,2025-11
+195,Journaling,Morning,2025-11-06,1,Thursday,2025-11
+196,Journaling,Morning,2025-11-07,1,Friday,2025-11
+197,Journaling,Morning,2025-11-08,0,Saturday,2025-11
+198,Journaling,Morning,2025-11-09,1,Sunday,2025-11
+199,Journaling,Morning,2025-11-10,1,Monday,2025-11
+200,Journaling,Morning,2025-11-11,1,Tuesday,2025-11
+201,Journaling,Morning,2025-11-12,1,Wednesday,2025-11
+202,Journaling,Morning,2025-11-13,0,Thursday,2025-11
+203,Journaling,Morning,2025-11-14,1,Friday,2025-11
+204,Journaling,Morning,2025-11-15,0,Saturday,2025-11
+205,Journaling,Morning,2025-11-16,1,Sunday,2025-11
+206,Journaling,Morning,2025-11-17,1,Monday,2025-11
+207,Journaling,Morning,2025-11-18,0,Tuesday,2025-11
+208,Journaling,Morning,2025-11-19,0,Wednesday,2025-11
+209,Journaling,Morning,2025-11-20,1,Thursday,2025-11
+210,Journaling,Morning,2025-11-21,1,Friday,2025-11
+211,Journaling,Morning,2025-11-22,1,Saturday,2025-11
+212,Journaling,Morning,2025-11-23,1,Sunday,2025-11
+213,Journaling,Morning,2025-11-24,0,Monday,2025-11
+214,Journaling,Morning,2025-11-25,0,Tuesday,2025-11
+215,Journaling,Morning,2025-11-26,1,Wednesday,2025-11
+216,Journaling,Morning,2025-11-27,0,Thursday,2025-11
+217,Journaling,Morning,2025-11-28,1,Friday,2025-11
+218,Journaling,Morning,2025-11-29,1,Saturday,2025-11
+219,Journaling,Morning,2025-11-30,1,Sunday,2025-11
+220,Journaling,Morning,2025-12-01,1,Monday,2025-12
+221,Journaling,Morning,2025-12-02,1,Tuesday,2025-12
+222,Journaling,Morning,2025-12-03,1,Wednesday,2025-12
+223,Journaling,Morning,2025-12-04,1,Thursday,2025-12
+224,Journaling,Morning,2025-12-05,1,Friday,2025-12
+225,Journaling,Morning,2025-12-06,0,Saturday,2025-12
+226,Journaling,Morning,2025-12-07,1,Sunday,2025-12
+227,Journaling,Morning,2025-12-08,1,Monday,2025-12
+228,Journaling,Morning,2025-12-09,0,Tuesday,2025-12
+229,Journaling,Morning,2025-12-10,0,Wednesday,2025-12
+230,Journaling,Morning,2025-12-11,0,Thursday,2025-12
+231,Journaling,Morning,2025-12-12,1,Friday,2025-12
+232,Journaling,Morning,2025-12-13,1,Saturday,2025-12
+233,Journaling,Morning,2025-12-14,1,Sunday,2025-12
+234,Journaling,Morning,2025-12-15,1,Monday,2025-12
+235,Journaling,Morning,2025-12-16,0,Tuesday,2025-12
+236,Journaling,Morning,2025-12-17,1,Wednesday,2025-12
+237,Journaling,Morning,2025-12-18,1,Thursday,2025-12
+238,Journaling,Morning,2025-12-19,1,Friday,2025-12
+239,Journaling,Morning,2025-12-20,1,Saturday,2025-12
+240,Journaling,Morning,2025-12-21,0,Sunday,2025-12
+241,Journaling,Morning,2025-12-22,1,Monday,2025-12
+242,Journaling,Morning,2025-12-23,1,Tuesday,2025-12
+243,Journaling,Morning,2025-12-24,1,Wednesday,2025-12
+244,Journaling,Morning,2025-12-25,1,Thursday,2025-12
+245,Journaling,Morning,2025-12-26,1,Friday,2025-12
+246,Journaling,Morning,2025-12-27,0,Saturday,2025-12
+247,Journaling,Morning,2025-12-28,1,Sunday,2025-12
+248,Journaling,Morning,2025-12-29,0,Monday,2025-12
+249,Journaling,Morning,2025-12-30,0,Tuesday,2025-12
+250,Journaling,Morning,2025-12-31,0,Wednesday,2025-12
+251,Journaling,Morning,2026-01-01,0,Thursday,2026-01
+252,Journaling,Morning,2026-01-02,1,Friday,2026-01
+253,Journaling,Morning,2026-01-03,1,Saturday,2026-01
+254,Journaling,Morning,2026-01-04,1,Sunday,2026-01
+255,Journaling,Morning,2026-01-05,0,Monday,2026-01
+256,Journaling,Morning,2026-01-06,0,Tuesday,2026-01
+257,Journaling,Morning,2026-01-07,0,Wednesday,2026-01
+258,Journaling,Morning,2026-01-08,1,Thursday,2026-01
+259,Journaling,Morning,2026-01-09,0,Friday,2026-01
+260,Journaling,Morning,2026-01-10,1,Saturday,2026-01
+261,Journaling,Morning,2026-01-11,1,Sunday,2026-01
+262,Journaling,Morning,2026-01-12,1,Monday,2026-01
+263,Journaling,Morning,2026-01-13,1,Tuesday,2026-01
+264,Journaling,Morning,2026-01-14,1,Wednesday,2026-01
+265,Journaling,Morning,2026-01-15,1,Thursday,2026-01
+266,Journaling,Morning,2026-01-16,1,Friday,2026-01
+267,Journaling,Morning,2026-01-17,0,Saturday,2026-01
+268,Journaling,Morning,2026-01-18,0,Sunday,2026-01
+269,Journaling,Morning,2026-01-19,1,Monday,2026-01
+270,Journaling,Morning,2026-01-20,1,Tuesday,2026-01
+271,Journaling,Morning,2026-01-21,0,Wednesday,2026-01
+272,Journaling,Morning,2026-01-22,0,Thursday,2026-01
+273,Journaling,Morning,2026-01-23,1,Friday,2026-01
+274,Journaling,Morning,2026-01-24,1,Saturday,2026-01
+275,Journaling,Morning,2026-01-25,1,Sunday,2026-01
+276,Journaling,Morning,2026-01-26,1,Monday,2026-01
+277,Journaling,Morning,2026-01-27,1,Tuesday,2026-01
+278,Journaling,Morning,2026-01-28,0,Wednesday,2026-01
+279,Journaling,Morning,2026-01-29,1,Thursday,2026-01
+280,Journaling,Morning,2026-01-30,0,Friday,2026-01
+281,Journaling,Morning,2026-01-31,0,Saturday,2026-01
+282,Journaling,Morning,2026-02-01,0,Sunday,2026-02
+283,Journaling,Morning,2026-02-02,1,Monday,2026-02
+284,Journaling,Morning,2026-02-03,0,Tuesday,2026-02
+285,Journaling,Morning,2026-02-04,1,Wednesday,2026-02
+286,Journaling,Morning,2026-02-05,1,Thursday,2026-02
+287,Journaling,Morning,2026-02-06,1,Friday,2026-02
+288,Journaling,Morning,2026-02-07,1,Saturday,2026-02
+289,Journaling,Morning,2026-02-08,0,Sunday,2026-02
+290,Journaling,Morning,2026-02-09,1,Monday,2026-02
+291,Journaling,Morning,2026-02-10,1,Tuesday,2026-02
+292,Journaling,Morning,2026-02-11,1,Wednesday,2026-02
+293,Journaling,Morning,2026-02-12,1,Thursday,2026-02
+294,Journaling,Morning,2026-02-13,1,Friday,2026-02
+295,Journaling,Morning,2026-02-14,0,Saturday,2026-02
+296,Journaling,Morning,2026-02-15,1,Sunday,2026-02
+297,Journaling,Morning,2026-02-16,1,Monday,2026-02
+298,Journaling,Morning,2026-02-17,1,Tuesday,2026-02
+299,Journaling,Morning,2026-02-18,1,Wednesday,2026-02
+300,Journaling,Morning,2026-02-19,1,Thursday,2026-02
+301,Journaling,Morning,2026-02-20,1,Friday,2026-02
+302,Journaling,Morning,2026-02-21,0,Saturday,2026-02
+303,Journaling,Morning,2026-02-22,0,Sunday,2026-02
+304,Journaling,Morning,2026-02-23,1,Monday,2026-02
+305,Journaling,Morning,2026-02-24,1,Tuesday,2026-02
+306,Journaling,Morning,2026-02-25,0,Wednesday,2026-02
+307,Journaling,Morning,2026-02-26,1,Thursday,2026-02
+308,Journaling,Morning,2026-02-27,1,Friday,2026-02
+309,Journaling,Morning,2026-02-28,0,Saturday,2026-02
+310,Journaling,Morning,2026-03-01,1,Sunday,2026-03
+311,Journaling,Morning,2026-03-02,1,Monday,2026-03
+312,Journaling,Morning,2026-03-03,1,Tuesday,2026-03
+313,Journaling,Morning,2026-03-04,1,Wednesday,2026-03
+314,Journaling,Morning,2026-03-05,1,Thursday,2026-03
+315,Journaling,Morning,2026-03-06,1,Friday,2026-03
+316,Journaling,Morning,2026-03-07,1,Saturday,2026-03
+317,Journaling,Morning,2026-03-08,1,Sunday,2026-03
+318,Journaling,Morning,2026-03-09,1,Monday,2026-03
+319,Journaling,Morning,2026-03-10,0,Tuesday,2026-03
+320,Journaling,Morning,2026-03-11,0,Wednesday,2026-03
+321,Journaling,Morning,2026-03-12,0,Thursday,2026-03
+322,Journaling,Morning,2026-03-13,1,Friday,2026-03
+323,Journaling,Morning,2026-03-14,1,Saturday,2026-03
+324,Journaling,Morning,2026-03-15,1,Sunday,2026-03
+325,Journaling,Morning,2026-03-16,1,Monday,2026-03
+326,Journaling,Morning,2026-03-17,0,Tuesday,2026-03
+327,Journaling,Morning,2026-03-18,1,Wednesday,2026-03
+328,Journaling,Morning,2026-03-19,1,Thursday,2026-03
+329,Journaling,Morning,2026-03-20,1,Friday,2026-03
+330,Journaling,Morning,2026-03-21,0,Saturday,2026-03
+331,Journaling,Morning,2026-03-22,1,Sunday,2026-03
+332,Journaling,Morning,2026-03-23,1,Monday,2026-03
+333,Journaling,Morning,2026-03-24,1,Tuesday,2026-03
+334,Journaling,Morning,2026-03-25,0,Wednesday,2026-03
+335,Journaling,Morning,2026-03-26,1,Thursday,2026-03
+336,Journaling,Morning,2026-03-27,0,Friday,2026-03
+337,Journaling,Morning,2026-03-28,0,Saturday,2026-03
+338,Journaling,Morning,2026-03-29,1,Sunday,2026-03
+339,Journaling,Morning,2026-03-30,0,Monday,2026-03
+340,Journaling,Morning,2026-03-31,1,Tuesday,2026-03
+341,Journaling,Morning,2026-04-01,0,Wednesday,2026-04
+342,Journaling,Morning,2026-04-02,1,Thursday,2026-04
+343,Journaling,Morning,2026-04-03,1,Friday,2026-04
+344,Journaling,Morning,2026-04-04,1,Saturday,2026-04
+345,Journaling,Morning,2026-04-05,1,Sunday,2026-04
+346,Journaling,Morning,2026-04-06,0,Monday,2026-04
+347,Journaling,Morning,2026-04-07,1,Tuesday,2026-04
+348,Journaling,Morning,2026-04-08,1,Wednesday,2026-04
+349,Journaling,Morning,2026-04-09,1,Thursday,2026-04
+350,Journaling,Morning,2026-04-10,0,Friday,2026-04
+351,Journaling,Morning,2026-04-11,1,Saturday,2026-04
+352,Journaling,Morning,2026-04-12,1,Sunday,2026-04
+353,Journaling,Morning,2026-04-13,1,Monday,2026-04
+354,Journaling,Morning,2026-04-14,0,Tuesday,2026-04
+355,Journaling,Morning,2026-04-15,1,Wednesday,2026-04
+356,Journaling,Morning,2026-04-16,1,Thursday,2026-04
+357,Journaling,Morning,2026-04-17,1,Friday,2026-04
+358,Journaling,Morning,2026-04-18,0,Saturday,2026-04
+359,Journaling,Morning,2026-04-19,1,Sunday,2026-04
+360,Journaling,Morning,2026-04-20,1,Monday,2026-04
+361,Journaling,Morning,2026-04-21,1,Tuesday,2026-04
+362,Journaling,Morning,2026-04-22,0,Wednesday,2026-04
+363,Journaling,Morning,2026-04-23,0,Thursday,2026-04
+364,Journaling,Morning,2026-04-24,1,Friday,2026-04
+365,Journaling,Morning,2026-04-25,1,Saturday,2026-04
+366,Journaling,Morning,2026-04-26,1,Sunday,2026-04
+367,Journaling,Morning,2026-04-27,1,Monday,2026-04
+368,Journaling,Morning,2026-04-28,1,Tuesday,2026-04
+369,Journaling,Morning,2026-04-29,1,Wednesday,2026-04
+370,Journaling,Morning,2026-04-30,1,Thursday,2026-04
+371,Journaling,Morning,2026-05-01,0,Friday,2026-05
+372,Journaling,Morning,2026-05-02,1,Saturday,2026-05
+373,Journaling,Morning,2026-05-03,0,Sunday,2026-05
+374,Journaling,Morning,2026-05-04,1,Monday,2026-05
+375,Journaling,Morning,2026-05-05,1,Tuesday,2026-05
+376,Journaling,Morning,2026-05-06,1,Wednesday,2026-05
+377,Journaling,Morning,2026-05-07,1,Thursday,2026-05
+378,Journaling,Morning,2026-05-08,1,Friday,2026-05
+379,Exercise,Morning,2025-11-01,0,Saturday,2025-11
+380,Exercise,Morning,2025-11-02,0,Sunday,2025-11
+381,Exercise,Morning,2025-11-03,1,Monday,2025-11
+382,Exercise,Morning,2025-11-04,1,Tuesday,2025-11
+383,Exercise,Morning,2025-11-05,1,Wednesday,2025-11
+384,Exercise,Morning,2025-11-06,1,Thursday,2025-11
+385,Exercise,Morning,2025-11-07,1,Friday,2025-11
+386,Exercise,Morning,2025-11-08,0,Saturday,2025-11
+387,Exercise,Morning,2025-11-09,0,Sunday,2025-11
+388,Exercise,Morning,2025-11-10,0,Monday,2025-11
+389,Exercise,Morning,2025-11-11,1,Tuesday,2025-11
+390,Exercise,Morning,2025-11-12,0,Wednesday,2025-11
+391,Exercise,Morning,2025-11-13,0,Thursday,2025-11
+392,Exercise,Morning,2025-11-14,1,Friday,2025-11
+393,Exercise,Morning,2025-11-15,1,Saturday,2025-11
+394,Exercise,Morning,2025-11-16,0,Sunday,2025-11
+395,Exercise,Morning,2025-11-17,1,Monday,2025-11
+396,Exercise,Morning,2025-11-18,1,Tuesday,2025-11
+397,Exercise,Morning,2025-11-19,1,Wednesday,2025-11
+398,Exercise,Morning,2025-11-20,1,Thursday,2025-11
+399,Exercise,Morning,2025-11-21,1,Friday,2025-11
+400,Exercise,Morning,2025-11-22,0,Saturday,2025-11
+401,Exercise,Morning,2025-11-23,0,Sunday,2025-11
+402,Exercise,Morning,2025-11-24,1,Monday,2025-11
+403,Exercise,Morning,2025-11-25,1,Tuesday,2025-11
+404,Exercise,Morning,2025-11-26,1,Wednesday,2025-11
+405,Exercise,Morning,2025-11-27,1,Thursday,2025-11
+406,Exercise,Morning,2025-11-28,1,Friday,2025-11
+407,Exercise,Morning,2025-11-29,1,Saturday,2025-11
+408,Exercise,Morning,2025-11-30,1,Sunday,2025-11
+409,Exercise,Morning,2025-12-01,1,Monday,2025-12
+410,Exercise,Morning,2025-12-02,1,Tuesday,2025-12
+411,Exercise,Morning,2025-12-03,1,Wednesday,2025-12
+412,Exercise,Morning,2025-12-04,1,Thursday,2025-12
+413,Exercise,Morning,2025-12-05,0,Friday,2025-12
+414,Exercise,Morning,2025-12-06,1,Saturday,2025-12
+415,Exercise,Morning,2025-12-07,0,Sunday,2025-12
+416,Exercise,Morning,2025-12-08,1,Monday,2025-12
+417,Exercise,Morning,2025-12-09,1,Tuesday,2025-12
+418,Exercise,Morning,2025-12-10,0,Wednesday,2025-12
+419,Exercise,Morning,2025-12-11,1,Thursday,2025-12
+420,Exercise,Morning,2025-12-12,1,Friday,2025-12
+421,Exercise,Morning,2025-12-13,0,Saturday,2025-12
+422,Exercise,Morning,2025-12-14,1,Sunday,2025-12
+423,Exercise,Morning,2025-12-15,0,Monday,2025-12
+424,Exercise,Morning,2025-12-16,1,Tuesday,2025-12
+425,Exercise,Morning,2025-12-17,1,Wednesday,2025-12
+426,Exercise,Morning,2025-12-18,1,Thursday,2025-12
+427,Exercise,Morning,2025-12-19,1,Friday,2025-12
+428,Exercise,Morning,2025-12-20,0,Saturday,2025-12
+429,Exercise,Morning,2025-12-21,0,Sunday,2025-12
+430,Exercise,Morning,2025-12-22,1,Monday,2025-12
+431,Exercise,Morning,2025-12-23,1,Tuesday,2025-12
+432,Exercise,Morning,2025-12-24,1,Wednesday,2025-12
+433,Exercise,Morning,2025-12-25,1,Thursday,2025-12
+434,Exercise,Morning,2025-12-26,1,Friday,2025-12
+435,Exercise,Morning,2025-12-27,1,Saturday,2025-12
+436,Exercise,Morning,2025-12-28,1,Sunday,2025-12
+437,Exercise,Morning,2025-12-29,1,Monday,2025-12
+438,Exercise,Morning,2025-12-30,0,Tuesday,2025-12
+439,Exercise,Morning,2025-12-31,1,Wednesday,2025-12
+440,Exercise,Morning,2026-01-01,1,Thursday,2026-01
+441,Exercise,Morning,2026-01-02,1,Friday,2026-01
+442,Exercise,Morning,2026-01-03,1,Saturday,2026-01
+443,Exercise,Morning,2026-01-04,1,Sunday,2026-01
+444,Exercise,Morning,2026-01-05,0,Monday,2026-01
+445,Exercise,Morning,2026-01-06,1,Tuesday,2026-01
+446,Exercise,Morning,2026-01-07,1,Wednesday,2026-01
+447,Exercise,Morning,2026-01-08,1,Thursday,2026-01
+448,Exercise,Morning,2026-01-09,1,Friday,2026-01
+449,Exercise,Morning,2026-01-10,1,Saturday,2026-01
+450,Exercise,Morning,2026-01-11,0,Sunday,2026-01
+451,Exercise,Morning,2026-01-12,1,Monday,2026-01
+452,Exercise,Morning,2026-01-13,1,Tuesday,2026-01
+453,Exercise,Morning,2026-01-14,1,Wednesday,2026-01
+454,Exercise,Morning,2026-01-15,1,Thursday,2026-01
+455,Exercise,Morning,2026-01-16,1,Friday,2026-01
+456,Exercise,Morning,2026-01-17,1,Saturday,2026-01
+457,Exercise,Morning,2026-01-18,1,Sunday,2026-01
+458,Exercise,Morning,2026-01-19,1,Monday,2026-01
+459,Exercise,Morning,2026-01-20,1,Tuesday,2026-01
+460,Exercise,Morning,2026-01-21,1,Wednesday,2026-01
+461,Exercise,Morning,2026-01-22,1,Thursday,2026-01
+462,Exercise,Morning,2026-01-23,1,Friday,2026-01
+463,Exercise,Morning,2026-01-24,1,Saturday,2026-01
+464,Exercise,Morning,2026-01-25,1,Sunday,2026-01
+465,Exercise,Morning,2026-01-26,1,Monday,2026-01
+466,Exercise,Morning,2026-01-27,0,Tuesday,2026-01
+467,Exercise,Morning,2026-01-28,1,Wednesday,2026-01
+468,Exercise,Morning,2026-01-29,1,Thursday,2026-01
+469,Exercise,Morning,2026-01-30,1,Friday,2026-01
+470,Exercise,Morning,2026-01-31,1,Saturday,2026-01
+471,Exercise,Morning,2026-02-01,1,Sunday,2026-02
+472,Exercise,Morning,2026-02-02,1,Monday,2026-02
+473,Exercise,Morning,2026-02-03,1,Tuesday,2026-02
+474,Exercise,Morning,2026-02-04,1,Wednesday,2026-02
+475,Exercise,Morning,2026-02-05,1,Thursday,2026-02
+476,Exercise,Morning,2026-02-06,1,Friday,2026-02
+477,Exercise,Morning,2026-02-07,1,Saturday,2026-02
+478,Exercise,Morning,2026-02-08,1,Sunday,2026-02
+479,Exercise,Morning,2026-02-09,1,Monday,2026-02
+480,Exercise,Morning,2026-02-10,1,Tuesday,2026-02
+481,Exercise,Morning,2026-02-11,1,Wednesday,2026-02
+482,Exercise,Morning,2026-02-12,1,Thursday,2026-02
+483,Exercise,Morning,2026-02-13,1,Friday,2026-02
+484,Exercise,Morning,2026-02-14,0,Saturday,2026-02
+485,Exercise,Morning,2026-02-15,0,Sunday,2026-02
+486,Exercise,Morning,2026-02-16,0,Monday,2026-02
+487,Exercise,Morning,2026-02-17,1,Tuesday,2026-02
+488,Exercise,Morning,2026-02-18,1,Wednesday,2026-02
+489,Exercise,Morning,2026-02-19,1,Thursday,2026-02
+490,Exercise,Morning,2026-02-20,1,Friday,2026-02
+491,Exercise,Morning,2026-02-21,1,Saturday,2026-02
+492,Exercise,Morning,2026-02-22,1,Sunday,2026-02
+493,Exercise,Morning,2026-02-23,0,Monday,2026-02
+494,Exercise,Morning,2026-02-24,1,Tuesday,2026-02
+495,Exercise,Morning,2026-02-25,1,Wednesday,2026-02
+496,Exercise,Morning,2026-02-26,1,Thursday,2026-02
+497,Exercise,Morning,2026-02-27,0,Friday,2026-02
+498,Exercise,Morning,2026-02-28,0,Saturday,2026-02
+499,Exercise,Morning,2026-03-01,1,Sunday,2026-03
+500,Exercise,Morning,2026-03-02,1,Monday,2026-03
+501,Exercise,Morning,2026-03-03,0,Tuesday,2026-03
+502,Exercise,Morning,2026-03-04,1,Wednesday,2026-03
+503,Exercise,Morning,2026-03-05,0,Thursday,2026-03
+504,Exercise,Morning,2026-03-06,1,Friday,2026-03
+505,Exercise,Morning,2026-03-07,1,Saturday,2026-03
+506,Exercise,Morning,2026-03-08,1,Sunday,2026-03
+507,Exercise,Morning,2026-03-09,1,Monday,2026-03
+508,Exercise,Morning,2026-03-10,1,Tuesday,2026-03
+509,Exercise,Morning,2026-03-11,0,Wednesday,2026-03
+510,Exercise,Morning,2026-03-12,1,Thursday,2026-03
+511,Exercise,Morning,2026-03-13,1,Friday,2026-03
+512,Exercise,Morning,2026-03-14,1,Saturday,2026-03
+513,Exercise,Morning,2026-03-15,1,Sunday,2026-03
+514,Exercise,Morning,2026-03-16,1,Monday,2026-03
+515,Exercise,Morning,2026-03-17,1,Tuesday,2026-03
+516,Exercise,Morning,2026-03-18,1,Wednesday,2026-03
+517,Exercise,Morning,2026-03-19,1,Thursday,2026-03
+518,Exercise,Morning,2026-03-20,0,Friday,2026-03
+519,Exercise,Morning,2026-03-21,0,Saturday,2026-03
+520,Exercise,Morning,2026-03-22,0,Sunday,2026-03
+521,Exercise,Morning,2026-03-23,1,Monday,2026-03
+522,Exercise,Morning,2026-03-24,1,Tuesday,2026-03
+523,Exercise,Morning,2026-03-25,1,Wednesday,2026-03
+524,Exercise,Morning,2026-03-26,1,Thursday,2026-03
+525,Exercise,Morning,2026-03-27,0,Friday,2026-03
+526,Exercise,Morning,2026-03-28,1,Saturday,2026-03
+527,Exercise,Morning,2026-03-29,1,Sunday,2026-03
+528,Exercise,Morning,2026-03-30,0,Monday,2026-03
+529,Exercise,Morning,2026-03-31,1,Tuesday,2026-03
+530,Exercise,Morning,2026-04-01,1,Wednesday,2026-04
+531,Exercise,Morning,2026-04-02,1,Thursday,2026-04
+532,Exercise,Morning,2026-04-03,0,Friday,2026-04
+533,Exercise,Morning,2026-04-04,1,Saturday,2026-04
+534,Exercise,Morning,2026-04-05,1,Sunday,2026-04
+535,Exercise,Morning,2026-04-06,1,Monday,2026-04
+536,Exercise,Morning,2026-04-07,0,Tuesday,2026-04
+537,Exercise,Morning,2026-04-08,1,Wednesday,2026-04
+538,Exercise,Morning,2026-04-09,1,Thursday,2026-04
+539,Exercise,Morning,2026-04-10,1,Friday,2026-04
+540,Exercise,Morning,2026-04-11,0,Saturday,2026-04
+541,Exercise,Morning,2026-04-12,0,Sunday,2026-04
+542,Exercise,Morning,2026-04-13,0,Monday,2026-04
+543,Exercise,Morning,2026-04-14,1,Tuesday,2026-04
+544,Exercise,Morning,2026-04-15,1,Wednesday,2026-04
+545,Exercise,Morning,2026-04-16,1,Thursday,2026-04
+546,Exercise,Morning,2026-04-17,0,Friday,2026-04
+547,Exercise,Morning,2026-04-18,1,Saturday,2026-04
+548,Exercise,Morning,2026-04-19,1,Sunday,2026-04
+549,Exercise,Morning,2026-04-20,0,Monday,2026-04
+550,Exercise,Morning,2026-04-21,1,Tuesday,2026-04
+551,Exercise,Morning,2026-04-22,1,Wednesday,2026-04
+552,Exercise,Morning,2026-04-23,1,Thursday,2026-04
+553,Exercise,Morning,2026-04-24,1,Friday,2026-04
+554,Exercise,Morning,2026-04-25,0,Saturday,2026-04
+555,Exercise,Morning,2026-04-26,1,Sunday,2026-04
+556,Exercise,Morning,2026-04-27,1,Monday,2026-04
+557,Exercise,Morning,2026-04-28,1,Tuesday,2026-04
+558,Exercise,Morning,2026-04-29,1,Wednesday,2026-04
+559,Exercise,Morning,2026-04-30,1,Thursday,2026-04
+560,Exercise,Morning,2026-05-01,1,Friday,2026-05
+561,Exercise,Morning,2026-05-02,1,Saturday,2026-05
+562,Exercise,Morning,2026-05-03,1,Sunday,2026-05
+563,Exercise,Morning,2026-05-04,1,Monday,2026-05
+564,Exercise,Morning,2026-05-05,1,Tuesday,2026-05
+565,Exercise,Morning,2026-05-06,0,Wednesday,2026-05
+566,Exercise,Morning,2026-05-07,1,Thursday,2026-05
+567,Exercise,Morning,2026-05-08,0,Friday,2026-05
+568,Meditation,Morning,2025-11-01,1,Saturday,2025-11
+569,Meditation,Morning,2025-11-02,1,Sunday,2025-11
+570,Meditation,Morning,2025-11-03,1,Monday,2025-11
+571,Meditation,Morning,2025-11-04,1,Tuesday,2025-11
+572,Meditation,Morning,2025-11-05,1,Wednesday,2025-11
+573,Meditation,Morning,2025-11-06,1,Thursday,2025-11
+574,Meditation,Morning,2025-11-07,0,Friday,2025-11
+575,Meditation,Morning,2025-11-08,1,Saturday,2025-11
+576,Meditation,Morning,2025-11-09,1,Sunday,2025-11
+577,Meditation,Morning,2025-11-10,0,Monday,2025-11
+578,Meditation,Morning,2025-11-11,1,Tuesday,2025-11
+579,Meditation,Morning,2025-11-12,0,Wednesday,2025-11
+580,Meditation,Morning,2025-11-13,0,Thursday,2025-11
+581,Meditation,Morning,2025-11-14,0,Friday,2025-11
+582,Meditation,Morning,2025-11-15,1,Saturday,2025-11
+583,Meditation,Morning,2025-11-16,0,Sunday,2025-11
+584,Meditation,Morning,2025-11-17,1,Monday,2025-11
+585,Meditation,Morning,2025-11-18,1,Tuesday,2025-11
+586,Meditation,Morning,2025-11-19,1,Wednesday,2025-11
+587,Meditation,Morning,2025-11-20,1,Thursday,2025-11
+588,Meditation,Morning,2025-11-21,1,Friday,2025-11
+589,Meditation,Morning,2025-11-22,1,Saturday,2025-11
+590,Meditation,Morning,2025-11-23,0,Sunday,2025-11
+591,Meditation,Morning,2025-11-24,0,Monday,2025-11
+592,Meditation,Morning,2025-11-25,1,Tuesday,2025-11
+593,Meditation,Morning,2025-11-26,1,Wednesday,2025-11
+594,Meditation,Morning,2025-11-27,0,Thursday,2025-11
+595,Meditation,Morning,2025-11-28,1,Friday,2025-11
+596,Meditation,Morning,2025-11-29,0,Saturday,2025-11
+597,Meditation,Morning,2025-11-30,0,Sunday,2025-11
+598,Meditation,Morning,2025-12-01,1,Monday,2025-12
+599,Meditation,Morning,2025-12-02,0,Tuesday,2025-12
+600,Meditation,Morning,2025-12-03,1,Wednesday,2025-12
+601,Meditation,Morning,2025-12-04,1,Thursday,2025-12
+602,Meditation,Morning,2025-12-05,1,Friday,2025-12
+603,Meditation,Morning,2025-12-06,1,Saturday,2025-12
+604,Meditation,Morning,2025-12-07,0,Sunday,2025-12
+605,Meditation,Morning,2025-12-08,1,Monday,2025-12
+606,Meditation,Morning,2025-12-09,1,Tuesday,2025-12
+607,Meditation,Morning,2025-12-10,1,Wednesday,2025-12
+608,Meditation,Morning,2025-12-11,0,Thursday,2025-12
+609,Meditation,Morning,2025-12-12,0,Friday,2025-12
+610,Meditation,Morning,2025-12-13,0,Saturday,2025-12
+611,Meditation,Morning,2025-12-14,0,Sunday,2025-12
+612,Meditation,Morning,2025-12-15,1,Monday,2025-12
+613,Meditation,Morning,2025-12-16,1,Tuesday,2025-12
+614,Meditation,Morning,2025-12-17,1,Wednesday,2025-12
+615,Meditation,Morning,2025-12-18,1,Thursday,2025-12
+616,Meditation,Morning,2025-12-19,1,Friday,2025-12
+617,Meditation,Morning,2025-12-20,1,Saturday,2025-12
+618,Meditation,Morning,2025-12-21,0,Sunday,2025-12
+619,Meditation,Morning,2025-12-22,1,Monday,2025-12
+620,Meditation,Morning,2025-12-23,1,Tuesday,2025-12
+621,Meditation,Morning,2025-12-24,1,Wednesday,2025-12
+622,Meditation,Morning,2025-12-25,0,Thursday,2025-12
+623,Meditation,Morning,2025-12-26,0,Friday,2025-12
+624,Meditation,Morning,2025-12-27,0,Saturday,2025-12
+625,Meditation,Morning,2025-12-28,1,Sunday,2025-12
+626,Meditation,Morning,2025-12-29,0,Monday,2025-12
+627,Meditation,Morning,2025-12-30,1,Tuesday,2025-12
+628,Meditation,Morning,2025-12-31,1,Wednesday,2025-12
+629,Meditation,Morning,2026-01-01,0,Thursday,2026-01
+630,Meditation,Morning,2026-01-02,1,Friday,2026-01
+631,Meditation,Morning,2026-01-03,0,Saturday,2026-01
+632,Meditation,Morning,2026-01-04,1,Sunday,2026-01
+633,Meditation,Morning,2026-01-05,1,Monday,2026-01
+634,Meditation,Morning,2026-01-06,0,Tuesday,2026-01
+635,Meditation,Morning,2026-01-07,1,Wednesday,2026-01
+636,Meditation,Morning,2026-01-08,1,Thursday,2026-01
+637,Meditation,Morning,2026-01-09,1,Friday,2026-01
+638,Meditation,Morning,2026-01-10,0,Saturday,2026-01
+639,Meditation,Morning,2026-01-11,1,Sunday,2026-01
+640,Meditation,Morning,2026-01-12,1,Monday,2026-01
+641,Meditation,Morning,2026-01-13,1,Tuesday,2026-01
+642,Meditation,Morning,2026-01-14,1,Wednesday,2026-01
+643,Meditation,Morning,2026-01-15,0,Thursday,2026-01
+644,Meditation,Morning,2026-01-16,1,Friday,2026-01
+645,Meditation,Morning,2026-01-17,1,Saturday,2026-01
+646,Meditation,Morning,2026-01-18,1,Sunday,2026-01
+647,Meditation,Morning,2026-01-19,1,Monday,2026-01
+648,Meditation,Morning,2026-01-20,0,Tuesday,2026-01
+649,Meditation,Morning,2026-01-21,0,Wednesday,2026-01
+650,Meditation,Morning,2026-01-22,1,Thursday,2026-01
+651,Meditation,Morning,2026-01-23,0,Friday,2026-01
+652,Meditation,Morning,2026-01-24,1,Saturday,2026-01
+653,Meditation,Morning,2026-01-25,1,Sunday,2026-01
+654,Meditation,Morning,2026-01-26,1,Monday,2026-01
+655,Meditation,Morning,2026-01-27,1,Tuesday,2026-01
+656,Meditation,Morning,2026-01-28,1,Wednesday,2026-01
+657,Meditation,Morning,2026-01-29,0,Thursday,2026-01
+658,Meditation,Morning,2026-01-30,1,Friday,2026-01
+659,Meditation,Morning,2026-01-31,0,Saturday,2026-01
+660,Meditation,Morning,2026-02-01,0,Sunday,2026-02
+661,Meditation,Morning,2026-02-02,1,Monday,2026-02
+662,Meditation,Morning,2026-02-03,1,Tuesday,2026-02
+663,Meditation,Morning,2026-02-04,1,Wednesday,2026-02
+664,Meditation,Morning,2026-02-05,0,Thursday,2026-02
+665,Meditation,Morning,2026-02-06,1,Friday,2026-02
+666,Meditation,Morning,2026-02-07,1,Saturday,2026-02
+667,Meditation,Morning,2026-02-08,1,Sunday,2026-02
+668,Meditation,Morning,2026-02-09,1,Monday,2026-02
+669,Meditation,Morning,2026-02-10,1,Tuesday,2026-02
+670,Meditation,Morning,2026-02-11,1,Wednesday,2026-02
+671,Meditation,Morning,2026-02-12,1,Thursday,2026-02
+672,Meditation,Morning,2026-02-13,1,Friday,2026-02
+673,Meditation,Morning,2026-02-14,1,Saturday,2026-02
+674,Meditation,Morning,2026-02-15,1,Sunday,2026-02
+675,Meditation,Morning,2026-02-16,1,Monday,2026-02
+676,Meditation,Morning,2026-02-17,1,Tuesday,2026-02
+677,Meditation,Morning,2026-02-18,1,Wednesday,2026-02
+678,Meditation,Morning,2026-02-19,1,Thursday,2026-02
+679,Meditation,Morning,2026-02-20,1,Friday,2026-02
+680,Meditation,Morning,2026-02-21,1,Saturday,2026-02
+681,Meditation,Morning,2026-02-22,1,Sunday,2026-02
+682,Meditation,Morning,2026-02-23,1,Monday,2026-02
+683,Meditation,Morning,2026-02-24,1,Tuesday,2026-02
+684,Meditation,Morning,2026-02-25,0,Wednesday,2026-02
+685,Meditation,Morning,2026-02-26,0,Thursday,2026-02
+686,Meditation,Morning,2026-02-27,0,Friday,2026-02
+687,Meditation,Morning,2026-02-28,0,Saturday,2026-02
+688,Meditation,Morning,2026-03-01,0,Sunday,2026-03
+689,Meditation,Morning,2026-03-02,1,Monday,2026-03
+690,Meditation,Morning,2026-03-03,1,Tuesday,2026-03
+691,Meditation,Morning,2026-03-04,1,Wednesday,2026-03
+692,Meditation,Morning,2026-03-05,1,Thursday,2026-03
+693,Meditation,Morning,2026-03-06,0,Friday,2026-03
+694,Meditation,Morning,2026-03-07,1,Saturday,2026-03
+695,Meditation,Morning,2026-03-08,1,Sunday,2026-03
+696,Meditation,Morning,2026-03-09,1,Monday,2026-03
+697,Meditation,Morning,2026-03-10,1,Tuesday,2026-03
+698,Meditation,Morning,2026-03-11,1,Wednesday,2026-03
+699,Meditation,Morning,2026-03-12,0,Thursday,2026-03
+700,Meditation,Morning,2026-03-13,1,Friday,2026-03
+701,Meditation,Morning,2026-03-14,0,Saturday,2026-03
+702,Meditation,Morning,2026-03-15,1,Sunday,2026-03
+703,Meditation,Morning,2026-03-16,0,Monday,2026-03
+704,Meditation,Morning,2026-03-17,1,Tuesday,2026-03
+705,Meditation,Morning,2026-03-18,1,Wednesday,2026-03
+706,Meditation,Morning,2026-03-19,1,Thursday,2026-03
+707,Meditation,Morning,2026-03-20,0,Friday,2026-03
+708,Meditation,Morning,2026-03-21,0,Saturday,2026-03
+709,Meditation,Morning,2026-03-22,1,Sunday,2026-03
+710,Meditation,Morning,2026-03-23,1,Monday,2026-03
+711,Meditation,Morning,2026-03-24,0,Tuesday,2026-03
+712,Meditation,Morning,2026-03-25,1,Wednesday,2026-03
+713,Meditation,Morning,2026-03-26,1,Thursday,2026-03
+714,Meditation,Morning,2026-03-27,1,Friday,2026-03
+715,Meditation,Morning,2026-03-28,1,Saturday,2026-03
+716,Meditation,Morning,2026-03-29,0,Sunday,2026-03
+717,Meditation,Morning,2026-03-30,0,Monday,2026-03
+718,Meditation,Morning,2026-03-31,1,Tuesday,2026-03
+719,Meditation,Morning,2026-04-01,1,Wednesday,2026-04
+720,Meditation,Morning,2026-04-02,0,Thursday,2026-04
+721,Meditation,Morning,2026-04-03,1,Friday,2026-04
+722,Meditation,Morning,2026-04-04,0,Saturday,2026-04
+723,Meditation,Morning,2026-04-05,1,Sunday,2026-04
+724,Meditation,Morning,2026-04-06,1,Monday,2026-04
+725,Meditation,Morning,2026-04-07,0,Tuesday,2026-04
+726,Meditation,Morning,2026-04-08,1,Wednesday,2026-04
+727,Meditation,Morning,2026-04-09,1,Thursday,2026-04
+728,Meditation,Morning,2026-04-10,1,Friday,2026-04
+729,Meditation,Morning,2026-04-11,1,Saturday,2026-04
+730,Meditation,Morning,2026-04-12,1,Sunday,2026-04
+731,Meditation,Morning,2026-04-13,0,Monday,2026-04
+732,Meditation,Morning,2026-04-14,0,Tuesday,2026-04
+733,Meditation,Morning,2026-04-15,1,Wednesday,2026-04
+734,Meditation,Morning,2026-04-16,1,Thursday,2026-04
+735,Meditation,Morning,2026-04-17,1,Friday,2026-04
+736,Meditation,Morning,2026-04-18,1,Saturday,2026-04
+737,Meditation,Morning,2026-04-19,1,Sunday,2026-04
+738,Meditation,Morning,2026-04-20,0,Monday,2026-04
+739,Meditation,Morning,2026-04-21,1,Tuesday,2026-04
+740,Meditation,Morning,2026-04-22,0,Wednesday,2026-04
+741,Meditation,Morning,2026-04-23,1,Thursday,2026-04
+742,Meditation,Morning,2026-04-24,1,Friday,2026-04
+743,Meditation,Morning,2026-04-25,1,Saturday,2026-04
+744,Meditation,Morning,2026-04-26,1,Sunday,2026-04
+745,Meditation,Morning,2026-04-27,1,Monday,2026-04
+746,Meditation,Morning,2026-04-28,0,Tuesday,2026-04
+747,Meditation,Morning,2026-04-29,1,Wednesday,2026-04
+748,Meditation,Morning,2026-04-30,0,Thursday,2026-04
+749,Meditation,Morning,2026-05-01,1,Friday,2026-05
+750,Meditation,Morning,2026-05-02,0,Saturday,2026-05
+751,Meditation,Morning,2026-05-03,1,Sunday,2026-05
+752,Meditation,Morning,2026-05-04,0,Monday,2026-05
+753,Meditation,Morning,2026-05-05,1,Tuesday,2026-05
+754,Meditation,Morning,2026-05-06,1,Wednesday,2026-05
+755,Meditation,Morning,2026-05-07,0,Thursday,2026-05
+756,Meditation,Morning,2026-05-08,1,Friday,2026-05
+757,Property Research,Morning,2025-11-01,1,Saturday,2025-11
+758,Property Research,Morning,2025-11-02,1,Sunday,2025-11
+759,Property Research,Morning,2025-11-03,0,Monday,2025-11
+760,Property Research,Morning,2025-11-04,1,Tuesday,2025-11
+761,Property Research,Morning,2025-11-05,1,Wednesday,2025-11
+762,Property Research,Morning,2025-11-06,1,Thursday,2025-11
+763,Property Research,Morning,2025-11-07,1,Friday,2025-11
+764,Property Research,Morning,2025-11-08,0,Saturday,2025-11
+765,Property Research,Morning,2025-11-09,1,Sunday,2025-11
+766,Property Research,Morning,2025-11-10,1,Monday,2025-11
+767,Property Research,Morning,2025-11-11,0,Tuesday,2025-11
+768,Property Research,Morning,2025-11-12,1,Wednesday,2025-11
+769,Property Research,Morning,2025-11-13,1,Thursday,2025-11
+770,Property Research,Morning,2025-11-14,1,Friday,2025-11
+771,Property Research,Morning,2025-11-15,0,Saturday,2025-11
+772,Property Research,Morning,2025-11-16,1,Sunday,2025-11
+773,Property Research,Morning,2025-11-17,0,Monday,2025-11
+774,Property Research,Morning,2025-11-18,1,Tuesday,2025-11
+775,Property Research,Morning,2025-11-19,1,Wednesday,2025-11
+776,Property Research,Morning,2025-11-20,1,Thursday,2025-11
+777,Property Research,Morning,2025-11-21,1,Friday,2025-11
+778,Property Research,Morning,2025-11-22,0,Saturday,2025-11
+779,Property Research,Morning,2025-11-23,1,Sunday,2025-11
+780,Property Research,Morning,2025-11-24,1,Monday,2025-11
+781,Property Research,Morning,2025-11-25,1,Tuesday,2025-11
+782,Property Research,Morning,2025-11-26,1,Wednesday,2025-11
+783,Property Research,Morning,2025-11-27,1,Thursday,2025-11
+784,Property Research,Morning,2025-11-28,1,Friday,2025-11
+785,Property Research,Morning,2025-11-29,1,Saturday,2025-11
+786,Property Research,Morning,2025-11-30,0,Sunday,2025-11
+787,Property Research,Morning,2025-12-01,1,Monday,2025-12
+788,Property Research,Morning,2025-12-02,0,Tuesday,2025-12
+789,Property Research,Morning,2025-12-03,0,Wednesday,2025-12
+790,Property Research,Morning,2025-12-04,1,Thursday,2025-12
+791,Property Research,Morning,2025-12-05,1,Friday,2025-12
+792,Property Research,Morning,2025-12-06,1,Saturday,2025-12
+793,Property Research,Morning,2025-12-07,1,Sunday,2025-12
+794,Property Research,Morning,2025-12-08,0,Monday,2025-12
+795,Property Research,Morning,2025-12-09,1,Tuesday,2025-12
+796,Property Research,Morning,2025-12-10,1,Wednesday,2025-12
+797,Property Research,Morning,2025-12-11,1,Thursday,2025-12
+798,Property Research,Morning,2025-12-12,1,Friday,2025-12
+799,Property Research,Morning,2025-12-13,1,Saturday,2025-12
+800,Property Research,Morning,2025-12-14,0,Sunday,2025-12
+801,Property Research,Morning,2025-12-15,1,Monday,2025-12
+802,Property Research,Morning,2025-12-16,0,Tuesday,2025-12
+803,Property Research,Morning,2025-12-17,1,Wednesday,2025-12
+804,Property Research,Morning,2025-12-18,1,Thursday,2025-12
+805,Property Research,Morning,2025-12-19,1,Friday,2025-12
+806,Property Research,Morning,2025-12-20,1,Saturday,2025-12
+807,Property Research,Morning,2025-12-21,1,Sunday,2025-12
+808,Property Research,Morning,2025-12-22,0,Monday,2025-12
+809,Property Research,Morning,2025-12-23,0,Tuesday,2025-12
+810,Property Research,Morning,2025-12-24,1,Wednesday,2025-12
+811,Property Research,Morning,2025-12-25,1,Thursday,2025-12
+812,Property Research,Morning,2025-12-26,1,Friday,2025-12
+813,Property Research,Morning,2025-12-27,0,Saturday,2025-12
+814,Property Research,Morning,2025-12-28,1,Sunday,2025-12
+815,Property Research,Morning,2025-12-29,0,Monday,2025-12
+816,Property Research,Morning,2025-12-30,1,Tuesday,2025-12
+817,Property Research,Morning,2025-12-31,1,Wednesday,2025-12
+818,Property Research,Morning,2026-01-01,0,Thursday,2026-01
+819,Property Research,Morning,2026-01-02,1,Friday,2026-01
+820,Property Research,Morning,2026-01-03,1,Saturday,2026-01
+821,Property Research,Morning,2026-01-04,1,Sunday,2026-01
+822,Property Research,Morning,2026-01-05,1,Monday,2026-01
+823,Property Research,Morning,2026-01-06,1,Tuesday,2026-01
+824,Property Research,Morning,2026-01-07,1,Wednesday,2026-01
+825,Property Research,Morning,2026-01-08,0,Thursday,2026-01
+826,Property Research,Morning,2026-01-09,1,Friday,2026-01
+827,Property Research,Morning,2026-01-10,0,Saturday,2026-01
+828,Property Research,Morning,2026-01-11,1,Sunday,2026-01
+829,Property Research,Morning,2026-01-12,1,Monday,2026-01
+830,Property Research,Morning,2026-01-13,1,Tuesday,2026-01
+831,Property Research,Morning,2026-01-14,1,Wednesday,2026-01
+832,Property Research,Morning,2026-01-15,1,Thursday,2026-01
+833,Property Research,Morning,2026-01-16,0,Friday,2026-01
+834,Property Research,Morning,2026-01-17,1,Saturday,2026-01
+835,Property Research,Morning,2026-01-18,1,Sunday,2026-01
+836,Property Research,Morning,2026-01-19,1,Monday,2026-01
+837,Property Research,Morning,2026-01-20,0,Tuesday,2026-01
+838,Property Research,Morning,2026-01-21,0,Wednesday,2026-01
+839,Property Research,Morning,2026-01-22,1,Thursday,2026-01
+840,Property Research,Morning,2026-01-23,1,Friday,2026-01
+841,Property Research,Morning,2026-01-24,1,Saturday,2026-01
+842,Property Research,Morning,2026-01-25,1,Sunday,2026-01
+843,Property Research,Morning,2026-01-26,1,Monday,2026-01
+844,Property Research,Morning,2026-01-27,1,Tuesday,2026-01
+845,Property Research,Morning,2026-01-28,1,Wednesday,2026-01
+846,Property Research,Morning,2026-01-29,1,Thursday,2026-01
+847,Property Research,Morning,2026-01-30,1,Friday,2026-01
+848,Property Research,Morning,2026-01-31,0,Saturday,2026-01
+849,Property Research,Morning,2026-02-01,0,Sunday,2026-02
+850,Property Research,Morning,2026-02-02,1,Monday,2026-02
+851,Property Research,Morning,2026-02-03,1,Tuesday,2026-02
+852,Property Research,Morning,2026-02-04,1,Wednesday,2026-02
+853,Property Research,Morning,2026-02-05,1,Thursday,2026-02
+854,Property Research,Morning,2026-02-06,1,Friday,2026-02
+855,Property Research,Morning,2026-02-07,1,Saturday,2026-02
+856,Property Research,Morning,2026-02-08,0,Sunday,2026-02
+857,Property Research,Morning,2026-02-09,0,Monday,2026-02
+858,Property Research,Morning,2026-02-10,1,Tuesday,2026-02
+859,Property Research,Morning,2026-02-11,1,Wednesday,2026-02
+860,Property Research,Morning,2026-02-12,1,Thursday,2026-02
+861,Property Research,Morning,2026-02-13,1,Friday,2026-02
+862,Property Research,Morning,2026-02-14,1,Saturday,2026-02
+863,Property Research,Morning,2026-02-15,1,Sunday,2026-02
+864,Property Research,Morning,2026-02-16,0,Monday,2026-02
+865,Property Research,Morning,2026-02-17,1,Tuesday,2026-02
+866,Property Research,Morning,2026-02-18,1,Wednesday,2026-02
+867,Property Research,Morning,2026-02-19,1,Thursday,2026-02
+868,Property Research,Morning,2026-02-20,1,Friday,2026-02
+869,Property Research,Morning,2026-02-21,1,Saturday,2026-02
+870,Property Research,Morning,2026-02-22,0,Sunday,2026-02
+871,Property Research,Morning,2026-02-23,1,Monday,2026-02
+872,Property Research,Morning,2026-02-24,1,Tuesday,2026-02
+873,Property Research,Morning,2026-02-25,1,Wednesday,2026-02
+874,Property Research,Morning,2026-02-26,1,Thursday,2026-02
+875,Property Research,Morning,2026-02-27,0,Friday,2026-02
+876,Property Research,Morning,2026-02-28,0,Saturday,2026-02
+877,Property Research,Morning,2026-03-01,0,Sunday,2026-03
+878,Property Research,Morning,2026-03-02,1,Monday,2026-03
+879,Property Research,Morning,2026-03-03,1,Tuesday,2026-03
+880,Property Research,Morning,2026-03-04,1,Wednesday,2026-03
+881,Property Research,Morning,2026-03-05,1,Thursday,2026-03
+882,Property Research,Morning,2026-03-06,1,Friday,2026-03
+883,Property Research,Morning,2026-03-07,0,Saturday,2026-03
+884,Property Research,Morning,2026-03-08,1,Sunday,2026-03
+885,Property Research,Morning,2026-03-09,1,Monday,2026-03
+886,Property Research,Morning,2026-03-10,1,Tuesday,2026-03
+887,Property Research,Morning,2026-03-11,1,Wednesday,2026-03
+888,Property Research,Morning,2026-03-12,1,Thursday,2026-03
+889,Property Research,Morning,2026-03-13,1,Friday,2026-03
+890,Property Research,Morning,2026-03-14,1,Saturday,2026-03
+891,Property Research,Morning,2026-03-15,1,Sunday,2026-03
+892,Property Research,Morning,2026-03-16,1,Monday,2026-03
+893,Property Research,Morning,2026-03-17,1,Tuesday,2026-03
+894,Property Research,Morning,2026-03-18,1,Wednesday,2026-03
+895,Property Research,Morning,2026-03-19,1,Thursday,2026-03
+896,Property Research,Morning,2026-03-20,0,Friday,2026-03
+897,Property Research,Morning,2026-03-21,1,Saturday,2026-03
+898,Property Research,Morning,2026-03-22,1,Sunday,2026-03
+899,Property Research,Morning,2026-03-23,1,Monday,2026-03
+900,Property Research,Morning,2026-03-24,1,Tuesday,2026-03
+901,Property Research,Morning,2026-03-25,0,Wednesday,2026-03
+902,Property Research,Morning,2026-03-26,1,Thursday,2026-03
+903,Property Research,Morning,2026-03-27,0,Friday,2026-03
+904,Property Research,Morning,2026-03-28,0,Saturday,2026-03
+905,Property Research,Morning,2026-03-29,1,Sunday,2026-03
+906,Property Research,Morning,2026-03-30,1,Monday,2026-03
+907,Property Research,Morning,2026-03-31,1,Tuesday,2026-03
+908,Property Research,Morning,2026-04-01,1,Wednesday,2026-04
+909,Property Research,Morning,2026-04-02,1,Thursday,2026-04
+910,Property Research,Morning,2026-04-03,1,Friday,2026-04
+911,Property Research,Morning,2026-04-04,1,Saturday,2026-04
+912,Property Research,Morning,2026-04-05,1,Sunday,2026-04
+913,Property Research,Morning,2026-04-06,1,Monday,2026-04
+914,Property Research,Morning,2026-04-07,0,Tuesday,2026-04
+915,Property Research,Morning,2026-04-08,1,Wednesday,2026-04
+916,Property Research,Morning,2026-04-09,0,Thursday,2026-04
+917,Property Research,Morning,2026-04-10,1,Friday,2026-04
+918,Property Research,Morning,2026-04-11,1,Saturday,2026-04
+919,Property Research,Morning,2026-04-12,1,Sunday,2026-04
+920,Property Research,Morning,2026-04-13,1,Monday,2026-04
+921,Property Research,Morning,2026-04-14,1,Tuesday,2026-04
+922,Property Research,Morning,2026-04-15,1,Wednesday,2026-04
+923,Property Research,Morning,2026-04-16,0,Thursday,2026-04
+924,Property Research,Morning,2026-04-17,1,Friday,2026-04
+925,Property Research,Morning,2026-04-18,1,Saturday,2026-04
+926,Property Research,Morning,2026-04-19,0,Sunday,2026-04
+927,Property Research,Morning,2026-04-20,0,Monday,2026-04
+928,Property Research,Morning,2026-04-21,1,Tuesday,2026-04
+929,Property Research,Morning,2026-04-22,1,Wednesday,2026-04
+930,Property Research,Morning,2026-04-23,0,Thursday,2026-04
+931,Property Research,Morning,2026-04-24,1,Friday,2026-04
+932,Property Research,Morning,2026-04-25,1,Saturday,2026-04
+933,Property Research,Morning,2026-04-26,1,Sunday,2026-04
+934,Property Research,Morning,2026-04-27,0,Monday,2026-04
+935,Property Research,Morning,2026-04-28,1,Tuesday,2026-04
+936,Property Research,Morning,2026-04-29,0,Wednesday,2026-04
+937,Property Research,Morning,2026-04-30,1,Thursday,2026-04
+938,Property Research,Morning,2026-05-01,0,Friday,2026-05
+939,Property Research,Morning,2026-05-02,1,Saturday,2026-05
+940,Property Research,Morning,2026-05-03,1,Sunday,2026-05
+941,Property Research,Morning,2026-05-04,0,Monday,2026-05
+942,Property Research,Morning,2026-05-05,1,Tuesday,2026-05
+943,Property Research,Morning,2026-05-06,1,Wednesday,2026-05
+944,Property Research,Morning,2026-05-07,1,Thursday,2026-05
+945,Property Research,Morning,2026-05-08,1,Friday,2026-05
+946,Language Study,Day,2025-11-01,1,Saturday,2025-11
+947,Language Study,Day,2025-11-02,0,Sunday,2025-11
+948,Language Study,Day,2025-11-03,1,Monday,2025-11
+949,Language Study,Day,2025-11-04,1,Tuesday,2025-11
+950,Language Study,Day,2025-11-05,1,Wednesday,2025-11
+951,Language Study,Day,2025-11-06,1,Thursday,2025-11
+952,Language Study,Day,2025-11-07,1,Friday,2025-11
+953,Language Study,Day,2025-11-08,1,Saturday,2025-11
+954,Language Study,Day,2025-11-09,1,Sunday,2025-11
+955,Language Study,Day,2025-11-10,0,Monday,2025-11
+956,Language Study,Day,2025-11-11,1,Tuesday,2025-11
+957,Language Study,Day,2025-11-12,0,Wednesday,2025-11
+958,Language Study,Day,2025-11-13,0,Thursday,2025-11
+959,Language Study,Day,2025-11-14,0,Friday,2025-11
+960,Language Study,Day,2025-11-15,1,Saturday,2025-11
+961,Language Study,Day,2025-11-16,0,Sunday,2025-11
+962,Language Study,Day,2025-11-17,0,Monday,2025-11
+963,Language Study,Day,2025-11-18,1,Tuesday,2025-11
+964,Language Study,Day,2025-11-19,1,Wednesday,2025-11
+965,Language Study,Day,2025-11-20,1,Thursday,2025-11
+966,Language Study,Day,2025-11-21,1,Friday,2025-11
+967,Language Study,Day,2025-11-22,1,Saturday,2025-11
+968,Language Study,Day,2025-11-23,1,Sunday,2025-11
+969,Language Study,Day,2025-11-24,1,Monday,2025-11
+970,Language Study,Day,2025-11-25,1,Tuesday,2025-11
+971,Language Study,Day,2025-11-26,1,Wednesday,2025-11
+972,Language Study,Day,2025-11-27,1,Thursday,2025-11
+973,Language Study,Day,2025-11-28,0,Friday,2025-11
+974,Language Study,Day,2025-11-29,1,Saturday,2025-11
+975,Language Study,Day,2025-11-30,1,Sunday,2025-11
+976,Language Study,Day,2025-12-01,1,Monday,2025-12
+977,Language Study,Day,2025-12-02,1,Tuesday,2025-12
+978,Language Study,Day,2025-12-03,1,Wednesday,2025-12
+979,Language Study,Day,2025-12-04,0,Thursday,2025-12
+980,Language Study,Day,2025-12-05,1,Friday,2025-12
+981,Language Study,Day,2025-12-06,0,Saturday,2025-12
+982,Language Study,Day,2025-12-07,1,Sunday,2025-12
+983,Language Study,Day,2025-12-08,1,Monday,2025-12
+984,Language Study,Day,2025-12-09,1,Tuesday,2025-12
+985,Language Study,Day,2025-12-10,0,Wednesday,2025-12
+986,Language Study,Day,2025-12-11,1,Thursday,2025-12
+987,Language Study,Day,2025-12-12,1,Friday,2025-12
+988,Language Study,Day,2025-12-13,0,Saturday,2025-12
+989,Language Study,Day,2025-12-14,1,Sunday,2025-12
+990,Language Study,Day,2025-12-15,1,Monday,2025-12
+991,Language Study,Day,2025-12-16,0,Tuesday,2025-12
+992,Language Study,Day,2025-12-17,1,Wednesday,2025-12
+993,Language Study,Day,2025-12-18,1,Thursday,2025-12
+994,Language Study,Day,2025-12-19,1,Friday,2025-12
+995,Language Study,Day,2025-12-20,0,Saturday,2025-12
+996,Language Study,Day,2025-12-21,1,Sunday,2025-12
+997,Language Study,Day,2025-12-22,1,Monday,2025-12
+998,Language Study,Day,2025-12-23,1,Tuesday,2025-12
+999,Language Study,Day,2025-12-24,1,Wednesday,2025-12
+1000,Language Study,Day,2025-12-25,0,Thursday,2025-12
+1001,Language Study,Day,2025-12-26,0,Friday,2025-12
+1002,Language Study,Day,2025-12-27,0,Saturday,2025-12
+1003,Language Study,Day,2025-12-28,1,Sunday,2025-12
+1004,Language Study,Day,2025-12-29,0,Monday,2025-12
+1005,Language Study,Day,2025-12-30,1,Tuesday,2025-12
+1006,Language Study,Day,2025-12-31,1,Wednesday,2025-12
+1007,Language Study,Day,2026-01-01,0,Thursday,2026-01
+1008,Language Study,Day,2026-01-02,1,Friday,2026-01
+1009,Language Study,Day,2026-01-03,0,Saturday,2026-01
+1010,Language Study,Day,2026-01-04,0,Sunday,2026-01
+1011,Language Study,Day,2026-01-05,1,Monday,2026-01
+1012,Language Study,Day,2026-01-06,1,Tuesday,2026-01
+1013,Language Study,Day,2026-01-07,1,Wednesday,2026-01
+1014,Language Study,Day,2026-01-08,1,Thursday,2026-01
+1015,Language Study,Day,2026-01-09,1,Friday,2026-01
+1016,Language Study,Day,2026-01-10,0,Saturday,2026-01
+1017,Language Study,Day,2026-01-11,0,Sunday,2026-01
+1018,Language Study,Day,2026-01-12,1,Monday,2026-01
+1019,Language Study,Day,2026-01-13,0,Tuesday,2026-01
+1020,Language Study,Day,2026-01-14,0,Wednesday,2026-01
+1021,Language Study,Day,2026-01-15,1,Thursday,2026-01
+1022,Language Study,Day,2026-01-16,1,Friday,2026-01
+1023,Language Study,Day,2026-01-17,1,Saturday,2026-01
+1024,Language Study,Day,2026-01-18,1,Sunday,2026-01
+1025,Language Study,Day,2026-01-19,1,Monday,2026-01
+1026,Language Study,Day,2026-01-20,1,Tuesday,2026-01
+1027,Language Study,Day,2026-01-21,1,Wednesday,2026-01
+1028,Language Study,Day,2026-01-22,1,Thursday,2026-01
+1029,Language Study,Day,2026-01-23,0,Friday,2026-01
+1030,Language Study,Day,2026-01-24,1,Saturday,2026-01
+1031,Language Study,Day,2026-01-25,0,Sunday,2026-01
+1032,Language Study,Day,2026-01-26,1,Monday,2026-01
+1033,Language Study,Day,2026-01-27,1,Tuesday,2026-01
+1034,Language Study,Day,2026-01-28,0,Wednesday,2026-01
+1035,Language Study,Day,2026-01-29,1,Thursday,2026-01
+1036,Language Study,Day,2026-01-30,1,Friday,2026-01
+1037,Language Study,Day,2026-01-31,0,Saturday,2026-01
+1038,Language Study,Day,2026-02-01,1,Sunday,2026-02
+1039,Language Study,Day,2026-02-02,1,Monday,2026-02
+1040,Language Study,Day,2026-02-03,1,Tuesday,2026-02
+1041,Language Study,Day,2026-02-04,0,Wednesday,2026-02
+1042,Language Study,Day,2026-02-05,1,Thursday,2026-02
+1043,Language Study,Day,2026-02-06,1,Friday,2026-02
+1044,Language Study,Day,2026-02-07,1,Saturday,2026-02
+1045,Language Study,Day,2026-02-08,0,Sunday,2026-02
+1046,Language Study,Day,2026-02-09,0,Monday,2026-02
+1047,Language Study,Day,2026-02-10,1,Tuesday,2026-02
+1048,Language Study,Day,2026-02-11,1,Wednesday,2026-02
+1049,Language Study,Day,2026-02-12,1,Thursday,2026-02
+1050,Language Study,Day,2026-02-13,0,Friday,2026-02
+1051,Language Study,Day,2026-02-14,1,Saturday,2026-02
+1052,Language Study,Day,2026-02-15,0,Sunday,2026-02
+1053,Language Study,Day,2026-02-16,0,Monday,2026-02
+1054,Language Study,Day,2026-02-17,1,Tuesday,2026-02
+1055,Language Study,Day,2026-02-18,1,Wednesday,2026-02
+1056,Language Study,Day,2026-02-19,1,Thursday,2026-02
+1057,Language Study,Day,2026-02-20,0,Friday,2026-02
+1058,Language Study,Day,2026-02-21,1,Saturday,2026-02
+1059,Language Study,Day,2026-02-22,1,Sunday,2026-02
+1060,Language Study,Day,2026-02-23,0,Monday,2026-02
+1061,Language Study,Day,2026-02-24,1,Tuesday,2026-02
+1062,Language Study,Day,2026-02-25,1,Wednesday,2026-02
+1063,Language Study,Day,2026-02-26,1,Thursday,2026-02
+1064,Language Study,Day,2026-02-27,1,Friday,2026-02
+1065,Language Study,Day,2026-02-28,0,Saturday,2026-02
+1066,Language Study,Day,2026-03-01,1,Sunday,2026-03
+1067,Language Study,Day,2026-03-02,1,Monday,2026-03
+1068,Language Study,Day,2026-03-03,0,Tuesday,2026-03
+1069,Language Study,Day,2026-03-04,1,Wednesday,2026-03
+1070,Language Study,Day,2026-03-05,0,Thursday,2026-03
+1071,Language Study,Day,2026-03-06,0,Friday,2026-03
+1072,Language Study,Day,2026-03-07,1,Saturday,2026-03
+1073,Language Study,Day,2026-03-08,1,Sunday,2026-03
+1074,Language Study,Day,2026-03-09,0,Monday,2026-03
+1075,Language Study,Day,2026-03-10,1,Tuesday,2026-03
+1076,Language Study,Day,2026-03-11,1,Wednesday,2026-03
+1077,Language Study,Day,2026-03-12,0,Thursday,2026-03
+1078,Language Study,Day,2026-03-13,1,Friday,2026-03
+1079,Language Study,Day,2026-03-14,0,Saturday,2026-03
+1080,Language Study,Day,2026-03-15,1,Sunday,2026-03
+1081,Language Study,Day,2026-03-16,1,Monday,2026-03
+1082,Language Study,Day,2026-03-17,1,Tuesday,2026-03
+1083,Language Study,Day,2026-03-18,0,Wednesday,2026-03
+1084,Language Study,Day,2026-03-19,1,Thursday,2026-03
+1085,Language Study,Day,2026-03-20,0,Friday,2026-03
+1086,Language Study,Day,2026-03-21,1,Saturday,2026-03
+1087,Language Study,Day,2026-03-22,1,Sunday,2026-03
+1088,Language Study,Day,2026-03-23,1,Monday,2026-03
+1089,Language Study,Day,2026-03-24,1,Tuesday,2026-03
+1090,Language Study,Day,2026-03-25,1,Wednesday,2026-03
+1091,Language Study,Day,2026-03-26,1,Thursday,2026-03
+1092,Language Study,Day,2026-03-27,1,Friday,2026-03
+1093,Language Study,Day,2026-03-28,0,Saturday,2026-03
+1094,Language Study,Day,2026-03-29,1,Sunday,2026-03
+1095,Language Study,Day,2026-03-30,0,Monday,2026-03
+1096,Language Study,Day,2026-03-31,1,Tuesday,2026-03
+1097,Language Study,Day,2026-04-01,1,Wednesday,2026-04
+1098,Language Study,Day,2026-04-02,1,Thursday,2026-04
+1099,Language Study,Day,2026-04-03,1,Friday,2026-04
+1100,Language Study,Day,2026-04-04,1,Saturday,2026-04
+1101,Language Study,Day,2026-04-05,1,Sunday,2026-04
+1102,Language Study,Day,2026-04-06,1,Monday,2026-04
+1103,Language Study,Day,2026-04-07,1,Tuesday,2026-04
+1104,Language Study,Day,2026-04-08,1,Wednesday,2026-04
+1105,Language Study,Day,2026-04-09,0,Thursday,2026-04
+1106,Language Study,Day,2026-04-10,1,Friday,2026-04
+1107,Language Study,Day,2026-04-11,0,Saturday,2026-04
+1108,Language Study,Day,2026-04-12,1,Sunday,2026-04
+1109,Language Study,Day,2026-04-13,1,Monday,2026-04
+1110,Language Study,Day,2026-04-14,1,Tuesday,2026-04
+1111,Language Study,Day,2026-04-15,1,Wednesday,2026-04
+1112,Language Study,Day,2026-04-16,1,Thursday,2026-04
+1113,Language Study,Day,2026-04-17,1,Friday,2026-04
+1114,Language Study,Day,2026-04-18,1,Saturday,2026-04
+1115,Language Study,Day,2026-04-19,0,Sunday,2026-04
+1116,Language Study,Day,2026-04-20,1,Monday,2026-04
+1117,Language Study,Day,2026-04-21,0,Tuesday,2026-04
+1118,Language Study,Day,2026-04-22,0,Wednesday,2026-04
+1119,Language Study,Day,2026-04-23,1,Thursday,2026-04
+1120,Language Study,Day,2026-04-24,0,Friday,2026-04
+1121,Language Study,Day,2026-04-25,0,Saturday,2026-04
+1122,Language Study,Day,2026-04-26,1,Sunday,2026-04
+1123,Language Study,Day,2026-04-27,1,Monday,2026-04
+1124,Language Study,Day,2026-04-28,0,Tuesday,2026-04
+1125,Language Study,Day,2026-04-29,1,Wednesday,2026-04
+1126,Language Study,Day,2026-04-30,0,Thursday,2026-04
+1127,Language Study,Day,2026-05-01,1,Friday,2026-05
+1128,Language Study,Day,2026-05-02,1,Saturday,2026-05
+1129,Language Study,Day,2026-05-03,1,Sunday,2026-05
+1130,Language Study,Day,2026-05-04,1,Monday,2026-05
+1131,Language Study,Day,2026-05-05,0,Tuesday,2026-05
+1132,Language Study,Day,2026-05-06,0,Wednesday,2026-05
+1133,Language Study,Day,2026-05-07,1,Thursday,2026-05
+1134,Language Study,Day,2026-05-08,1,Friday,2026-05
+1135,Code Practice,Day,2025-11-01,0,Saturday,2025-11
+1136,Code Practice,Day,2025-11-02,1,Sunday,2025-11
+1137,Code Practice,Day,2025-11-03,1,Monday,2025-11
+1138,Code Practice,Day,2025-11-04,1,Tuesday,2025-11
+1139,Code Practice,Day,2025-11-05,1,Wednesday,2025-11
+1140,Code Practice,Day,2025-11-06,0,Thursday,2025-11
+1141,Code Practice,Day,2025-11-07,1,Friday,2025-11
+1142,Code Practice,Day,2025-11-08,1,Saturday,2025-11
+1143,Code Practice,Day,2025-11-09,0,Sunday,2025-11
+1144,Code Practice,Day,2025-11-10,1,Monday,2025-11
+1145,Code Practice,Day,2025-11-11,1,Tuesday,2025-11
+1146,Code Practice,Day,2025-11-12,1,Wednesday,2025-11
+1147,Code Practice,Day,2025-11-13,0,Thursday,2025-11
+1148,Code Practice,Day,2025-11-14,1,Friday,2025-11
+1149,Code Practice,Day,2025-11-15,1,Saturday,2025-11
+1150,Code Practice,Day,2025-11-16,1,Sunday,2025-11
+1151,Code Practice,Day,2025-11-17,1,Monday,2025-11
+1152,Code Practice,Day,2025-11-18,1,Tuesday,2025-11
+1153,Code Practice,Day,2025-11-19,1,Wednesday,2025-11
+1154,Code Practice,Day,2025-11-20,1,Thursday,2025-11
+1155,Code Practice,Day,2025-11-21,1,Friday,2025-11
+1156,Code Practice,Day,2025-11-22,1,Saturday,2025-11
+1157,Code Practice,Day,2025-11-23,1,Sunday,2025-11
+1158,Code Practice,Day,2025-11-24,0,Monday,2025-11
+1159,Code Practice,Day,2025-11-25,0,Tuesday,2025-11
+1160,Code Practice,Day,2025-11-26,1,Wednesday,2025-11
+1161,Code Practice,Day,2025-11-27,0,Thursday,2025-11
+1162,Code Practice,Day,2025-11-28,1,Friday,2025-11
+1163,Code Practice,Day,2025-11-29,0,Saturday,2025-11
+1164,Code Practice,Day,2025-11-30,1,Sunday,2025-11
+1165,Code Practice,Day,2025-12-01,1,Monday,2025-12
+1166,Code Practice,Day,2025-12-02,1,Tuesday,2025-12
+1167,Code Practice,Day,2025-12-03,1,Wednesday,2025-12
+1168,Code Practice,Day,2025-12-04,0,Thursday,2025-12
+1169,Code Practice,Day,2025-12-05,1,Friday,2025-12
+1170,Code Practice,Day,2025-12-06,1,Saturday,2025-12
+1171,Code Practice,Day,2025-12-07,1,Sunday,2025-12
+1172,Code Practice,Day,2025-12-08,0,Monday,2025-12
+1173,Code Practice,Day,2025-12-09,1,Tuesday,2025-12
+1174,Code Practice,Day,2025-12-10,1,Wednesday,2025-12
+1175,Code Practice,Day,2025-12-11,0,Thursday,2025-12
+1176,Code Practice,Day,2025-12-12,1,Friday,2025-12
+1177,Code Practice,Day,2025-12-13,1,Saturday,2025-12
+1178,Code Practice,Day,2025-12-14,0,Sunday,2025-12
+1179,Code Practice,Day,2025-12-15,1,Monday,2025-12
+1180,Code Practice,Day,2025-12-16,1,Tuesday,2025-12
+1181,Code Practice,Day,2025-12-17,1,Wednesday,2025-12
+1182,Code Practice,Day,2025-12-18,0,Thursday,2025-12
+1183,Code Practice,Day,2025-12-19,1,Friday,2025-12
+1184,Code Practice,Day,2025-12-20,0,Saturday,2025-12
+1185,Code Practice,Day,2025-12-21,0,Sunday,2025-12
+1186,Code Practice,Day,2025-12-22,1,Monday,2025-12
+1187,Code Practice,Day,2025-12-23,0,Tuesday,2025-12
+1188,Code Practice,Day,2025-12-24,1,Wednesday,2025-12
+1189,Code Practice,Day,2025-12-25,1,Thursday,2025-12
+1190,Code Practice,Day,2025-12-26,0,Friday,2025-12
+1191,Code Practice,Day,2025-12-27,0,Saturday,2025-12
+1192,Code Practice,Day,2025-12-28,1,Sunday,2025-12
+1193,Code Practice,Day,2025-12-29,1,Monday,2025-12
+1194,Code Practice,Day,2025-12-30,1,Tuesday,2025-12
+1195,Code Practice,Day,2025-12-31,1,Wednesday,2025-12
+1196,Code Practice,Day,2026-01-01,1,Thursday,2026-01
+1197,Code Practice,Day,2026-01-02,1,Friday,2026-01
+1198,Code Practice,Day,2026-01-03,0,Saturday,2026-01
+1199,Code Practice,Day,2026-01-04,1,Sunday,2026-01
+1200,Code Practice,Day,2026-01-05,1,Monday,2026-01
+1201,Code Practice,Day,2026-01-06,0,Tuesday,2026-01
+1202,Code Practice,Day,2026-01-07,0,Wednesday,2026-01
+1203,Code Practice,Day,2026-01-08,1,Thursday,2026-01
+1204,Code Practice,Day,2026-01-09,1,Friday,2026-01
+1205,Code Practice,Day,2026-01-10,0,Saturday,2026-01
+1206,Code Practice,Day,2026-01-11,1,Sunday,2026-01
+1207,Code Practice,Day,2026-01-12,1,Monday,2026-01
+1208,Code Practice,Day,2026-01-13,0,Tuesday,2026-01
+1209,Code Practice,Day,2026-01-14,1,Wednesday,2026-01
+1210,Code Practice,Day,2026-01-15,1,Thursday,2026-01
+1211,Code Practice,Day,2026-01-16,1,Friday,2026-01
+1212,Code Practice,Day,2026-01-17,1,Saturday,2026-01
+1213,Code Practice,Day,2026-01-18,1,Sunday,2026-01
+1214,Code Practice,Day,2026-01-19,0,Monday,2026-01
+1215,Code Practice,Day,2026-01-20,1,Tuesday,2026-01
+1216,Code Practice,Day,2026-01-21,1,Wednesday,2026-01
+1217,Code Practice,Day,2026-01-22,1,Thursday,2026-01
+1218,Code Practice,Day,2026-01-23,0,Friday,2026-01
+1219,Code Practice,Day,2026-01-24,1,Saturday,2026-01
+1220,Code Practice,Day,2026-01-25,1,Sunday,2026-01
+1221,Code Practice,Day,2026-01-26,0,Monday,2026-01
+1222,Code Practice,Day,2026-01-27,1,Tuesday,2026-01
+1223,Code Practice,Day,2026-01-28,1,Wednesday,2026-01
+1224,Code Practice,Day,2026-01-29,1,Thursday,2026-01
+1225,Code Practice,Day,2026-01-30,1,Friday,2026-01
+1226,Code Practice,Day,2026-01-31,1,Saturday,2026-01
+1227,Code Practice,Day,2026-02-01,0,Sunday,2026-02
+1228,Code Practice,Day,2026-02-02,1,Monday,2026-02
+1229,Code Practice,Day,2026-02-03,1,Tuesday,2026-02
+1230,Code Practice,Day,2026-02-04,1,Wednesday,2026-02
+1231,Code Practice,Day,2026-02-05,1,Thursday,2026-02
+1232,Code Practice,Day,2026-02-06,1,Friday,2026-02
+1233,Code Practice,Day,2026-02-07,0,Saturday,2026-02
+1234,Code Practice,Day,2026-02-08,1,Sunday,2026-02
+1235,Code Practice,Day,2026-02-09,1,Monday,2026-02
+1236,Code Practice,Day,2026-02-10,1,Tuesday,2026-02
+1237,Code Practice,Day,2026-02-11,1,Wednesday,2026-02
+1238,Code Practice,Day,2026-02-12,1,Thursday,2026-02
+1239,Code Practice,Day,2026-02-13,1,Friday,2026-02
+1240,Code Practice,Day,2026-02-14,1,Saturday,2026-02
+1241,Code Practice,Day,2026-02-15,1,Sunday,2026-02
+1242,Code Practice,Day,2026-02-16,0,Monday,2026-02
+1243,Code Practice,Day,2026-02-17,1,Tuesday,2026-02
+1244,Code Practice,Day,2026-02-18,1,Wednesday,2026-02
+1245,Code Practice,Day,2026-02-19,1,Thursday,2026-02
+1246,Code Practice,Day,2026-02-20,1,Friday,2026-02
+1247,Code Practice,Day,2026-02-21,1,Saturday,2026-02
+1248,Code Practice,Day,2026-02-22,1,Sunday,2026-02
+1249,Code Practice,Day,2026-02-23,1,Monday,2026-02
+1250,Code Practice,Day,2026-02-24,0,Tuesday,2026-02
+1251,Code Practice,Day,2026-02-25,0,Wednesday,2026-02
+1252,Code Practice,Day,2026-02-26,1,Thursday,2026-02
+1253,Code Practice,Day,2026-02-27,1,Friday,2026-02
+1254,Code Practice,Day,2026-02-28,0,Saturday,2026-02
+1255,Code Practice,Day,2026-03-01,1,Sunday,2026-03
+1256,Code Practice,Day,2026-03-02,1,Monday,2026-03
+1257,Code Practice,Day,2026-03-03,1,Tuesday,2026-03
+1258,Code Practice,Day,2026-03-04,1,Wednesday,2026-03
+1259,Code Practice,Day,2026-03-05,1,Thursday,2026-03
+1260,Code Practice,Day,2026-03-06,1,Friday,2026-03
+1261,Code Practice,Day,2026-03-07,1,Saturday,2026-03
+1262,Code Practice,Day,2026-03-08,1,Sunday,2026-03
+1263,Code Practice,Day,2026-03-09,0,Monday,2026-03
+1264,Code Practice,Day,2026-03-10,1,Tuesday,2026-03
+1265,Code Practice,Day,2026-03-11,1,Wednesday,2026-03
+1266,Code Practice,Day,2026-03-12,1,Thursday,2026-03
+1267,Code Practice,Day,2026-03-13,0,Friday,2026-03
+1268,Code Practice,Day,2026-03-14,0,Saturday,2026-03
+1269,Code Practice,Day,2026-03-15,0,Sunday,2026-03
+1270,Code Practice,Day,2026-03-16,1,Monday,2026-03
+1271,Code Practice,Day,2026-03-17,0,Tuesday,2026-03
+1272,Code Practice,Day,2026-03-18,1,Wednesday,2026-03
+1273,Code Practice,Day,2026-03-19,1,Thursday,2026-03
+1274,Code Practice,Day,2026-03-20,1,Friday,2026-03
+1275,Code Practice,Day,2026-03-21,1,Saturday,2026-03
+1276,Code Practice,Day,2026-03-22,0,Sunday,2026-03
+1277,Code Practice,Day,2026-03-23,1,Monday,2026-03
+1278,Code Practice,Day,2026-03-24,1,Tuesday,2026-03
+1279,Code Practice,Day,2026-03-25,0,Wednesday,2026-03
+1280,Code Practice,Day,2026-03-26,0,Thursday,2026-03
+1281,Code Practice,Day,2026-03-27,0,Friday,2026-03
+1282,Code Practice,Day,2026-03-28,0,Saturday,2026-03
+1283,Code Practice,Day,2026-03-29,1,Sunday,2026-03
+1284,Code Practice,Day,2026-03-30,1,Monday,2026-03
+1285,Code Practice,Day,2026-03-31,1,Tuesday,2026-03
+1286,Code Practice,Day,2026-04-01,0,Wednesday,2026-04
+1287,Code Practice,Day,2026-04-02,1,Thursday,2026-04
+1288,Code Practice,Day,2026-04-03,0,Friday,2026-04
+1289,Code Practice,Day,2026-04-04,1,Saturday,2026-04
+1290,Code Practice,Day,2026-04-05,0,Sunday,2026-04
+1291,Code Practice,Day,2026-04-06,1,Monday,2026-04
+1292,Code Practice,Day,2026-04-07,1,Tuesday,2026-04
+1293,Code Practice,Day,2026-04-08,0,Wednesday,2026-04
+1294,Code Practice,Day,2026-04-09,1,Thursday,2026-04
+1295,Code Practice,Day,2026-04-10,0,Friday,2026-04
+1296,Code Practice,Day,2026-04-11,1,Saturday,2026-04
+1297,Code Practice,Day,2026-04-12,0,Sunday,2026-04
+1298,Code Practice,Day,2026-04-13,1,Monday,2026-04
+1299,Code Practice,Day,2026-04-14,1,Tuesday,2026-04
+1300,Code Practice,Day,2026-04-15,1,Wednesday,2026-04
+1301,Code Practice,Day,2026-04-16,1,Thursday,2026-04
+1302,Code Practice,Day,2026-04-17,1,Friday,2026-04
+1303,Code Practice,Day,2026-04-18,1,Saturday,2026-04
+1304,Code Practice,Day,2026-04-19,1,Sunday,2026-04
+1305,Code Practice,Day,2026-04-20,1,Monday,2026-04
+1306,Code Practice,Day,2026-04-21,0,Tuesday,2026-04
+1307,Code Practice,Day,2026-04-22,1,Wednesday,2026-04
+1308,Code Practice,Day,2026-04-23,1,Thursday,2026-04
+1309,Code Practice,Day,2026-04-24,1,Friday,2026-04
+1310,Code Practice,Day,2026-04-25,1,Saturday,2026-04
+1311,Code Practice,Day,2026-04-26,1,Sunday,2026-04
+1312,Code Practice,Day,2026-04-27,0,Monday,2026-04
+1313,Code Practice,Day,2026-04-28,0,Tuesday,2026-04
+1314,Code Practice,Day,2026-04-29,1,Wednesday,2026-04
+1315,Code Practice,Day,2026-04-30,1,Thursday,2026-04
+1316,Code Practice,Day,2026-05-01,0,Friday,2026-05
+1317,Code Practice,Day,2026-05-02,1,Saturday,2026-05
+1318,Code Practice,Day,2026-05-03,1,Sunday,2026-05
+1319,Code Practice,Day,2026-05-04,1,Monday,2026-05
+1320,Code Practice,Day,2026-05-05,1,Tuesday,2026-05
+1321,Code Practice,Day,2026-05-06,0,Wednesday,2026-05
+1322,Code Practice,Day,2026-05-07,1,Thursday,2026-05
+1323,Code Practice,Day,2026-05-08,1,Friday,2026-05
+1324,Review Inbox,Day,2025-11-01,1,Saturday,2025-11
+1325,Review Inbox,Day,2025-11-02,0,Sunday,2025-11
+1326,Review Inbox,Day,2025-11-03,0,Monday,2025-11
+1327,Review Inbox,Day,2025-11-04,1,Tuesday,2025-11
+1328,Review Inbox,Day,2025-11-05,1,Wednesday,2025-11
+1329,Review Inbox,Day,2025-11-06,1,Thursday,2025-11
+1330,Review Inbox,Day,2025-11-07,0,Friday,2025-11
+1331,Review Inbox,Day,2025-11-08,0,Saturday,2025-11
+1332,Review Inbox,Day,2025-11-09,1,Sunday,2025-11
+1333,Review Inbox,Day,2025-11-10,0,Monday,2025-11
+1334,Review Inbox,Day,2025-11-11,1,Tuesday,2025-11
+1335,Review Inbox,Day,2025-11-12,1,Wednesday,2025-11
+1336,Review Inbox,Day,2025-11-13,1,Thursday,2025-11
+1337,Review Inbox,Day,2025-11-14,1,Friday,2025-11
+1338,Review Inbox,Day,2025-11-15,1,Saturday,2025-11
+1339,Review Inbox,Day,2025-11-16,1,Sunday,2025-11
+1340,Review Inbox,Day,2025-11-17,1,Monday,2025-11
+1341,Review Inbox,Day,2025-11-18,1,Tuesday,2025-11
+1342,Review Inbox,Day,2025-11-19,1,Wednesday,2025-11
+1343,Review Inbox,Day,2025-11-20,1,Thursday,2025-11
+1344,Review Inbox,Day,2025-11-21,1,Friday,2025-11
+1345,Review Inbox,Day,2025-11-22,1,Saturday,2025-11
+1346,Review Inbox,Day,2025-11-23,1,Sunday,2025-11
+1347,Review Inbox,Day,2025-11-24,0,Monday,2025-11
+1348,Review Inbox,Day,2025-11-25,0,Tuesday,2025-11
+1349,Review Inbox,Day,2025-11-26,0,Wednesday,2025-11
+1350,Review Inbox,Day,2025-11-27,1,Thursday,2025-11
+1351,Review Inbox,Day,2025-11-28,1,Friday,2025-11
+1352,Review Inbox,Day,2025-11-29,0,Saturday,2025-11
+1353,Review Inbox,Day,2025-11-30,1,Sunday,2025-11
+1354,Review Inbox,Day,2025-12-01,1,Monday,2025-12
+1355,Review Inbox,Day,2025-12-02,1,Tuesday,2025-12
+1356,Review Inbox,Day,2025-12-03,0,Wednesday,2025-12
+1357,Review Inbox,Day,2025-12-04,1,Thursday,2025-12
+1358,Review Inbox,Day,2025-12-05,0,Friday,2025-12
+1359,Review Inbox,Day,2025-12-06,0,Saturday,2025-12
+1360,Review Inbox,Day,2025-12-07,1,Sunday,2025-12
+1361,Review Inbox,Day,2025-12-08,0,Monday,2025-12
+1362,Review Inbox,Day,2025-12-09,1,Tuesday,2025-12
+1363,Review Inbox,Day,2025-12-10,0,Wednesday,2025-12
+1364,Review Inbox,Day,2025-12-11,1,Thursday,2025-12
+1365,Review Inbox,Day,2025-12-12,0,Friday,2025-12
+1366,Review Inbox,Day,2025-12-13,1,Saturday,2025-12
+1367,Review Inbox,Day,2025-12-14,0,Sunday,2025-12
+1368,Review Inbox,Day,2025-12-15,1,Monday,2025-12
+1369,Review Inbox,Day,2025-12-16,1,Tuesday,2025-12
+1370,Review Inbox,Day,2025-12-17,0,Wednesday,2025-12
+1371,Review Inbox,Day,2025-12-18,0,Thursday,2025-12
+1372,Review Inbox,Day,2025-12-19,1,Friday,2025-12
+1373,Review Inbox,Day,2025-12-20,1,Saturday,2025-12
+1374,Review Inbox,Day,2025-12-21,1,Sunday,2025-12
+1375,Review Inbox,Day,2025-12-22,0,Monday,2025-12
+1376,Review Inbox,Day,2025-12-23,0,Tuesday,2025-12
+1377,Review Inbox,Day,2025-12-24,0,Wednesday,2025-12
+1378,Review Inbox,Day,2025-12-25,1,Thursday,2025-12
+1379,Review Inbox,Day,2025-12-26,1,Friday,2025-12
+1380,Review Inbox,Day,2025-12-27,0,Saturday,2025-12
+1381,Review Inbox,Day,2025-12-28,0,Sunday,2025-12
+1382,Review Inbox,Day,2025-12-29,1,Monday,2025-12
+1383,Review Inbox,Day,2025-12-30,0,Tuesday,2025-12
+1384,Review Inbox,Day,2025-12-31,1,Wednesday,2025-12
+1385,Review Inbox,Day,2026-01-01,1,Thursday,2026-01
+1386,Review Inbox,Day,2026-01-02,1,Friday,2026-01
+1387,Review Inbox,Day,2026-01-03,1,Saturday,2026-01
+1388,Review Inbox,Day,2026-01-04,1,Sunday,2026-01
+1389,Review Inbox,Day,2026-01-05,1,Monday,2026-01
+1390,Review Inbox,Day,2026-01-06,1,Tuesday,2026-01
+1391,Review Inbox,Day,2026-01-07,0,Wednesday,2026-01
+1392,Review Inbox,Day,2026-01-08,1,Thursday,2026-01
+1393,Review Inbox,Day,2026-01-09,1,Friday,2026-01
+1394,Review Inbox,Day,2026-01-10,1,Saturday,2026-01
+1395,Review Inbox,Day,2026-01-11,1,Sunday,2026-01
+1396,Review Inbox,Day,2026-01-12,0,Monday,2026-01
+1397,Review Inbox,Day,2026-01-13,1,Tuesday,2026-01
+1398,Review Inbox,Day,2026-01-14,0,Wednesday,2026-01
+1399,Review Inbox,Day,2026-01-15,1,Thursday,2026-01
+1400,Review Inbox,Day,2026-01-16,1,Friday,2026-01
+1401,Review Inbox,Day,2026-01-17,1,Saturday,2026-01
+1402,Review Inbox,Day,2026-01-18,1,Sunday,2026-01
+1403,Review Inbox,Day,2026-01-19,1,Monday,2026-01
+1404,Review Inbox,Day,2026-01-20,0,Tuesday,2026-01
+1405,Review Inbox,Day,2026-01-21,1,Wednesday,2026-01
+1406,Review Inbox,Day,2026-01-22,1,Thursday,2026-01
+1407,Review Inbox,Day,2026-01-23,1,Friday,2026-01
+1408,Review Inbox,Day,2026-01-24,1,Saturday,2026-01
+1409,Review Inbox,Day,2026-01-25,1,Sunday,2026-01
+1410,Review Inbox,Day,2026-01-26,1,Monday,2026-01
+1411,Review Inbox,Day,2026-01-27,1,Tuesday,2026-01
+1412,Review Inbox,Day,2026-01-28,1,Wednesday,2026-01
+1413,Review Inbox,Day,2026-01-29,1,Thursday,2026-01
+1414,Review Inbox,Day,2026-01-30,0,Friday,2026-01
+1415,Review Inbox,Day,2026-01-31,1,Saturday,2026-01
+1416,Review Inbox,Day,2026-02-01,1,Sunday,2026-02
+1417,Review Inbox,Day,2026-02-02,0,Monday,2026-02
+1418,Review Inbox,Day,2026-02-03,1,Tuesday,2026-02
+1419,Review Inbox,Day,2026-02-04,1,Wednesday,2026-02
+1420,Review Inbox,Day,2026-02-05,1,Thursday,2026-02
+1421,Review Inbox,Day,2026-02-06,1,Friday,2026-02
+1422,Review Inbox,Day,2026-02-07,1,Saturday,2026-02
+1423,Review Inbox,Day,2026-02-08,0,Sunday,2026-02
+1424,Review Inbox,Day,2026-02-09,0,Monday,2026-02
+1425,Review Inbox,Day,2026-02-10,0,Tuesday,2026-02
+1426,Review Inbox,Day,2026-02-11,0,Wednesday,2026-02
+1427,Review Inbox,Day,2026-02-12,1,Thursday,2026-02
+1428,Review Inbox,Day,2026-02-13,1,Friday,2026-02
+1429,Review Inbox,Day,2026-02-14,0,Saturday,2026-02
+1430,Review Inbox,Day,2026-02-15,0,Sunday,2026-02
+1431,Review Inbox,Day,2026-02-16,1,Monday,2026-02
+1432,Review Inbox,Day,2026-02-17,0,Tuesday,2026-02
+1433,Review Inbox,Day,2026-02-18,1,Wednesday,2026-02
+1434,Review Inbox,Day,2026-02-19,1,Thursday,2026-02
+1435,Review Inbox,Day,2026-02-20,1,Friday,2026-02
+1436,Review Inbox,Day,2026-02-21,1,Saturday,2026-02
+1437,Review Inbox,Day,2026-02-22,1,Sunday,2026-02
+1438,Review Inbox,Day,2026-02-23,1,Monday,2026-02
+1439,Review Inbox,Day,2026-02-24,1,Tuesday,2026-02
+1440,Review Inbox,Day,2026-02-25,1,Wednesday,2026-02
+1441,Review Inbox,Day,2026-02-26,1,Thursday,2026-02
+1442,Review Inbox,Day,2026-02-27,0,Friday,2026-02
+1443,Review Inbox,Day,2026-02-28,1,Saturday,2026-02
+1444,Review Inbox,Day,2026-03-01,1,Sunday,2026-03
+1445,Review Inbox,Day,2026-03-02,1,Monday,2026-03
+1446,Review Inbox,Day,2026-03-03,1,Tuesday,2026-03
+1447,Review Inbox,Day,2026-03-04,0,Wednesday,2026-03
+1448,Review Inbox,Day,2026-03-05,1,Thursday,2026-03
+1449,Review Inbox,Day,2026-03-06,1,Friday,2026-03
+1450,Review Inbox,Day,2026-03-07,1,Saturday,2026-03
+1451,Review Inbox,Day,2026-03-08,1,Sunday,2026-03
+1452,Review Inbox,Day,2026-03-09,1,Monday,2026-03
+1453,Review Inbox,Day,2026-03-10,1,Tuesday,2026-03
+1454,Review Inbox,Day,2026-03-11,1,Wednesday,2026-03
+1455,Review Inbox,Day,2026-03-12,1,Thursday,2026-03
+1456,Review Inbox,Day,2026-03-13,1,Friday,2026-03
+1457,Review Inbox,Day,2026-03-14,1,Saturday,2026-03
+1458,Review Inbox,Day,2026-03-15,0,Sunday,2026-03
+1459,Review Inbox,Day,2026-03-16,1,Monday,2026-03
+1460,Review Inbox,Day,2026-03-17,1,Tuesday,2026-03
+1461,Review Inbox,Day,2026-03-18,1,Wednesday,2026-03
+1462,Review Inbox,Day,2026-03-19,1,Thursday,2026-03
+1463,Review Inbox,Day,2026-03-20,1,Friday,2026-03
+1464,Review Inbox,Day,2026-03-21,0,Saturday,2026-03
+1465,Review Inbox,Day,2026-03-22,0,Sunday,2026-03
+1466,Review Inbox,Day,2026-03-23,1,Monday,2026-03
+1467,Review Inbox,Day,2026-03-24,1,Tuesday,2026-03
+1468,Review Inbox,Day,2026-03-25,1,Wednesday,2026-03
+1469,Review Inbox,Day,2026-03-26,1,Thursday,2026-03
+1470,Review Inbox,Day,2026-03-27,1,Friday,2026-03
+1471,Review Inbox,Day,2026-03-28,1,Saturday,2026-03
+1472,Review Inbox,Day,2026-03-29,1,Sunday,2026-03
+1473,Review Inbox,Day,2026-03-30,1,Monday,2026-03
+1474,Review Inbox,Day,2026-03-31,1,Tuesday,2026-03
+1475,Review Inbox,Day,2026-04-01,1,Wednesday,2026-04
+1476,Review Inbox,Day,2026-04-02,1,Thursday,2026-04
+1477,Review Inbox,Day,2026-04-03,1,Friday,2026-04
+1478,Review Inbox,Day,2026-04-04,0,Saturday,2026-04
+1479,Review Inbox,Day,2026-04-05,1,Sunday,2026-04
+1480,Review Inbox,Day,2026-04-06,0,Monday,2026-04
+1481,Review Inbox,Day,2026-04-07,1,Tuesday,2026-04
+1482,Review Inbox,Day,2026-04-08,1,Wednesday,2026-04
+1483,Review Inbox,Day,2026-04-09,1,Thursday,2026-04
+1484,Review Inbox,Day,2026-04-10,1,Friday,2026-04
+1485,Review Inbox,Day,2026-04-11,0,Saturday,2026-04
+1486,Review Inbox,Day,2026-04-12,1,Sunday,2026-04
+1487,Review Inbox,Day,2026-04-13,1,Monday,2026-04
+1488,Review Inbox,Day,2026-04-14,1,Tuesday,2026-04
+1489,Review Inbox,Day,2026-04-15,0,Wednesday,2026-04
+1490,Review Inbox,Day,2026-04-16,1,Thursday,2026-04
+1491,Review Inbox,Day,2026-04-17,0,Friday,2026-04
+1492,Review Inbox,Day,2026-04-18,0,Saturday,2026-04
+1493,Review Inbox,Day,2026-04-19,1,Sunday,2026-04
+1494,Review Inbox,Day,2026-04-20,0,Monday,2026-04
+1495,Review Inbox,Day,2026-04-21,0,Tuesday,2026-04
+1496,Review Inbox,Day,2026-04-22,1,Wednesday,2026-04
+1497,Review Inbox,Day,2026-04-23,1,Thursday,2026-04
+1498,Review Inbox,Day,2026-04-24,1,Friday,2026-04
+1499,Review Inbox,Day,2026-04-25,1,Saturday,2026-04
+1500,Review Inbox,Day,2026-04-26,1,Sunday,2026-04
+1501,Review Inbox,Day,2026-04-27,1,Monday,2026-04
+1502,Review Inbox,Day,2026-04-28,1,Tuesday,2026-04
+1503,Review Inbox,Day,2026-04-29,1,Wednesday,2026-04
+1504,Review Inbox,Day,2026-04-30,1,Thursday,2026-04
+1505,Review Inbox,Day,2026-05-01,0,Friday,2026-05
+1506,Review Inbox,Day,2026-05-02,0,Saturday,2026-05
+1507,Review Inbox,Day,2026-05-03,1,Sunday,2026-05
+1508,Review Inbox,Day,2026-05-04,1,Monday,2026-05
+1509,Review Inbox,Day,2026-05-05,1,Tuesday,2026-05
+1510,Review Inbox,Day,2026-05-06,0,Wednesday,2026-05
+1511,Review Inbox,Day,2026-05-07,1,Thursday,2026-05
+1512,Review Inbox,Day,2026-05-08,1,Friday,2026-05
+1513,Evening Walk,Night,2025-11-01,0,Saturday,2025-11
+1514,Evening Walk,Night,2025-11-02,0,Sunday,2025-11
+1515,Evening Walk,Night,2025-11-03,1,Monday,2025-11
+1516,Evening Walk,Night,2025-11-04,1,Tuesday,2025-11
+1517,Evening Walk,Night,2025-11-05,1,Wednesday,2025-11
+1518,Evening Walk,Night,2025-11-06,1,Thursday,2025-11
+1519,Evening Walk,Night,2025-11-07,1,Friday,2025-11
+1520,Evening Walk,Night,2025-11-08,1,Saturday,2025-11
+1521,Evening Walk,Night,2025-11-09,0,Sunday,2025-11
+1522,Evening Walk,Night,2025-11-10,1,Monday,2025-11
+1523,Evening Walk,Night,2025-11-11,1,Tuesday,2025-11
+1524,Evening Walk,Night,2025-11-12,0,Wednesday,2025-11
+1525,Evening Walk,Night,2025-11-13,1,Thursday,2025-11
+1526,Evening Walk,Night,2025-11-14,0,Friday,2025-11
+1527,Evening Walk,Night,2025-11-15,0,Saturday,2025-11
+1528,Evening Walk,Night,2025-11-16,1,Sunday,2025-11
+1529,Evening Walk,Night,2025-11-17,1,Monday,2025-11
+1530,Evening Walk,Night,2025-11-18,1,Tuesday,2025-11
+1531,Evening Walk,Night,2025-11-19,1,Wednesday,2025-11
+1532,Evening Walk,Night,2025-11-20,1,Thursday,2025-11
+1533,Evening Walk,Night,2025-11-21,1,Friday,2025-11
+1534,Evening Walk,Night,2025-11-22,0,Saturday,2025-11
+1535,Evening Walk,Night,2025-11-23,1,Sunday,2025-11
+1536,Evening Walk,Night,2025-11-24,0,Monday,2025-11
+1537,Evening Walk,Night,2025-11-25,1,Tuesday,2025-11
+1538,Evening Walk,Night,2025-11-26,1,Wednesday,2025-11
+1539,Evening Walk,Night,2025-11-27,0,Thursday,2025-11
+1540,Evening Walk,Night,2025-11-28,1,Friday,2025-11
+1541,Evening Walk,Night,2025-11-29,1,Saturday,2025-11
+1542,Evening Walk,Night,2025-11-30,0,Sunday,2025-11
+1543,Evening Walk,Night,2025-12-01,1,Monday,2025-12
+1544,Evening Walk,Night,2025-12-02,1,Tuesday,2025-12
+1545,Evening Walk,Night,2025-12-03,1,Wednesday,2025-12
+1546,Evening Walk,Night,2025-12-04,1,Thursday,2025-12
+1547,Evening Walk,Night,2025-12-05,0,Friday,2025-12
+1548,Evening Walk,Night,2025-12-06,0,Saturday,2025-12
+1549,Evening Walk,Night,2025-12-07,1,Sunday,2025-12
+1550,Evening Walk,Night,2025-12-08,0,Monday,2025-12
+1551,Evening Walk,Night,2025-12-09,1,Tuesday,2025-12
+1552,Evening Walk,Night,2025-12-10,1,Wednesday,2025-12
+1553,Evening Walk,Night,2025-12-11,1,Thursday,2025-12
+1554,Evening Walk,Night,2025-12-12,1,Friday,2025-12
+1555,Evening Walk,Night,2025-12-13,1,Saturday,2025-12
+1556,Evening Walk,Night,2025-12-14,1,Sunday,2025-12
+1557,Evening Walk,Night,2025-12-15,1,Monday,2025-12
+1558,Evening Walk,Night,2025-12-16,0,Tuesday,2025-12
+1559,Evening Walk,Night,2025-12-17,1,Wednesday,2025-12
+1560,Evening Walk,Night,2025-12-18,1,Thursday,2025-12
+1561,Evening Walk,Night,2025-12-19,0,Friday,2025-12
+1562,Evening Walk,Night,2025-12-20,1,Saturday,2025-12
+1563,Evening Walk,Night,2025-12-21,1,Sunday,2025-12
+1564,Evening Walk,Night,2025-12-22,0,Monday,2025-12
+1565,Evening Walk,Night,2025-12-23,1,Tuesday,2025-12
+1566,Evening Walk,Night,2025-12-24,1,Wednesday,2025-12
+1567,Evening Walk,Night,2025-12-25,1,Thursday,2025-12
+1568,Evening Walk,Night,2025-12-26,0,Friday,2025-12
+1569,Evening Walk,Night,2025-12-27,1,Saturday,2025-12
+1570,Evening Walk,Night,2025-12-28,0,Sunday,2025-12
+1571,Evening Walk,Night,2025-12-29,1,Monday,2025-12
+1572,Evening Walk,Night,2025-12-30,1,Tuesday,2025-12
+1573,Evening Walk,Night,2025-12-31,0,Wednesday,2025-12
+1574,Evening Walk,Night,2026-01-01,1,Thursday,2026-01
+1575,Evening Walk,Night,2026-01-02,1,Friday,2026-01
+1576,Evening Walk,Night,2026-01-03,1,Saturday,2026-01
+1577,Evening Walk,Night,2026-01-04,0,Sunday,2026-01
+1578,Evening Walk,Night,2026-01-05,1,Monday,2026-01
+1579,Evening Walk,Night,2026-01-06,1,Tuesday,2026-01
+1580,Evening Walk,Night,2026-01-07,1,Wednesday,2026-01
+1581,Evening Walk,Night,2026-01-08,0,Thursday,2026-01
+1582,Evening Walk,Night,2026-01-09,1,Friday,2026-01
+1583,Evening Walk,Night,2026-01-10,0,Saturday,2026-01
+1584,Evening Walk,Night,2026-01-11,1,Sunday,2026-01
+1585,Evening Walk,Night,2026-01-12,1,Monday,2026-01
+1586,Evening Walk,Night,2026-01-13,1,Tuesday,2026-01
+1587,Evening Walk,Night,2026-01-14,1,Wednesday,2026-01
+1588,Evening Walk,Night,2026-01-15,1,Thursday,2026-01
+1589,Evening Walk,Night,2026-01-16,0,Friday,2026-01
+1590,Evening Walk,Night,2026-01-17,0,Saturday,2026-01
+1591,Evening Walk,Night,2026-01-18,1,Sunday,2026-01
+1592,Evening Walk,Night,2026-01-19,0,Monday,2026-01
+1593,Evening Walk,Night,2026-01-20,1,Tuesday,2026-01
+1594,Evening Walk,Night,2026-01-21,0,Wednesday,2026-01
+1595,Evening Walk,Night,2026-01-22,1,Thursday,2026-01
+1596,Evening Walk,Night,2026-01-23,1,Friday,2026-01
+1597,Evening Walk,Night,2026-01-24,0,Saturday,2026-01
+1598,Evening Walk,Night,2026-01-25,0,Sunday,2026-01
+1599,Evening Walk,Night,2026-01-26,1,Monday,2026-01
+1600,Evening Walk,Night,2026-01-27,1,Tuesday,2026-01
+1601,Evening Walk,Night,2026-01-28,1,Wednesday,2026-01
+1602,Evening Walk,Night,2026-01-29,1,Thursday,2026-01
+1603,Evening Walk,Night,2026-01-30,1,Friday,2026-01
+1604,Evening Walk,Night,2026-01-31,1,Saturday,2026-01
+1605,Evening Walk,Night,2026-02-01,0,Sunday,2026-02
+1606,Evening Walk,Night,2026-02-02,1,Monday,2026-02
+1607,Evening Walk,Night,2026-02-03,1,Tuesday,2026-02
+1608,Evening Walk,Night,2026-02-04,1,Wednesday,2026-02
+1609,Evening Walk,Night,2026-02-05,1,Thursday,2026-02
+1610,Evening Walk,Night,2026-02-06,1,Friday,2026-02
+1611,Evening Walk,Night,2026-02-07,1,Saturday,2026-02
+1612,Evening Walk,Night,2026-02-08,0,Sunday,2026-02
+1613,Evening Walk,Night,2026-02-09,0,Monday,2026-02
+1614,Evening Walk,Night,2026-02-10,1,Tuesday,2026-02
+1615,Evening Walk,Night,2026-02-11,1,Wednesday,2026-02
+1616,Evening Walk,Night,2026-02-12,1,Thursday,2026-02
+1617,Evening Walk,Night,2026-02-13,0,Friday,2026-02
+1618,Evening Walk,Night,2026-02-14,0,Saturday,2026-02
+1619,Evening Walk,Night,2026-02-15,1,Sunday,2026-02
+1620,Evening Walk,Night,2026-02-16,1,Monday,2026-02
+1621,Evening Walk,Night,2026-02-17,0,Tuesday,2026-02
+1622,Evening Walk,Night,2026-02-18,1,Wednesday,2026-02
+1623,Evening Walk,Night,2026-02-19,1,Thursday,2026-02
+1624,Evening Walk,Night,2026-02-20,0,Friday,2026-02
+1625,Evening Walk,Night,2026-02-21,0,Saturday,2026-02
+1626,Evening Walk,Night,2026-02-22,1,Sunday,2026-02
+1627,Evening Walk,Night,2026-02-23,1,Monday,2026-02
+1628,Evening Walk,Night,2026-02-24,1,Tuesday,2026-02
+1629,Evening Walk,Night,2026-02-25,1,Wednesday,2026-02
+1630,Evening Walk,Night,2026-02-26,1,Thursday,2026-02
+1631,Evening Walk,Night,2026-02-27,1,Friday,2026-02
+1632,Evening Walk,Night,2026-02-28,0,Saturday,2026-02
+1633,Evening Walk,Night,2026-03-01,0,Sunday,2026-03
+1634,Evening Walk,Night,2026-03-02,1,Monday,2026-03
+1635,Evening Walk,Night,2026-03-03,1,Tuesday,2026-03
+1636,Evening Walk,Night,2026-03-04,1,Wednesday,2026-03
+1637,Evening Walk,Night,2026-03-05,1,Thursday,2026-03
+1638,Evening Walk,Night,2026-03-06,1,Friday,2026-03
+1639,Evening Walk,Night,2026-03-07,1,Saturday,2026-03
+1640,Evening Walk,Night,2026-03-08,0,Sunday,2026-03
+1641,Evening Walk,Night,2026-03-09,1,Monday,2026-03
+1642,Evening Walk,Night,2026-03-10,0,Tuesday,2026-03
+1643,Evening Walk,Night,2026-03-11,0,Wednesday,2026-03
+1644,Evening Walk,Night,2026-03-12,1,Thursday,2026-03
+1645,Evening Walk,Night,2026-03-13,1,Friday,2026-03
+1646,Evening Walk,Night,2026-03-14,0,Saturday,2026-03
+1647,Evening Walk,Night,2026-03-15,0,Sunday,2026-03
+1648,Evening Walk,Night,2026-03-16,1,Monday,2026-03
+1649,Evening Walk,Night,2026-03-17,1,Tuesday,2026-03
+1650,Evening Walk,Night,2026-03-18,1,Wednesday,2026-03
+1651,Evening Walk,Night,2026-03-19,0,Thursday,2026-03
+1652,Evening Walk,Night,2026-03-20,1,Friday,2026-03
+1653,Evening Walk,Night,2026-03-21,1,Saturday,2026-03
+1654,Evening Walk,Night,2026-03-22,0,Sunday,2026-03
+1655,Evening Walk,Night,2026-03-23,1,Monday,2026-03
+1656,Evening Walk,Night,2026-03-24,1,Tuesday,2026-03
+1657,Evening Walk,Night,2026-03-25,1,Wednesday,2026-03
+1658,Evening Walk,Night,2026-03-26,0,Thursday,2026-03
+1659,Evening Walk,Night,2026-03-27,1,Friday,2026-03
+1660,Evening Walk,Night,2026-03-28,0,Saturday,2026-03
+1661,Evening Walk,Night,2026-03-29,0,Sunday,2026-03
+1662,Evening Walk,Night,2026-03-30,1,Monday,2026-03
+1663,Evening Walk,Night,2026-03-31,1,Tuesday,2026-03
+1664,Evening Walk,Night,2026-04-01,1,Wednesday,2026-04
+1665,Evening Walk,Night,2026-04-02,1,Thursday,2026-04
+1666,Evening Walk,Night,2026-04-03,0,Friday,2026-04
+1667,Evening Walk,Night,2026-04-04,0,Saturday,2026-04
+1668,Evening Walk,Night,2026-04-05,1,Sunday,2026-04
+1669,Evening Walk,Night,2026-04-06,1,Monday,2026-04
+1670,Evening Walk,Night,2026-04-07,1,Tuesday,2026-04
+1671,Evening Walk,Night,2026-04-08,0,Wednesday,2026-04
+1672,Evening Walk,Night,2026-04-09,1,Thursday,2026-04
+1673,Evening Walk,Night,2026-04-10,1,Friday,2026-04
+1674,Evening Walk,Night,2026-04-11,1,Saturday,2026-04
+1675,Evening Walk,Night,2026-04-12,1,Sunday,2026-04
+1676,Evening Walk,Night,2026-04-13,1,Monday,2026-04
+1677,Evening Walk,Night,2026-04-14,1,Tuesday,2026-04
+1678,Evening Walk,Night,2026-04-15,1,Wednesday,2026-04
+1679,Evening Walk,Night,2026-04-16,0,Thursday,2026-04
+1680,Evening Walk,Night,2026-04-17,1,Friday,2026-04
+1681,Evening Walk,Night,2026-04-18,1,Saturday,2026-04
+1682,Evening Walk,Night,2026-04-19,1,Sunday,2026-04
+1683,Evening Walk,Night,2026-04-20,1,Monday,2026-04
+1684,Evening Walk,Night,2026-04-21,1,Tuesday,2026-04
+1685,Evening Walk,Night,2026-04-22,1,Wednesday,2026-04
+1686,Evening Walk,Night,2026-04-23,1,Thursday,2026-04
+1687,Evening Walk,Night,2026-04-24,1,Friday,2026-04
+1688,Evening Walk,Night,2026-04-25,1,Saturday,2026-04
+1689,Evening Walk,Night,2026-04-26,1,Sunday,2026-04
+1690,Evening Walk,Night,2026-04-27,0,Monday,2026-04
+1691,Evening Walk,Night,2026-04-28,1,Tuesday,2026-04
+1692,Evening Walk,Night,2026-04-29,1,Wednesday,2026-04
+1693,Evening Walk,Night,2026-04-30,1,Thursday,2026-04
+1694,Evening Walk,Night,2026-05-01,1,Friday,2026-05
+1695,Evening Walk,Night,2026-05-02,1,Saturday,2026-05
+1696,Evening Walk,Night,2026-05-03,1,Sunday,2026-05
+1697,Evening Walk,Night,2026-05-04,1,Monday,2026-05
+1698,Evening Walk,Night,2026-05-05,1,Tuesday,2026-05
+1699,Evening Walk,Night,2026-05-06,1,Wednesday,2026-05
+1700,Evening Walk,Night,2026-05-07,0,Thursday,2026-05
+1701,Evening Walk,Night,2026-05-08,0,Friday,2026-05
+1702,Gratitude Log,Night,2025-11-01,1,Saturday,2025-11
+1703,Gratitude Log,Night,2025-11-02,1,Sunday,2025-11
+1704,Gratitude Log,Night,2025-11-03,1,Monday,2025-11
+1705,Gratitude Log,Night,2025-11-04,1,Tuesday,2025-11
+1706,Gratitude Log,Night,2025-11-05,1,Wednesday,2025-11
+1707,Gratitude Log,Night,2025-11-06,1,Thursday,2025-11
+1708,Gratitude Log,Night,2025-11-07,1,Friday,2025-11
+1709,Gratitude Log,Night,2025-11-08,1,Saturday,2025-11
+1710,Gratitude Log,Night,2025-11-09,1,Sunday,2025-11
+1711,Gratitude Log,Night,2025-11-10,1,Monday,2025-11
+1712,Gratitude Log,Night,2025-11-11,0,Tuesday,2025-11
+1713,Gratitude Log,Night,2025-11-12,1,Wednesday,2025-11
+1714,Gratitude Log,Night,2025-11-13,1,Thursday,2025-11
+1715,Gratitude Log,Night,2025-11-14,1,Friday,2025-11
+1716,Gratitude Log,Night,2025-11-15,1,Saturday,2025-11
+1717,Gratitude Log,Night,2025-11-16,1,Sunday,2025-11
+1718,Gratitude Log,Night,2025-11-17,1,Monday,2025-11
+1719,Gratitude Log,Night,2025-11-18,1,Tuesday,2025-11
+1720,Gratitude Log,Night,2025-11-19,1,Wednesday,2025-11
+1721,Gratitude Log,Night,2025-11-20,1,Thursday,2025-11
+1722,Gratitude Log,Night,2025-11-21,1,Friday,2025-11
+1723,Gratitude Log,Night,2025-11-22,1,Saturday,2025-11
+1724,Gratitude Log,Night,2025-11-23,1,Sunday,2025-11
+1725,Gratitude Log,Night,2025-11-24,1,Monday,2025-11
+1726,Gratitude Log,Night,2025-11-25,1,Tuesday,2025-11
+1727,Gratitude Log,Night,2025-11-26,0,Wednesday,2025-11
+1728,Gratitude Log,Night,2025-11-27,1,Thursday,2025-11
+1729,Gratitude Log,Night,2025-11-28,1,Friday,2025-11
+1730,Gratitude Log,Night,2025-11-29,1,Saturday,2025-11
+1731,Gratitude Log,Night,2025-11-30,0,Sunday,2025-11
+1732,Gratitude Log,Night,2025-12-01,0,Monday,2025-12
+1733,Gratitude Log,Night,2025-12-02,1,Tuesday,2025-12
+1734,Gratitude Log,Night,2025-12-03,1,Wednesday,2025-12
+1735,Gratitude Log,Night,2025-12-04,1,Thursday,2025-12
+1736,Gratitude Log,Night,2025-12-05,1,Friday,2025-12
+1737,Gratitude Log,Night,2025-12-06,0,Saturday,2025-12
+1738,Gratitude Log,Night,2025-12-07,1,Sunday,2025-12
+1739,Gratitude Log,Night,2025-12-08,1,Monday,2025-12
+1740,Gratitude Log,Night,2025-12-09,0,Tuesday,2025-12
+1741,Gratitude Log,Night,2025-12-10,0,Wednesday,2025-12
+1742,Gratitude Log,Night,2025-12-11,1,Thursday,2025-12
+1743,Gratitude Log,Night,2025-12-12,1,Friday,2025-12
+1744,Gratitude Log,Night,2025-12-13,1,Saturday,2025-12
+1745,Gratitude Log,Night,2025-12-14,0,Sunday,2025-12
+1746,Gratitude Log,Night,2025-12-15,0,Monday,2025-12
+1747,Gratitude Log,Night,2025-12-16,1,Tuesday,2025-12
+1748,Gratitude Log,Night,2025-12-17,1,Wednesday,2025-12
+1749,Gratitude Log,Night,2025-12-18,0,Thursday,2025-12
+1750,Gratitude Log,Night,2025-12-19,1,Friday,2025-12
+1751,Gratitude Log,Night,2025-12-20,1,Saturday,2025-12
+1752,Gratitude Log,Night,2025-12-21,0,Sunday,2025-12
+1753,Gratitude Log,Night,2025-12-22,1,Monday,2025-12
+1754,Gratitude Log,Night,2025-12-23,1,Tuesday,2025-12
+1755,Gratitude Log,Night,2025-12-24,0,Wednesday,2025-12
+1756,Gratitude Log,Night,2025-12-25,0,Thursday,2025-12
+1757,Gratitude Log,Night,2025-12-26,1,Friday,2025-12
+1758,Gratitude Log,Night,2025-12-27,1,Saturday,2025-12
+1759,Gratitude Log,Night,2025-12-28,1,Sunday,2025-12
+1760,Gratitude Log,Night,2025-12-29,1,Monday,2025-12
+1761,Gratitude Log,Night,2025-12-30,1,Tuesday,2025-12
+1762,Gratitude Log,Night,2025-12-31,0,Wednesday,2025-12
+1763,Gratitude Log,Night,2026-01-01,1,Thursday,2026-01
+1764,Gratitude Log,Night,2026-01-02,1,Friday,2026-01
+1765,Gratitude Log,Night,2026-01-03,1,Saturday,2026-01
+1766,Gratitude Log,Night,2026-01-04,0,Sunday,2026-01
+1767,Gratitude Log,Night,2026-01-05,1,Monday,2026-01
+1768,Gratitude Log,Night,2026-01-06,1,Tuesday,2026-01
+1769,Gratitude Log,Night,2026-01-07,1,Wednesday,2026-01
+1770,Gratitude Log,Night,2026-01-08,1,Thursday,2026-01
+1771,Gratitude Log,Night,2026-01-09,1,Friday,2026-01
+1772,Gratitude Log,Night,2026-01-10,1,Saturday,2026-01
+1773,Gratitude Log,Night,2026-01-11,1,Sunday,2026-01
+1774,Gratitude Log,Night,2026-01-12,1,Monday,2026-01
+1775,Gratitude Log,Night,2026-01-13,1,Tuesday,2026-01
+1776,Gratitude Log,Night,2026-01-14,1,Wednesday,2026-01
+1777,Gratitude Log,Night,2026-01-15,1,Thursday,2026-01
+1778,Gratitude Log,Night,2026-01-16,1,Friday,2026-01
+1779,Gratitude Log,Night,2026-01-17,1,Saturday,2026-01
+1780,Gratitude Log,Night,2026-01-18,1,Sunday,2026-01
+1781,Gratitude Log,Night,2026-01-19,1,Monday,2026-01
+1782,Gratitude Log,Night,2026-01-20,1,Tuesday,2026-01
+1783,Gratitude Log,Night,2026-01-21,1,Wednesday,2026-01
+1784,Gratitude Log,Night,2026-01-22,1,Thursday,2026-01
+1785,Gratitude Log,Night,2026-01-23,0,Friday,2026-01
+1786,Gratitude Log,Night,2026-01-24,0,Saturday,2026-01
+1787,Gratitude Log,Night,2026-01-25,1,Sunday,2026-01
+1788,Gratitude Log,Night,2026-01-26,1,Monday,2026-01
+1789,Gratitude Log,Night,2026-01-27,1,Tuesday,2026-01
+1790,Gratitude Log,Night,2026-01-28,1,Wednesday,2026-01
+1791,Gratitude Log,Night,2026-01-29,1,Thursday,2026-01
+1792,Gratitude Log,Night,2026-01-30,1,Friday,2026-01
+1793,Gratitude Log,Night,2026-01-31,1,Saturday,2026-01
+1794,Gratitude Log,Night,2026-02-01,0,Sunday,2026-02
+1795,Gratitude Log,Night,2026-02-02,1,Monday,2026-02
+1796,Gratitude Log,Night,2026-02-03,0,Tuesday,2026-02
+1797,Gratitude Log,Night,2026-02-04,0,Wednesday,2026-02
+1798,Gratitude Log,Night,2026-02-05,1,Thursday,2026-02
+1799,Gratitude Log,Night,2026-02-06,1,Friday,2026-02
+1800,Gratitude Log,Night,2026-02-07,1,Saturday,2026-02
+1801,Gratitude Log,Night,2026-02-08,1,Sunday,2026-02
+1802,Gratitude Log,Night,2026-02-09,1,Monday,2026-02
+1803,Gratitude Log,Night,2026-02-10,1,Tuesday,2026-02
+1804,Gratitude Log,Night,2026-02-11,1,Wednesday,2026-02
+1805,Gratitude Log,Night,2026-02-12,0,Thursday,2026-02
+1806,Gratitude Log,Night,2026-02-13,1,Friday,2026-02
+1807,Gratitude Log,Night,2026-02-14,0,Saturday,2026-02
+1808,Gratitude Log,Night,2026-02-15,1,Sunday,2026-02
+1809,Gratitude Log,Night,2026-02-16,0,Monday,2026-02
+1810,Gratitude Log,Night,2026-02-17,1,Tuesday,2026-02
+1811,Gratitude Log,Night,2026-02-18,1,Wednesday,2026-02
+1812,Gratitude Log,Night,2026-02-19,0,Thursday,2026-02
+1813,Gratitude Log,Night,2026-02-20,1,Friday,2026-02
+1814,Gratitude Log,Night,2026-02-21,0,Saturday,2026-02
+1815,Gratitude Log,Night,2026-02-22,1,Sunday,2026-02
+1816,Gratitude Log,Night,2026-02-23,1,Monday,2026-02
+1817,Gratitude Log,Night,2026-02-24,1,Tuesday,2026-02
+1818,Gratitude Log,Night,2026-02-25,0,Wednesday,2026-02
+1819,Gratitude Log,Night,2026-02-26,1,Thursday,2026-02
+1820,Gratitude Log,Night,2026-02-27,1,Friday,2026-02
+1821,Gratitude Log,Night,2026-02-28,0,Saturday,2026-02
+1822,Gratitude Log,Night,2026-03-01,1,Sunday,2026-03
+1823,Gratitude Log,Night,2026-03-02,1,Monday,2026-03
+1824,Gratitude Log,Night,2026-03-03,1,Tuesday,2026-03
+1825,Gratitude Log,Night,2026-03-04,1,Wednesday,2026-03
+1826,Gratitude Log,Night,2026-03-05,1,Thursday,2026-03
+1827,Gratitude Log,Night,2026-03-06,1,Friday,2026-03
+1828,Gratitude Log,Night,2026-03-07,1,Saturday,2026-03
+1829,Gratitude Log,Night,2026-03-08,1,Sunday,2026-03
+1830,Gratitude Log,Night,2026-03-09,1,Monday,2026-03
+1831,Gratitude Log,Night,2026-03-10,0,Tuesday,2026-03
+1832,Gratitude Log,Night,2026-03-11,1,Wednesday,2026-03
+1833,Gratitude Log,Night,2026-03-12,1,Thursday,2026-03
+1834,Gratitude Log,Night,2026-03-13,0,Friday,2026-03
+1835,Gratitude Log,Night,2026-03-14,0,Saturday,2026-03
+1836,Gratitude Log,Night,2026-03-15,0,Sunday,2026-03
+1837,Gratitude Log,Night,2026-03-16,1,Monday,2026-03
+1838,Gratitude Log,Night,2026-03-17,0,Tuesday,2026-03
+1839,Gratitude Log,Night,2026-03-18,1,Wednesday,2026-03
+1840,Gratitude Log,Night,2026-03-19,1,Thursday,2026-03
+1841,Gratitude Log,Night,2026-03-20,1,Friday,2026-03
+1842,Gratitude Log,Night,2026-03-21,1,Saturday,2026-03
+1843,Gratitude Log,Night,2026-03-22,0,Sunday,2026-03
+1844,Gratitude Log,Night,2026-03-23,1,Monday,2026-03
+1845,Gratitude Log,Night,2026-03-24,1,Tuesday,2026-03
+1846,Gratitude Log,Night,2026-03-25,0,Wednesday,2026-03
+1847,Gratitude Log,Night,2026-03-26,1,Thursday,2026-03
+1848,Gratitude Log,Night,2026-03-27,1,Friday,2026-03
+1849,Gratitude Log,Night,2026-03-28,1,Saturday,2026-03
+1850,Gratitude Log,Night,2026-03-29,1,Sunday,2026-03
+1851,Gratitude Log,Night,2026-03-30,1,Monday,2026-03
+1852,Gratitude Log,Night,2026-03-31,0,Tuesday,2026-03
+1853,Gratitude Log,Night,2026-04-01,1,Wednesday,2026-04
+1854,Gratitude Log,Night,2026-04-02,1,Thursday,2026-04
+1855,Gratitude Log,Night,2026-04-03,0,Friday,2026-04
+1856,Gratitude Log,Night,2026-04-04,1,Saturday,2026-04
+1857,Gratitude Log,Night,2026-04-05,1,Sunday,2026-04
+1858,Gratitude Log,Night,2026-04-06,1,Monday,2026-04
+1859,Gratitude Log,Night,2026-04-07,1,Tuesday,2026-04
+1860,Gratitude Log,Night,2026-04-08,1,Wednesday,2026-04
+1861,Gratitude Log,Night,2026-04-09,1,Thursday,2026-04
+1862,Gratitude Log,Night,2026-04-10,1,Friday,2026-04
+1863,Gratitude Log,Night,2026-04-11,0,Saturday,2026-04
+1864,Gratitude Log,Night,2026-04-12,1,Sunday,2026-04
+1865,Gratitude Log,Night,2026-04-13,0,Monday,2026-04
+1866,Gratitude Log,Night,2026-04-14,1,Tuesday,2026-04
+1867,Gratitude Log,Night,2026-04-15,1,Wednesday,2026-04
+1868,Gratitude Log,Night,2026-04-16,1,Thursday,2026-04
+1869,Gratitude Log,Night,2026-04-17,0,Friday,2026-04
+1870,Gratitude Log,Night,2026-04-18,1,Saturday,2026-04
+1871,Gratitude Log,Night,2026-04-19,1,Sunday,2026-04
+1872,Gratitude Log,Night,2026-04-20,0,Monday,2026-04
+1873,Gratitude Log,Night,2026-04-21,1,Tuesday,2026-04
+1874,Gratitude Log,Night,2026-04-22,0,Wednesday,2026-04
+1875,Gratitude Log,Night,2026-04-23,1,Thursday,2026-04
+1876,Gratitude Log,Night,2026-04-24,0,Friday,2026-04
+1877,Gratitude Log,Night,2026-04-25,0,Saturday,2026-04
+1878,Gratitude Log,Night,2026-04-26,0,Sunday,2026-04
+1879,Gratitude Log,Night,2026-04-27,1,Monday,2026-04
+1880,Gratitude Log,Night,2026-04-28,1,Tuesday,2026-04
+1881,Gratitude Log,Night,2026-04-29,0,Wednesday,2026-04
+1882,Gratitude Log,Night,2026-04-30,1,Thursday,2026-04
+1883,Gratitude Log,Night,2026-05-01,1,Friday,2026-05
+1884,Gratitude Log,Night,2026-05-02,0,Saturday,2026-05
+1885,Gratitude Log,Night,2026-05-03,1,Sunday,2026-05
+1886,Gratitude Log,Night,2026-05-04,1,Monday,2026-05
+1887,Gratitude Log,Night,2026-05-05,1,Tuesday,2026-05
+1888,Gratitude Log,Night,2026-05-06,1,Wednesday,2026-05
+1889,Gratitude Log,Night,2026-05-07,1,Thursday,2026-05
+1890,Gratitude Log,Night,2026-05-08,1,Friday,2026-05
+1891,Stretch Routine,Night,2025-11-01,1,Saturday,2025-11
+1892,Stretch Routine,Night,2025-11-02,0,Sunday,2025-11
+1893,Stretch Routine,Night,2025-11-03,0,Monday,2025-11
+1894,Stretch Routine,Night,2025-11-04,1,Tuesday,2025-11
+1895,Stretch Routine,Night,2025-11-05,1,Wednesday,2025-11
+1896,Stretch Routine,Night,2025-11-06,1,Thursday,2025-11
+1897,Stretch Routine,Night,2025-11-07,1,Friday,2025-11
+1898,Stretch Routine,Night,2025-11-08,1,Saturday,2025-11
+1899,Stretch Routine,Night,2025-11-09,0,Sunday,2025-11
+1900,Stretch Routine,Night,2025-11-10,1,Monday,2025-11
+1901,Stretch Routine,Night,2025-11-11,0,Tuesday,2025-11
+1902,Stretch Routine,Night,2025-11-12,1,Wednesday,2025-11
+1903,Stretch Routine,Night,2025-11-13,1,Thursday,2025-11
+1904,Stretch Routine,Night,2025-11-14,1,Friday,2025-11
+1905,Stretch Routine,Night,2025-11-15,0,Saturday,2025-11
+1906,Stretch Routine,Night,2025-11-16,1,Sunday,2025-11
+1907,Stretch Routine,Night,2025-11-17,1,Monday,2025-11
+1908,Stretch Routine,Night,2025-11-18,1,Tuesday,2025-11
+1909,Stretch Routine,Night,2025-11-19,1,Wednesday,2025-11
+1910,Stretch Routine,Night,2025-11-20,1,Thursday,2025-11
+1911,Stretch Routine,Night,2025-11-21,1,Friday,2025-11
+1912,Stretch Routine,Night,2025-11-22,1,Saturday,2025-11
+1913,Stretch Routine,Night,2025-11-23,1,Sunday,2025-11
+1914,Stretch Routine,Night,2025-11-24,1,Monday,2025-11
+1915,Stretch Routine,Night,2025-11-25,0,Tuesday,2025-11
+1916,Stretch Routine,Night,2025-11-26,1,Wednesday,2025-11
+1917,Stretch Routine,Night,2025-11-27,0,Thursday,2025-11
+1918,Stretch Routine,Night,2025-11-28,1,Friday,2025-11
+1919,Stretch Routine,Night,2025-11-29,1,Saturday,2025-11
+1920,Stretch Routine,Night,2025-11-30,1,Sunday,2025-11
+1921,Stretch Routine,Night,2025-12-01,1,Monday,2025-12
+1922,Stretch Routine,Night,2025-12-02,0,Tuesday,2025-12
+1923,Stretch Routine,Night,2025-12-03,0,Wednesday,2025-12
+1924,Stretch Routine,Night,2025-12-04,1,Thursday,2025-12
+1925,Stretch Routine,Night,2025-12-05,1,Friday,2025-12
+1926,Stretch Routine,Night,2025-12-06,1,Saturday,2025-12
+1927,Stretch Routine,Night,2025-12-07,1,Sunday,2025-12
+1928,Stretch Routine,Night,2025-12-08,1,Monday,2025-12
+1929,Stretch Routine,Night,2025-12-09,1,Tuesday,2025-12
+1930,Stretch Routine,Night,2025-12-10,0,Wednesday,2025-12
+1931,Stretch Routine,Night,2025-12-11,1,Thursday,2025-12
+1932,Stretch Routine,Night,2025-12-12,0,Friday,2025-12
+1933,Stretch Routine,Night,2025-12-13,0,Saturday,2025-12
+1934,Stretch Routine,Night,2025-12-14,0,Sunday,2025-12
+1935,Stretch Routine,Night,2025-12-15,1,Monday,2025-12
+1936,Stretch Routine,Night,2025-12-16,1,Tuesday,2025-12
+1937,Stretch Routine,Night,2025-12-17,1,Wednesday,2025-12
+1938,Stretch Routine,Night,2025-12-18,1,Thursday,2025-12
+1939,Stretch Routine,Night,2025-12-19,1,Friday,2025-12
+1940,Stretch Routine,Night,2025-12-20,0,Saturday,2025-12
+1941,Stretch Routine,Night,2025-12-21,0,Sunday,2025-12
+1942,Stretch Routine,Night,2025-12-22,0,Monday,2025-12
+1943,Stretch Routine,Night,2025-12-23,0,Tuesday,2025-12
+1944,Stretch Routine,Night,2025-12-24,1,Wednesday,2025-12
+1945,Stretch Routine,Night,2025-12-25,1,Thursday,2025-12
+1946,Stretch Routine,Night,2025-12-26,1,Friday,2025-12
+1947,Stretch Routine,Night,2025-12-27,1,Saturday,2025-12
+1948,Stretch Routine,Night,2025-12-28,0,Sunday,2025-12
+1949,Stretch Routine,Night,2025-12-29,1,Monday,2025-12
+1950,Stretch Routine,Night,2025-12-30,1,Tuesday,2025-12
+1951,Stretch Routine,Night,2025-12-31,1,Wednesday,2025-12
+1952,Stretch Routine,Night,2026-01-01,1,Thursday,2026-01
+1953,Stretch Routine,Night,2026-01-02,1,Friday,2026-01
+1954,Stretch Routine,Night,2026-01-03,0,Saturday,2026-01
+1955,Stretch Routine,Night,2026-01-04,1,Sunday,2026-01
+1956,Stretch Routine,Night,2026-01-05,1,Monday,2026-01
+1957,Stretch Routine,Night,2026-01-06,1,Tuesday,2026-01
+1958,Stretch Routine,Night,2026-01-07,1,Wednesday,2026-01
+1959,Stretch Routine,Night,2026-01-08,1,Thursday,2026-01
+1960,Stretch Routine,Night,2026-01-09,0,Friday,2026-01
+1961,Stretch Routine,Night,2026-01-10,1,Saturday,2026-01
+1962,Stretch Routine,Night,2026-01-11,1,Sunday,2026-01
+1963,Stretch Routine,Night,2026-01-12,1,Monday,2026-01
+1964,Stretch Routine,Night,2026-01-13,1,Tuesday,2026-01
+1965,Stretch Routine,Night,2026-01-14,1,Wednesday,2026-01
+1966,Stretch Routine,Night,2026-01-15,1,Thursday,2026-01
+1967,Stretch Routine,Night,2026-01-16,1,Friday,2026-01
+1968,Stretch Routine,Night,2026-01-17,0,Saturday,2026-01
+1969,Stretch Routine,Night,2026-01-18,1,Sunday,2026-01
+1970,Stretch Routine,Night,2026-01-19,1,Monday,2026-01
+1971,Stretch Routine,Night,2026-01-20,1,Tuesday,2026-01
+1972,Stretch Routine,Night,2026-01-21,1,Wednesday,2026-01
+1973,Stretch Routine,Night,2026-01-22,0,Thursday,2026-01
+1974,Stretch Routine,Night,2026-01-23,0,Friday,2026-01
+1975,Stretch Routine,Night,2026-01-24,1,Saturday,2026-01
+1976,Stretch Routine,Night,2026-01-25,0,Sunday,2026-01
+1977,Stretch Routine,Night,2026-01-26,0,Monday,2026-01
+1978,Stretch Routine,Night,2026-01-27,0,Tuesday,2026-01
+1979,Stretch Routine,Night,2026-01-28,1,Wednesday,2026-01
+1980,Stretch Routine,Night,2026-01-29,1,Thursday,2026-01
+1981,Stretch Routine,Night,2026-01-30,1,Friday,2026-01
+1982,Stretch Routine,Night,2026-01-31,0,Saturday,2026-01
+1983,Stretch Routine,Night,2026-02-01,1,Sunday,2026-02
+1984,Stretch Routine,Night,2026-02-02,1,Monday,2026-02
+1985,Stretch Routine,Night,2026-02-03,1,Tuesday,2026-02
+1986,Stretch Routine,Night,2026-02-04,1,Wednesday,2026-02
+1987,Stretch Routine,Night,2026-02-05,1,Thursday,2026-02
+1988,Stretch Routine,Night,2026-02-06,0,Friday,2026-02
+1989,Stretch Routine,Night,2026-02-07,1,Saturday,2026-02
+1990,Stretch Routine,Night,2026-02-08,0,Sunday,2026-02
+1991,Stretch Routine,Night,2026-02-09,1,Monday,2026-02
+1992,Stretch Routine,Night,2026-02-10,1,Tuesday,2026-02
+1993,Stretch Routine,Night,2026-02-11,1,Wednesday,2026-02
+1994,Stretch Routine,Night,2026-02-12,1,Thursday,2026-02
+1995,Stretch Routine,Night,2026-02-13,1,Friday,2026-02
+1996,Stretch Routine,Night,2026-02-14,0,Saturday,2026-02
+1997,Stretch Routine,Night,2026-02-15,1,Sunday,2026-02
+1998,Stretch Routine,Night,2026-02-16,0,Monday,2026-02
+1999,Stretch Routine,Night,2026-02-17,1,Tuesday,2026-02
+2000,Stretch Routine,Night,2026-02-18,1,Wednesday,2026-02
+2001,Stretch Routine,Night,2026-02-19,1,Thursday,2026-02
+2002,Stretch Routine,Night,2026-02-20,1,Friday,2026-02
+2003,Stretch Routine,Night,2026-02-21,1,Saturday,2026-02
+2004,Stretch Routine,Night,2026-02-22,1,Sunday,2026-02
+2005,Stretch Routine,Night,2026-02-23,1,Monday,2026-02
+2006,Stretch Routine,Night,2026-02-24,1,Tuesday,2026-02
+2007,Stretch Routine,Night,2026-02-25,1,Wednesday,2026-02
+2008,Stretch Routine,Night,2026-02-26,0,Thursday,2026-02
+2009,Stretch Routine,Night,2026-02-27,1,Friday,2026-02
+2010,Stretch Routine,Night,2026-02-28,1,Saturday,2026-02
+2011,Stretch Routine,Night,2026-03-01,0,Sunday,2026-03
+2012,Stretch Routine,Night,2026-03-02,1,Monday,2026-03
+2013,Stretch Routine,Night,2026-03-03,1,Tuesday,2026-03
+2014,Stretch Routine,Night,2026-03-04,1,Wednesday,2026-03
+2015,Stretch Routine,Night,2026-03-05,1,Thursday,2026-03
+2016,Stretch Routine,Night,2026-03-06,1,Friday,2026-03
+2017,Stretch Routine,Night,2026-03-07,1,Saturday,2026-03
+2018,Stretch Routine,Night,2026-03-08,0,Sunday,2026-03
+2019,Stretch Routine,Night,2026-03-09,0,Monday,2026-03
+2020,Stretch Routine,Night,2026-03-10,1,Tuesday,2026-03
+2021,Stretch Routine,Night,2026-03-11,1,Wednesday,2026-03
+2022,Stretch Routine,Night,2026-03-12,1,Thursday,2026-03
+2023,Stretch Routine,Night,2026-03-13,1,Friday,2026-03
+2024,Stretch Routine,Night,2026-03-14,1,Saturday,2026-03
+2025,Stretch Routine,Night,2026-03-15,1,Sunday,2026-03
+2026,Stretch Routine,Night,2026-03-16,1,Monday,2026-03
+2027,Stretch Routine,Night,2026-03-17,1,Tuesday,2026-03
+2028,Stretch Routine,Night,2026-03-18,0,Wednesday,2026-03
+2029,Stretch Routine,Night,2026-03-19,1,Thursday,2026-03
+2030,Stretch Routine,Night,2026-03-20,0,Friday,2026-03
+2031,Stretch Routine,Night,2026-03-21,0,Saturday,2026-03
+2032,Stretch Routine,Night,2026-03-22,1,Sunday,2026-03
+2033,Stretch Routine,Night,2026-03-23,0,Monday,2026-03
+2034,Stretch Routine,Night,2026-03-24,1,Tuesday,2026-03
+2035,Stretch Routine,Night,2026-03-25,1,Wednesday,2026-03
+2036,Stretch Routine,Night,2026-03-26,1,Thursday,2026-03
+2037,Stretch Routine,Night,2026-03-27,1,Friday,2026-03
+2038,Stretch Routine,Night,2026-03-28,1,Saturday,2026-03
+2039,Stretch Routine,Night,2026-03-29,1,Sunday,2026-03
+2040,Stretch Routine,Night,2026-03-30,1,Monday,2026-03
+2041,Stretch Routine,Night,2026-03-31,1,Tuesday,2026-03
+2042,Stretch Routine,Night,2026-04-01,1,Wednesday,2026-04
+2043,Stretch Routine,Night,2026-04-02,1,Thursday,2026-04
+2044,Stretch Routine,Night,2026-04-03,1,Friday,2026-04
+2045,Stretch Routine,Night,2026-04-04,1,Saturday,2026-04
+2046,Stretch Routine,Night,2026-04-05,1,Sunday,2026-04
+2047,Stretch Routine,Night,2026-04-06,1,Monday,2026-04
+2048,Stretch Routine,Night,2026-04-07,0,Tuesday,2026-04
+2049,Stretch Routine,Night,2026-04-08,1,Wednesday,2026-04
+2050,Stretch Routine,Night,2026-04-09,1,Thursday,2026-04
+2051,Stretch Routine,Night,2026-04-10,1,Friday,2026-04
+2052,Stretch Routine,Night,2026-04-11,0,Saturday,2026-04
+2053,Stretch Routine,Night,2026-04-12,1,Sunday,2026-04
+2054,Stretch Routine,Night,2026-04-13,1,Monday,2026-04
+2055,Stretch Routine,Night,2026-04-14,1,Tuesday,2026-04
+2056,Stretch Routine,Night,2026-04-15,1,Wednesday,2026-04
+2057,Stretch Routine,Night,2026-04-16,1,Thursday,2026-04
+2058,Stretch Routine,Night,2026-04-17,1,Friday,2026-04
+2059,Stretch Routine,Night,2026-04-18,0,Saturday,2026-04
+2060,Stretch Routine,Night,2026-04-19,1,Sunday,2026-04
+2061,Stretch Routine,Night,2026-04-20,1,Monday,2026-04
+2062,Stretch Routine,Night,2026-04-21,0,Tuesday,2026-04
+2063,Stretch Routine,Night,2026-04-22,1,Wednesday,2026-04
+2064,Stretch Routine,Night,2026-04-23,0,Thursday,2026-04
+2065,Stretch Routine,Night,2026-04-24,1,Friday,2026-04
+2066,Stretch Routine,Night,2026-04-25,0,Saturday,2026-04
+2067,Stretch Routine,Night,2026-04-26,1,Sunday,2026-04
+2068,Stretch Routine,Night,2026-04-27,0,Monday,2026-04
+2069,Stretch Routine,Night,2026-04-28,0,Tuesday,2026-04
+2070,Stretch Routine,Night,2026-04-29,1,Wednesday,2026-04
+2071,Stretch Routine,Night,2026-04-30,1,Thursday,2026-04
+2072,Stretch Routine,Night,2026-05-01,1,Friday,2026-05
+2073,Stretch Routine,Night,2026-05-02,0,Saturday,2026-05
+2074,Stretch Routine,Night,2026-05-03,1,Sunday,2026-05
+2075,Stretch Routine,Night,2026-05-04,1,Monday,2026-05
+2076,Stretch Routine,Night,2026-05-05,1,Tuesday,2026-05
+2077,Stretch Routine,Night,2026-05-06,1,Wednesday,2026-05
+2078,Stretch Routine,Night,2026-05-07,1,Thursday,2026-05
+2079,Stretch Routine,Night,2026-05-08,0,Friday,2026-05
+2080,Weekly Planning,Morning,2025-11-01,1,Saturday,2025-11
+2081,Weekly Planning,Morning,2025-11-02,0,Sunday,2025-11
+2082,Weekly Planning,Morning,2025-11-03,1,Monday,2025-11
+2083,Weekly Planning,Morning,2025-11-04,1,Tuesday,2025-11
+2084,Weekly Planning,Morning,2025-11-05,1,Wednesday,2025-11
+2085,Weekly Planning,Morning,2025-11-06,1,Thursday,2025-11
+2086,Weekly Planning,Morning,2025-11-07,0,Friday,2025-11
+2087,Weekly Planning,Morning,2025-11-08,0,Saturday,2025-11
+2088,Weekly Planning,Morning,2025-11-09,1,Sunday,2025-11
+2089,Weekly Planning,Morning,2025-11-10,1,Monday,2025-11
+2090,Weekly Planning,Morning,2025-11-11,1,Tuesday,2025-11
+2091,Weekly Planning,Morning,2025-11-12,0,Wednesday,2025-11
+2092,Weekly Planning,Morning,2025-11-13,0,Thursday,2025-11
+2093,Weekly Planning,Morning,2025-11-14,0,Friday,2025-11
+2094,Weekly Planning,Morning,2025-11-15,1,Saturday,2025-11
+2095,Weekly Planning,Morning,2025-11-16,1,Sunday,2025-11
+2096,Weekly Planning,Morning,2025-11-17,1,Monday,2025-11
+2097,Weekly Planning,Morning,2025-11-18,1,Tuesday,2025-11
+2098,Weekly Planning,Morning,2025-11-19,1,Wednesday,2025-11
+2099,Weekly Planning,Morning,2025-11-20,1,Thursday,2025-11
+2100,Weekly Planning,Morning,2025-11-21,1,Friday,2025-11
+2101,Weekly Planning,Morning,2025-11-22,0,Saturday,2025-11
+2102,Weekly Planning,Morning,2025-11-23,0,Sunday,2025-11
+2103,Weekly Planning,Morning,2025-11-24,1,Monday,2025-11
+2104,Weekly Planning,Morning,2025-11-25,1,Tuesday,2025-11
+2105,Weekly Planning,Morning,2025-11-26,1,Wednesday,2025-11
+2106,Weekly Planning,Morning,2025-11-27,0,Thursday,2025-11
+2107,Weekly Planning,Morning,2025-11-28,0,Friday,2025-11
+2108,Weekly Planning,Morning,2025-11-29,0,Saturday,2025-11
+2109,Weekly Planning,Morning,2025-11-30,0,Sunday,2025-11
+2110,Weekly Planning,Morning,2025-12-01,1,Monday,2025-12
+2111,Weekly Planning,Morning,2025-12-02,1,Tuesday,2025-12
+2112,Weekly Planning,Morning,2025-12-03,1,Wednesday,2025-12
+2113,Weekly Planning,Morning,2025-12-04,1,Thursday,2025-12
+2114,Weekly Planning,Morning,2025-12-05,1,Friday,2025-12
+2115,Weekly Planning,Morning,2025-12-06,1,Saturday,2025-12
+2116,Weekly Planning,Morning,2025-12-07,1,Sunday,2025-12
+2117,Weekly Planning,Morning,2025-12-08,1,Monday,2025-12
+2118,Weekly Planning,Morning,2025-12-09,0,Tuesday,2025-12
+2119,Weekly Planning,Morning,2025-12-10,1,Wednesday,2025-12
+2120,Weekly Planning,Morning,2025-12-11,1,Thursday,2025-12
+2121,Weekly Planning,Morning,2025-12-12,1,Friday,2025-12
+2122,Weekly Planning,Morning,2025-12-13,1,Saturday,2025-12
+2123,Weekly Planning,Morning,2025-12-14,1,Sunday,2025-12
+2124,Weekly Planning,Morning,2025-12-15,0,Monday,2025-12
+2125,Weekly Planning,Morning,2025-12-16,1,Tuesday,2025-12
+2126,Weekly Planning,Morning,2025-12-17,0,Wednesday,2025-12
+2127,Weekly Planning,Morning,2025-12-18,1,Thursday,2025-12
+2128,Weekly Planning,Morning,2025-12-19,1,Friday,2025-12
+2129,Weekly Planning,Morning,2025-12-20,0,Saturday,2025-12
+2130,Weekly Planning,Morning,2025-12-21,1,Sunday,2025-12
+2131,Weekly Planning,Morning,2025-12-22,1,Monday,2025-12
+2132,Weekly Planning,Morning,2025-12-23,0,Tuesday,2025-12
+2133,Weekly Planning,Morning,2025-12-24,1,Wednesday,2025-12
+2134,Weekly Planning,Morning,2025-12-25,0,Thursday,2025-12
+2135,Weekly Planning,Morning,2025-12-26,1,Friday,2025-12
+2136,Weekly Planning,Morning,2025-12-27,1,Saturday,2025-12
+2137,Weekly Planning,Morning,2025-12-28,1,Sunday,2025-12
+2138,Weekly Planning,Morning,2025-12-29,0,Monday,2025-12
+2139,Weekly Planning,Morning,2025-12-30,1,Tuesday,2025-12
+2140,Weekly Planning,Morning,2025-12-31,0,Wednesday,2025-12
+2141,Weekly Planning,Morning,2026-01-01,0,Thursday,2026-01
+2142,Weekly Planning,Morning,2026-01-02,1,Friday,2026-01
+2143,Weekly Planning,Morning,2026-01-03,1,Saturday,2026-01
+2144,Weekly Planning,Morning,2026-01-04,1,Sunday,2026-01
+2145,Weekly Planning,Morning,2026-01-05,1,Monday,2026-01
+2146,Weekly Planning,Morning,2026-01-06,1,Tuesday,2026-01
+2147,Weekly Planning,Morning,2026-01-07,1,Wednesday,2026-01
+2148,Weekly Planning,Morning,2026-01-08,0,Thursday,2026-01
+2149,Weekly Planning,Morning,2026-01-09,0,Friday,2026-01
+2150,Weekly Planning,Morning,2026-01-10,0,Saturday,2026-01
+2151,Weekly Planning,Morning,2026-01-11,0,Sunday,2026-01
+2152,Weekly Planning,Morning,2026-01-12,1,Monday,2026-01
+2153,Weekly Planning,Morning,2026-01-13,1,Tuesday,2026-01
+2154,Weekly Planning,Morning,2026-01-14,0,Wednesday,2026-01
+2155,Weekly Planning,Morning,2026-01-15,1,Thursday,2026-01
+2156,Weekly Planning,Morning,2026-01-16,0,Friday,2026-01
+2157,Weekly Planning,Morning,2026-01-17,1,Saturday,2026-01
+2158,Weekly Planning,Morning,2026-01-18,0,Sunday,2026-01
+2159,Weekly Planning,Morning,2026-01-19,0,Monday,2026-01
+2160,Weekly Planning,Morning,2026-01-20,0,Tuesday,2026-01
+2161,Weekly Planning,Morning,2026-01-21,1,Wednesday,2026-01
+2162,Weekly Planning,Morning,2026-01-22,0,Thursday,2026-01
+2163,Weekly Planning,Morning,2026-01-23,1,Friday,2026-01
+2164,Weekly Planning,Morning,2026-01-24,1,Saturday,2026-01
+2165,Weekly Planning,Morning,2026-01-25,0,Sunday,2026-01
+2166,Weekly Planning,Morning,2026-01-26,1,Monday,2026-01
+2167,Weekly Planning,Morning,2026-01-27,1,Tuesday,2026-01
+2168,Weekly Planning,Morning,2026-01-28,1,Wednesday,2026-01
+2169,Weekly Planning,Morning,2026-01-29,1,Thursday,2026-01
+2170,Weekly Planning,Morning,2026-01-30,1,Friday,2026-01
+2171,Weekly Planning,Morning,2026-01-31,1,Saturday,2026-01
+2172,Weekly Planning,Morning,2026-02-01,1,Sunday,2026-02
+2173,Weekly Planning,Morning,2026-02-02,0,Monday,2026-02
+2174,Weekly Planning,Morning,2026-02-03,1,Tuesday,2026-02
+2175,Weekly Planning,Morning,2026-02-04,1,Wednesday,2026-02
+2176,Weekly Planning,Morning,2026-02-05,1,Thursday,2026-02
+2177,Weekly Planning,Morning,2026-02-06,1,Friday,2026-02
+2178,Weekly Planning,Morning,2026-02-07,1,Saturday,2026-02
+2179,Weekly Planning,Morning,2026-02-08,1,Sunday,2026-02
+2180,Weekly Planning,Morning,2026-02-09,1,Monday,2026-02
+2181,Weekly Planning,Morning,2026-02-10,1,Tuesday,2026-02
+2182,Weekly Planning,Morning,2026-02-11,1,Wednesday,2026-02
+2183,Weekly Planning,Morning,2026-02-12,1,Thursday,2026-02
+2184,Weekly Planning,Morning,2026-02-13,1,Friday,2026-02
+2185,Weekly Planning,Morning,2026-02-14,1,Saturday,2026-02
+2186,Weekly Planning,Morning,2026-02-15,1,Sunday,2026-02
+2187,Weekly Planning,Morning,2026-02-16,0,Monday,2026-02
+2188,Weekly Planning,Morning,2026-02-17,1,Tuesday,2026-02
+2189,Weekly Planning,Morning,2026-02-18,1,Wednesday,2026-02
+2190,Weekly Planning,Morning,2026-02-19,1,Thursday,2026-02
+2191,Weekly Planning,Morning,2026-02-20,0,Friday,2026-02
+2192,Weekly Planning,Morning,2026-02-21,0,Saturday,2026-02
+2193,Weekly Planning,Morning,2026-02-22,0,Sunday,2026-02
+2194,Weekly Planning,Morning,2026-02-23,1,Monday,2026-02
+2195,Weekly Planning,Morning,2026-02-24,0,Tuesday,2026-02
+2196,Weekly Planning,Morning,2026-02-25,0,Wednesday,2026-02
+2197,Weekly Planning,Morning,2026-02-26,0,Thursday,2026-02
+2198,Weekly Planning,Morning,2026-02-27,1,Friday,2026-02
+2199,Weekly Planning,Morning,2026-02-28,1,Saturday,2026-02
+2200,Weekly Planning,Morning,2026-03-01,1,Sunday,2026-03
+2201,Weekly Planning,Morning,2026-03-02,1,Monday,2026-03
+2202,Weekly Planning,Morning,2026-03-03,0,Tuesday,2026-03
+2203,Weekly Planning,Morning,2026-03-04,1,Wednesday,2026-03
+2204,Weekly Planning,Morning,2026-03-05,1,Thursday,2026-03
+2205,Weekly Planning,Morning,2026-03-06,1,Friday,2026-03
+2206,Weekly Planning,Morning,2026-03-07,1,Saturday,2026-03
+2207,Weekly Planning,Morning,2026-03-08,1,Sunday,2026-03
+2208,Weekly Planning,Morning,2026-03-09,0,Monday,2026-03
+2209,Weekly Planning,Morning,2026-03-10,1,Tuesday,2026-03
+2210,Weekly Planning,Morning,2026-03-11,1,Wednesday,2026-03
+2211,Weekly Planning,Morning,2026-03-12,1,Thursday,2026-03
+2212,Weekly Planning,Morning,2026-03-13,1,Friday,2026-03
+2213,Weekly Planning,Morning,2026-03-14,1,Saturday,2026-03
+2214,Weekly Planning,Morning,2026-03-15,0,Sunday,2026-03
+2215,Weekly Planning,Morning,2026-03-16,0,Monday,2026-03
+2216,Weekly Planning,Morning,2026-03-17,0,Tuesday,2026-03
+2217,Weekly Planning,Morning,2026-03-18,0,Wednesday,2026-03
+2218,Weekly Planning,Morning,2026-03-19,1,Thursday,2026-03
+2219,Weekly Planning,Morning,2026-03-20,0,Friday,2026-03
+2220,Weekly Planning,Morning,2026-03-21,0,Saturday,2026-03
+2221,Weekly Planning,Morning,2026-03-22,0,Sunday,2026-03
+2222,Weekly Planning,Morning,2026-03-23,1,Monday,2026-03
+2223,Weekly Planning,Morning,2026-03-24,0,Tuesday,2026-03
+2224,Weekly Planning,Morning,2026-03-25,0,Wednesday,2026-03
+2225,Weekly Planning,Morning,2026-03-26,0,Thursday,2026-03
+2226,Weekly Planning,Morning,2026-03-27,1,Friday,2026-03
+2227,Weekly Planning,Morning,2026-03-28,0,Saturday,2026-03
+2228,Weekly Planning,Morning,2026-03-29,0,Sunday,2026-03
+2229,Weekly Planning,Morning,2026-03-30,1,Monday,2026-03
+2230,Weekly Planning,Morning,2026-03-31,1,Tuesday,2026-03
+2231,Weekly Planning,Morning,2026-04-01,0,Wednesday,2026-04
+2232,Weekly Planning,Morning,2026-04-02,1,Thursday,2026-04
+2233,Weekly Planning,Morning,2026-04-03,1,Friday,2026-04
+2234,Weekly Planning,Morning,2026-04-04,1,Saturday,2026-04
+2235,Weekly Planning,Morning,2026-04-05,0,Sunday,2026-04
+2236,Weekly Planning,Morning,2026-04-06,1,Monday,2026-04
+2237,Weekly Planning,Morning,2026-04-07,1,Tuesday,2026-04
+2238,Weekly Planning,Morning,2026-04-08,1,Wednesday,2026-04
+2239,Weekly Planning,Morning,2026-04-09,0,Thursday,2026-04
+2240,Weekly Planning,Morning,2026-04-10,1,Friday,2026-04
+2241,Weekly Planning,Morning,2026-04-11,0,Saturday,2026-04
+2242,Weekly Planning,Morning,2026-04-12,0,Sunday,2026-04
+2243,Weekly Planning,Morning,2026-04-13,1,Monday,2026-04
+2244,Weekly Planning,Morning,2026-04-14,1,Tuesday,2026-04
+2245,Weekly Planning,Morning,2026-04-15,1,Wednesday,2026-04
+2246,Weekly Planning,Morning,2026-04-16,1,Thursday,2026-04
+2247,Weekly Planning,Morning,2026-04-17,1,Friday,2026-04
+2248,Weekly Planning,Morning,2026-04-18,0,Saturday,2026-04
+2249,Weekly Planning,Morning,2026-04-19,0,Sunday,2026-04
+2250,Weekly Planning,Morning,2026-04-20,1,Monday,2026-04
+2251,Weekly Planning,Morning,2026-04-21,1,Tuesday,2026-04
+2252,Weekly Planning,Morning,2026-04-22,1,Wednesday,2026-04
+2253,Weekly Planning,Morning,2026-04-23,1,Thursday,2026-04
+2254,Weekly Planning,Morning,2026-04-24,1,Friday,2026-04
+2255,Weekly Planning,Morning,2026-04-25,0,Saturday,2026-04
+2256,Weekly Planning,Morning,2026-04-26,0,Sunday,2026-04
+2257,Weekly Planning,Morning,2026-04-27,1,Monday,2026-04
+2258,Weekly Planning,Morning,2026-04-28,0,Tuesday,2026-04
+2259,Weekly Planning,Morning,2026-04-29,1,Wednesday,2026-04
+2260,Weekly Planning,Morning,2026-04-30,0,Thursday,2026-04
+2261,Weekly Planning,Morning,2026-05-01,1,Friday,2026-05
+2262,Weekly Planning,Morning,2026-05-02,1,Saturday,2026-05
+2263,Weekly Planning,Morning,2026-05-03,0,Sunday,2026-05
+2264,Weekly Planning,Morning,2026-05-04,1,Monday,2026-05
+2265,Weekly Planning,Morning,2026-05-05,1,Tuesday,2026-05
+2266,Weekly Planning,Morning,2026-05-06,1,Wednesday,2026-05
+2267,Weekly Planning,Morning,2026-05-07,1,Thursday,2026-05
+2268,Weekly Planning,Morning,2026-05-08,1,Friday,2026-05

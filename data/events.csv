@@ -1,0 +1,251 @@
+event_id,subject,event_date,time,end_time,status,tags,person,location,recurring,day_of_week,month
+1,Property settlement meeting,2026-01-09,18:30,20:00,Done,Personal,Family,Bank Branch,No,Friday,2026-01
+2,Friend's wedding,2025-11-18,17:30,19:00,Done,School,Person A|Person C|Family,Property Address,No,Tuesday,2025-11
+3,Weekend market,2026-05-13,10:45,12:45,Upcoming,Personal|Travel,Person A|Person C,Client Office,No,Wednesday,2026-05
+4,Client presentation,2026-02-01,17:00,18:00,Done,Work,Family,Cafe,Yes,Sunday,2026-02
+5,Community cleanup,2026-02-12,19:00,20:00,Done,Work,Person A,Local Park,No,Thursday,2026-02
+6,Car service appointment,2025-11-09,09:30,13:30,Done,Subscription|Personal,Person A|Person B,Sports Centre,Yes,Sunday,2025-11
+7,Gym orientation,2026-01-30,07:15,11:15,Done,Subscription,Person B,Community Hall,No,Friday,2026-01
+8,Weekend market,2026-04-03,07:15,10:15,Cancelled,Cheer,Person A,Medical Centre,Yes,Friday,2026-04
+9,Community cleanup,2026-04-18,18:30,21:30,Cancelled,Personal,Person A|Person C,Cafe,No,Saturday,2026-04
+10,Property inspection,2026-01-10,13:15,14:15,Done,Home,Person C|Person A|Person B,School Hall,No,Saturday,2026-01
+11,Piano recital,2026-06-07,19:45,21:45,Upcoming,Property,Person A|Person C,Cafe,No,Sunday,2026-06
+12,Home maintenance day,2025-11-24,11:15,12:45,Done,Cheer|Personal,Person A,Office,No,Monday,2025-11
+13,Dentist checkup,2026-05-07,09:45,10:15,Done,Subscription,Person A,Market Square,No,Thursday,2026-05
+14,Cheer competition,2025-12-17,11:00,12:00,Done,Home,Person A|Person C,Service Centre,No,Wednesday,2025-12
+15,Work conference,2026-04-28,07:45,08:15,Done,Property,Family|Person C|Person A,Conference Room,No,Tuesday,2026-04
+16,Client presentation,2025-12-01,07:45,11:45,Done,Social,Person A|Person B,City Centre,No,Monday,2025-12
+17,Kids birthday party,2026-02-19,14:30,16:30,Done,Work|Cheer,Person A|Family,School Hall,No,Thursday,2026-02
+18,Cheer competition,2026-03-03,07:30,09:30,Done,Work,Person A|Person B|Family,City Centre,Yes,Tuesday,2026-03
+19,Team standup,2026-02-20,10:30,11:00,Done,Personal|Work,Person B|Person A,City Centre,Yes,Friday,2026-02
+20,Gym orientation,2025-12-28,11:00,12:00,Done,Work|Cheer,Person B|Person A,Community Hall,No,Sunday,2025-12
+21,Birthday party,2026-01-19,10:45,11:45,Done,Home,Person A|Family,Service Centre,Yes,Monday,2026-01
+22,Annual health check,2026-02-28,13:30,15:30,Done,Work,Family,Cafe,No,Saturday,2026-02
+23,Neighbourhood watch meeting,2026-05-27,18:00,22:00,Upcoming,Work,Person A,Conference Room,Yes,Wednesday,2026-05
+24,Family BBQ,2025-11-05,08:15,09:15,Done,Work,Person A|Person C,Client Office,No,Wednesday,2025-11
+25,Birthday party,2026-05-15,14:15,18:15,Upcoming,Home|Work,Person C|Person B,Client Office,No,Friday,2026-05
+26,School parent-teacher night,2026-02-13,15:00,16:00,Cancelled,Cheer,Family,Accountant Office,Yes,Friday,2026-02
+27,Property settlement meeting,2026-05-31,15:30,16:30,Upcoming,Social,Person A,Cafe,Yes,Sunday,2026-05
+28,School parent-teacher night,2026-03-04,15:15,17:15,Done,Work,Person A|Family,Bank Branch,Yes,Wednesday,2026-03
+29,School parent-teacher night,2026-03-27,16:00,18:00,Done,Social,Family,School Hall,No,Friday,2026-03
+30,Tax meeting with accountant,2025-12-18,15:15,17:15,Done,Social,Person A,Conference Room,Yes,Thursday,2025-12
+31,Swimming lesson,2025-12-29,10:30,11:30,Done,Social|Cheer,Person B|Person A,Pool,Yes,Monday,2025-12
+32,Cheer competition,2026-04-13,16:15,18:15,Cancelled,Home,Person B|Person A,School Hall,No,Monday,2026-04
+33,Swimming lesson,2026-04-27,15:30,16:00,Upcoming,Property,Person A,Medical Centre,No,Monday,2026-04
+34,Quarterly review,2026-01-31,07:00,07:30,Done,Social,Person A|Family,Sports Centre,No,Saturday,2026-01
+35,Dentist checkup,2025-12-13,16:15,19:15,Done,Personal,Person B|Person A,Beach,No,Saturday,2025-12
+36,Dentist checkup,2025-11-19,17:15,18:15,Done,Home,Person A,Market Square,No,Wednesday,2025-11
+37,Date night,2026-05-28,14:30,16:00,Upcoming,Cheer|Social,Person C,Property Address,No,Thursday,2026-05
+38,Kids birthday party,2026-05-08,18:15,21:15,Done,Travel,Person A,Accountant Office,Yes,Friday,2026-05
+39,Weekend market,2026-03-30,07:30,09:30,Done,Social,Person A|Person B,Accountant Office,Yes,Monday,2026-03
+40,House open for inspection,2026-04-15,11:15,14:15,Done,Work,Person A,School Hall,Yes,Wednesday,2026-04
+41,House open for inspection,2026-02-17,16:30,17:30,Done,Home,Family,Medical Centre,No,Tuesday,2026-02
+42,Car service appointment,2025-12-31,07:00,08:00,Done,Home|Social,Family|Person A|Person B,Accountant Office,No,Wednesday,2025-12
+43,Tax meeting with accountant,2026-03-17,15:30,17:30,Upcoming,Social|Cheer,Person C|Person A,Pool,No,Tuesday,2026-03
+44,Mortgage meeting,2025-11-29,13:45,16:45,Done,Home,Person A,Gym,No,Saturday,2025-11
+45,Client presentation,2026-03-14,09:15,10:15,Done,Cheer,Person A,Bank Branch,No,Saturday,2026-03
+46,Weekend market,2026-02-23,09:15,10:15,Done,Cheer,Person A,Gym,No,Monday,2026-02
+47,Date night,2026-04-05,08:30,10:00,Done,Personal|Home,Person B|Person A|Person C,Local Park,Yes,Sunday,2026-04
+48,Neighbourhood watch meeting,2026-03-09,13:00,14:00,Done,Work,Person A|Person B,Restaurant,No,Monday,2026-03
+49,Community cleanup,2025-12-19,19:00,20:00,Done,Subscription|Home,Person C|Person B,Bank Branch,No,Friday,2025-12
+50,Surf lesson,2025-11-26,09:15,11:15,Done,Home,Person C|Person B,Medical Centre,No,Wednesday,2025-11
+51,Team standup,2026-05-25,15:45,16:15,Upcoming,Travel,Person A,Community Hall,Yes,Monday,2026-05
+52,House open for inspection,2026-03-08,18:45,20:45,Done,Property,Person A,Accountant Office,No,Sunday,2026-03
+53,Property inspection,2026-04-22,09:30,10:00,Done,Subscription,Family,Medical Centre,Yes,Wednesday,2026-04
+54,Sunday brunch,2026-05-25,16:30,18:30,Upcoming,Work,Person A,Client Office,No,Monday,2026-05
+55,Swimming lesson,2026-01-30,15:15,16:45,Done,Travel|Personal,Person A|Person B,Gym,No,Friday,2026-01
+56,Family BBQ,2026-02-20,18:15,20:15,Done,Cheer|Work,Person B|Person A,School Oval,Yes,Friday,2026-02
+57,Kids birthday party,2026-03-25,18:15,19:45,Done,Personal,Person C|Person A,Medical Centre,No,Wednesday,2026-03
+58,Kids birthday party,2025-11-11,18:15,19:45,Done,Social,Person A,Market Square,No,Tuesday,2025-11
+59,School sports day,2026-05-26,07:45,09:15,Upcoming,Cheer,Person A,Restaurant,No,Tuesday,2026-05
+60,Cheer competition,2026-05-14,19:30,21:30,Upcoming,School|Social,Person A,Community Hall,No,Thursday,2026-05
+61,Home maintenance day,2025-11-22,11:30,12:30,Upcoming,Travel|Personal,Person C|Person B|Person A,Cafe,Yes,Saturday,2025-11
+62,Annual health check,2026-03-05,14:15,17:15,Done,Cheer,Person B,Restaurant,No,Thursday,2026-03
+63,House open for inspection,2026-04-06,17:45,21:45,Done,Work,Person C|Person B,Pool,No,Monday,2026-04
+64,Team standup,2026-05-08,07:30,08:00,Done,Travel|Subscription,Person A,Cafe,No,Friday,2026-05
+65,Birthday party,2026-05-06,14:15,16:15,Done,Work,Person A,Property Address,Yes,Wednesday,2026-05
+66,Kids birthday party,2026-02-08,16:00,17:00,Upcoming,Cheer|School,Person B|Family|Person A,Local Park,No,Sunday,2026-02
+67,Gym orientation,2025-11-20,16:45,20:45,Done,Personal|School,Person A|Person C,Property Address,No,Thursday,2025-11
+68,Kids birthday party,2025-11-14,11:30,13:30,Upcoming,School,Person A|Family,Property Address,Yes,Friday,2025-11
+69,Property settlement meeting,2026-01-28,12:15,14:15,Done,Work,Person B|Person A,Cafe,No,Wednesday,2026-01
+70,Family BBQ,2026-02-01,14:15,16:15,Cancelled,School,Person A,Gym,No,Sunday,2026-02
+71,Birthday party,2026-04-15,10:15,12:15,Done,Personal,Person B,Beach,No,Wednesday,2026-04
+72,Client presentation,2026-05-19,13:45,15:45,Upcoming,Cheer,Person A|Family,Bank Branch,No,Tuesday,2026-05
+73,Client presentation,2025-11-07,13:00,14:30,Done,School|Personal,Person C|Person A|Person B,Gym,No,Friday,2025-11
+74,Swimming lesson,2026-02-03,16:15,17:15,Done,Social,Person A,Conference Room,No,Tuesday,2026-02
+75,Gym orientation,2025-11-11,10:30,11:30,Done,Work,Person A,School Hall,No,Tuesday,2025-11
+76,Dentist checkup,2026-03-11,14:00,15:00,Cancelled,Work,Person A,Service Centre,Yes,Wednesday,2026-03
+77,Home maintenance day,2025-12-30,10:30,12:30,Done,Personal,Family,Gym,Yes,Tuesday,2025-12
+78,School parent-teacher night,2026-04-15,11:45,13:45,Done,Work,Person A,Office,No,Wednesday,2026-04
+79,Mortgage meeting,2026-04-17,16:00,18:00,Done,Work,Person C,Local Park,No,Friday,2026-04
+80,Piano recital,2026-04-30,13:30,15:30,Done,Home,Person B|Person C,Gym,No,Thursday,2026-04
+81,Cheer competition,2025-12-02,18:15,21:15,Done,Work,Person B,Community Hall,No,Tuesday,2025-12
+82,Sunday brunch,2026-01-10,19:00,22:00,Done,Work|School,Person A,Service Centre,No,Saturday,2026-01
+83,Sunday brunch,2026-03-14,17:15,18:15,Done,Personal,Person A|Person B,Office,No,Saturday,2026-03
+84,Property inspection,2026-02-28,19:15,23:15,Done,Social,Person C,Medical Centre,No,Saturday,2026-02
+85,Kids birthday party,2026-01-11,15:30,16:30,Done,Social|Property,Person A|Person B|Person C,Local Park,No,Sunday,2026-01
+86,Sunday brunch,2026-01-23,19:00,20:00,Done,Work,Person C|Person B|Person A,School Hall,No,Friday,2026-01
+87,Home maintenance day,2026-01-11,13:00,14:30,Cancelled,Social,Person A,School Oval,No,Sunday,2026-01
+88,Tax meeting with accountant,2026-06-05,08:00,10:00,Upcoming,Cheer,Person A|Person B,Cafe,No,Friday,2026-06
+89,Family BBQ,2026-01-21,15:45,17:15,Done,Social,Person A,Service Centre,No,Wednesday,2026-01
+90,Family BBQ,2025-12-23,09:30,11:00,Upcoming,Cheer,Person C,School Hall,Yes,Tuesday,2025-12
+91,Birthday party,2025-11-09,16:15,16:45,Done,Home,Person A|Family|Person B,School Oval,No,Sunday,2025-11
+92,Kids birthday party,2026-02-11,11:00,14:00,Done,Social|School,Family|Person A,School Hall,Yes,Wednesday,2026-02
+93,Kids birthday party,2025-12-24,14:30,16:30,Upcoming,Personal,Person A,School Oval,No,Wednesday,2025-12
+94,Client presentation,2025-11-17,07:30,08:30,Done,Social,Person B|Person A,Market Square,No,Monday,2025-11
+95,Neighbourhood watch meeting,2025-11-13,14:45,16:15,Upcoming,School,Family|Person A,Property Address,No,Thursday,2025-11
+96,School sports day,2026-03-09,13:15,14:45,Upcoming,Cheer|Subscription,Person A|Person B|Person C,Cafe,No,Monday,2026-03
+97,Kids birthday party,2025-12-04,17:45,19:45,Done,Work,Person B|Person A|Person C,Service Centre,Yes,Thursday,2025-12
+98,House open for inspection,2026-04-12,13:45,14:45,Done,Personal,Person C,Local Park,No,Sunday,2026-04
+99,Surf lesson,2026-05-02,10:15,12:15,Done,Home,Person B|Person C|Person A,Market Square,No,Saturday,2026-05
+100,Quarterly review,2026-02-18,18:30,19:00,Done,Work,Person A,Sports Centre,No,Wednesday,2026-02
+101,Friend's wedding,2026-01-30,13:00,14:00,Cancelled,Cheer|School,Person A|Family|Person B,Sports Centre,No,Friday,2026-01
+102,Kids birthday party,2026-02-10,18:30,19:30,Done,Cheer,Person A|Person B,Service Centre,No,Tuesday,2026-02
+103,Team standup,2026-03-03,16:00,17:00,Done,Social,Person C,Sports Centre,Yes,Tuesday,2026-03
+104,Property settlement meeting,2026-04-11,07:00,09:00,Upcoming,School,Person A,Bank Branch,No,Saturday,2026-04
+105,Friend's wedding,2026-05-01,12:00,13:00,Done,Work,Person C|Person A|Person B,Service Centre,Yes,Friday,2026-05
+106,Friend's wedding,2026-04-22,12:00,16:00,Done,Personal,Person C|Person A|Person B,Market Square,No,Wednesday,2026-04
+107,Gym orientation,2025-12-19,08:15,09:15,Done,Property,Person A,Sports Centre,No,Friday,2025-12
+108,Friend's wedding,2025-11-14,09:30,10:30,Done,Social,Person C|Person A,Property Address,No,Friday,2025-11
+109,Date night,2026-04-12,10:00,11:30,Done,Home|Cheer,Person A,School Hall,Yes,Sunday,2026-04
+110,Quarterly review,2026-03-08,10:00,11:00,Done,Personal,Person A,Conference Room,No,Sunday,2026-03
+111,Weekend market,2026-02-04,14:30,18:30,Done,Social,Person B|Family,Client Office,Yes,Wednesday,2026-02
+112,Home maintenance day,2026-02-23,11:00,12:00,Done,Social,Person A,Community Hall,Yes,Monday,2026-02
+113,School sports day,2026-02-06,13:15,14:15,Done,Travel,Person C|Person A,Restaurant,No,Friday,2026-02
+114,Home maintenance day,2026-03-26,17:00,19:00,Done,Social,Person A|Person C|Person B,Market Square,No,Thursday,2026-03
+115,Weekend market,2026-05-10,12:00,13:30,Upcoming,Home,Person B,Office,No,Sunday,2026-05
+116,Neighbourhood watch meeting,2026-02-20,11:30,13:00,Done,Home,Person A|Person B|Person C,Client Office,No,Friday,2026-02
+117,Date night,2026-06-03,16:00,18:00,Upcoming,Work,Person A,Bank Branch,No,Wednesday,2026-06
+118,Gym orientation,2026-02-02,19:30,20:30,Done,School,Person A|Person B,Medical Centre,No,Monday,2026-02
+119,School excursion,2026-05-11,07:30,08:30,Upcoming,Social,Family,Gym,Yes,Monday,2026-05
+120,School sports day,2026-05-06,19:45,23:45,Done,Home,Person A,Pool,No,Wednesday,2026-05
+121,Date night,2026-03-10,19:15,20:15,Upcoming,Cheer,Person A|Person B,Cafe,Yes,Tuesday,2026-03
+122,Mortgage meeting,2026-01-02,16:30,17:00,Done,Home,Person A|Family|Person B,Office,Yes,Friday,2026-01
+123,Property inspection,2026-03-04,11:30,15:30,Done,Personal,Person B|Person A,Gym,Yes,Wednesday,2026-03
+124,Cheer competition,2025-11-29,10:15,11:15,Done,Personal,Person B,Accountant Office,Yes,Saturday,2025-11
+125,Gym orientation,2026-06-03,15:30,16:30,Upcoming,Social|Subscription,Person A,School Hall,No,Wednesday,2026-06
+126,Property inspection,2025-12-08,17:00,17:30,Done,Travel,Person C|Person A,Beach,Yes,Monday,2025-12
+127,Car service appointment,2026-01-07,09:00,10:30,Done,Subscription,Family,School Oval,No,Wednesday,2026-01
+128,Property settlement meeting,2026-04-08,07:45,10:45,Done,Cheer,Person A,Bank Branch,No,Wednesday,2026-04
+129,Car service appointment,2025-12-16,08:45,09:15,Upcoming,Social,Person A,Beach,No,Tuesday,2025-12
+130,Swimming lesson,2026-05-22,16:30,20:30,Upcoming,Social|Home,Person C,Property Address,Yes,Friday,2026-05
+131,Date night,2026-04-20,10:15,11:15,Cancelled,Work,Family|Person C|Person A,Accountant Office,Yes,Monday,2026-04
+132,Client presentation,2026-02-04,19:15,20:15,Done,Social,Person B|Person A,Gym,Yes,Wednesday,2026-02
+133,School parent-teacher night,2026-02-15,16:45,19:45,Done,Work|Cheer,Person A,Service Centre,Yes,Sunday,2026-02
+134,Team standup,2026-04-25,19:30,22:30,Upcoming,Personal,Person A|Person C,Pool,No,Saturday,2026-04
+135,Surf lesson,2026-04-05,16:45,17:45,Done,Personal,Person C|Person A,Cafe,No,Sunday,2026-04
+136,Neighbourhood watch meeting,2026-05-17,07:00,09:00,Upcoming,Social,Person B|Family,Client Office,No,Sunday,2026-05
+137,School sports day,2025-11-18,09:15,10:45,Done,Home,Family,Service Centre,No,Tuesday,2025-11
+138,Dentist checkup,2026-05-25,18:00,21:00,Upcoming,Social,Person B|Person A,Bank Branch,Yes,Monday,2026-05
+139,House open for inspection,2025-12-14,09:00,11:00,Done,Personal,Person C|Person A,Bank Branch,Yes,Sunday,2025-12
+140,Neighbourhood watch meeting,2026-02-18,19:00,20:00,Upcoming,Travel,Person B|Person A|Person C,Property Address,No,Wednesday,2026-02
+141,Property settlement meeting,2026-01-28,17:00,17:30,Done,Work,Person C,Restaurant,No,Wednesday,2026-01
+142,Swimming lesson,2025-11-16,19:45,21:45,Cancelled,Home,Person A,Restaurant,No,Sunday,2025-11
+143,Neighbourhood watch meeting,2025-11-29,13:45,15:15,Done,Home,Person A|Person B,Service Centre,No,Saturday,2025-11
+144,Mortgage meeting,2025-11-19,11:00,14:00,Done,Work,Person A,City Centre,No,Wednesday,2025-11
+145,Annual health check,2026-05-30,14:30,17:30,Upcoming,Cheer,Person A|Person B,Restaurant,No,Saturday,2026-05
+146,Sunday brunch,2026-04-28,12:15,14:15,Done,Social,Person C|Person A,Local Park,No,Tuesday,2026-04
+147,Client presentation,2026-02-21,15:45,17:45,Done,Home|Cheer,Person A|Person B,Service Centre,No,Saturday,2026-02
+148,Neighbourhood watch meeting,2026-02-18,10:30,14:30,Done,Cheer|Home,Family|Person C|Person A,City Centre,No,Wednesday,2026-02
+149,Neighbourhood watch meeting,2025-11-07,15:15,18:15,Done,Property,Person A,Sports Centre,No,Friday,2025-11
+150,House open for inspection,2025-11-29,19:00,20:00,Done,Work,Family|Person A,Accountant Office,No,Saturday,2025-11
+151,Birthday party,2026-06-05,13:00,17:00,Upcoming,Personal,Person A|Person B,City Centre,Yes,Friday,2026-06
+152,Sunday brunch,2025-11-22,17:45,18:45,Done,Work,Person A,Office,Yes,Saturday,2025-11
+153,Birthday party,2026-04-30,14:00,15:00,Done,Cheer,Person A|Person B,Restaurant,Yes,Thursday,2026-04
+154,Client presentation,2025-12-06,16:45,18:45,Done,Cheer,Person A|Person B|Person C,Service Centre,Yes,Saturday,2025-12
+155,Friend's wedding,2026-03-12,16:00,17:00,Done,Home,Person A|Person C|Person B,Accountant Office,No,Thursday,2026-03
+156,House open for inspection,2025-12-14,11:45,15:45,Upcoming,Cheer,Family|Person B,Bank Branch,No,Sunday,2025-12
+157,Community cleanup,2026-04-04,18:15,19:15,Done,Work|Social,Person A|Person B,Community Hall,Yes,Saturday,2026-04
+158,Community cleanup,2026-03-15,10:30,12:30,Cancelled,Social,Person A,Client Office,No,Sunday,2026-03
+159,Swimming lesson,2026-02-21,18:30,20:30,Done,Social,Person A|Person B|Family,Conference Room,Yes,Saturday,2026-02
+160,Friend's wedding,2025-11-09,16:30,18:30,Upcoming,Travel|Home,Person C,Sports Centre,No,Sunday,2025-11
+161,Neighbourhood watch meeting,2026-03-03,19:00,20:30,Done,Social,Person A,Medical Centre,No,Tuesday,2026-03
+162,Birthday party,2026-03-16,19:30,22:30,Done,Personal,Person A,Pool,No,Monday,2026-03
+163,Neighbourhood watch meeting,2025-12-30,18:00,19:00,Done,Property,Person C|Family,Beach,No,Tuesday,2025-12
+164,Mortgage meeting,2026-05-27,15:45,16:45,Upcoming,Social|Work,Person A,Medical Centre,Yes,Wednesday,2026-05
+165,Home maintenance day,2026-04-20,14:30,16:30,Done,Work,Person A|Person B|Person C,Market Square,Yes,Monday,2026-04
+166,Neighbourhood watch meeting,2026-03-17,14:15,16:15,Done,Social,Person A,Restaurant,No,Tuesday,2026-03
+167,Weekend market,2026-04-25,16:30,17:30,Done,Work,Person B,Client Office,Yes,Saturday,2026-04
+168,Family BBQ,2026-04-24,11:15,14:15,Cancelled,Social,Person C,Office,No,Friday,2026-04
+169,School parent-teacher night,2026-02-26,18:30,19:30,Done,School,Person B|Person A,Market Square,Yes,Thursday,2026-02
+170,Work conference,2026-05-07,09:45,11:15,Done,Home|Travel,Person B,Beach,Yes,Thursday,2026-05
+171,Quarterly review,2026-01-16,13:30,15:30,Done,Work,Person C|Family,Medical Centre,Yes,Friday,2026-01
+172,Community cleanup,2025-11-26,13:30,14:30,Cancelled,Social|Personal,Person A|Person B,Service Centre,No,Wednesday,2025-11
+173,Kids birthday party,2025-12-27,13:15,13:45,Done,Social,Person C,Accountant Office,No,Saturday,2025-12
+174,Client presentation,2026-01-30,11:15,12:45,Done,Cheer,Person B|Person A,City Centre,Yes,Friday,2026-01
+175,Work conference,2026-03-25,12:00,13:00,Done,Social,Family,City Centre,Yes,Wednesday,2026-03
+176,Weekend market,2026-01-05,19:45,21:15,Cancelled,Personal,Person B,Local Park,No,Monday,2026-01
+177,Piano recital,2026-05-09,19:30,22:30,Done,Personal,Person B,Office,No,Saturday,2026-05
+178,Kids birthday party,2025-11-25,08:00,10:00,Done,Cheer|Work,Person A,Property Address,Yes,Tuesday,2025-11
+179,School excursion,2026-03-14,15:45,17:45,Done,Travel,Person B,Service Centre,No,Saturday,2026-03
+180,Weekend market,2026-01-27,09:00,12:00,Done,Work|School,Person C|Family,Sports Centre,Yes,Tuesday,2026-01
+181,Friend's wedding,2025-11-05,15:15,16:15,Done,School,Family|Person B|Person A,Pool,No,Wednesday,2025-11
+182,Community cleanup,2026-02-07,15:45,17:15,Cancelled,Social,Person A,School Hall,No,Saturday,2026-02
+183,Sunday brunch,2025-12-26,11:30,12:30,Cancelled,Home,Person A,Market Square,No,Friday,2025-12
+184,Surf lesson,2025-12-01,16:30,18:00,Cancelled,Work,Person B|Person A,Property Address,No,Monday,2025-12
+185,Community cleanup,2026-02-26,14:00,15:00,Done,Personal,Person A,Local Park,No,Thursday,2026-02
+186,Friend's wedding,2026-06-05,09:00,09:30,Upcoming,Home,Person B,Community Hall,No,Friday,2026-06
+187,Neighbourhood watch meeting,2026-02-19,13:30,15:30,Done,Work|Cheer,Person A,Pool,No,Thursday,2026-02
+188,Sunday brunch,2025-12-06,09:15,10:15,Done,Property,Person A|Person C,Beach,No,Saturday,2025-12
+189,Mortgage meeting,2026-03-11,17:45,20:45,Done,Personal,Person B,Community Hall,Yes,Wednesday,2026-03
+190,House open for inspection,2026-02-20,12:00,12:30,Done,Work|School,Person B|Person A,Pool,No,Friday,2026-02
+191,Car service appointment,2025-11-27,07:15,08:45,Cancelled,Work,Person C,Cafe,No,Thursday,2025-11
+192,Community cleanup,2026-04-14,19:00,20:00,Done,Personal,Person C|Person B|Person A,Sports Centre,No,Tuesday,2026-04
+193,Property settlement meeting,2025-11-17,17:30,20:30,Done,Cheer,Person A,Conference Room,Yes,Monday,2025-11
+194,Community cleanup,2025-11-08,10:00,11:00,Done,Travel,Family,Gym,No,Saturday,2025-11
+195,School excursion,2025-12-04,19:00,20:00,Done,Social,Person A|Person C,Market Square,No,Thursday,2025-12
+196,Home maintenance day,2026-03-16,17:00,18:00,Done,Personal,Person A|Family|Person C,Gym,No,Monday,2026-03
+197,School excursion,2026-03-10,09:00,11:00,Cancelled,Home,Person C,Pool,No,Tuesday,2026-03
+198,Work conference,2026-05-20,12:15,13:15,Upcoming,Social,Family,Market Square,No,Wednesday,2026-05
+199,Gym orientation,2026-04-15,07:45,08:45,Done,Home|Social,Person A|Person B,Community Hall,No,Wednesday,2026-04
+200,Dentist checkup,2026-05-02,08:15,09:15,Upcoming,Social|Work,Person A,Restaurant,No,Saturday,2026-05
+201,Weekend market,2026-04-20,16:30,18:30,Done,Travel,Person A|Person C|Family,Gym,No,Monday,2026-04
+202,Mortgage meeting,2026-06-02,14:30,15:00,Upcoming,Property|Personal,Person A|Person C|Person B,Bank Branch,No,Tuesday,2026-06
+203,Kids birthday party,2025-11-20,09:15,11:15,Done,Social,Person A,Cafe,Yes,Thursday,2025-11
+204,Dentist checkup,2026-05-02,08:30,12:30,Done,Personal,Person C|Person B|Person A,Local Park,No,Saturday,2026-05
+205,Family BBQ,2025-12-08,18:15,22:15,Done,Home,Person B,Market Square,Yes,Monday,2025-12
+206,Date night,2026-03-05,18:00,21:00,Upcoming,Work|Cheer,Person A|Person C,Local Park,Yes,Thursday,2026-03
+207,Annual health check,2026-05-11,19:45,21:45,Upcoming,Home|Property,Person A,Client Office,No,Monday,2026-05
+208,Dentist checkup,2025-11-16,15:45,17:45,Done,Work,Person A,Service Centre,No,Sunday,2025-11
+209,Car service appointment,2025-12-28,18:30,19:30,Upcoming,Personal,Person A,Bank Branch,No,Sunday,2025-12
+210,Sunday brunch,2026-05-26,16:00,17:30,Upcoming,Travel,Person B,Community Hall,No,Tuesday,2026-05
+211,Car service appointment,2025-12-08,13:30,16:30,Done,Social|School,Person A,School Hall,No,Monday,2025-12
+212,Client presentation,2025-12-02,10:00,11:00,Done,Travel|Cheer,Family|Person B,Service Centre,No,Tuesday,2025-12
+213,Date night,2026-05-28,17:45,18:45,Upcoming,Subscription,Person B|Family,Accountant Office,No,Thursday,2026-05
+214,Annual health check,2026-05-06,16:00,18:00,Done,Work,Person A|Person B|Family,Office,No,Wednesday,2026-05
+215,Quarterly review,2026-04-20,15:15,16:15,Upcoming,Cheer,Person A,Accountant Office,Yes,Monday,2026-04
+216,Date night,2026-01-01,19:45,20:15,Done,Work,Person B|Person A,Conference Room,No,Thursday,2026-01
+217,Team standup,2026-03-25,10:15,11:45,Done,Property,Person A,School Oval,No,Wednesday,2026-03
+218,Birthday party,2026-02-28,10:15,11:45,Done,Work|Social,Person A,City Centre,No,Saturday,2026-02
+219,Quarterly review,2026-04-03,18:00,19:30,Done,Travel,Family,Service Centre,No,Friday,2026-04
+220,Sunday brunch,2026-05-03,13:15,15:15,Done,Travel,Person C,Cafe,No,Sunday,2026-05
+221,Friend's wedding,2026-03-24,14:00,15:30,Upcoming,Personal,Person A,Beach,No,Tuesday,2026-03
+222,Kids birthday party,2026-03-14,09:45,11:15,Done,Home,Person A|Person C,Market Square,No,Saturday,2026-03
+223,Work conference,2026-04-03,18:45,19:15,Cancelled,Personal,Person A|Person B|Person C,Market Square,Yes,Friday,2026-04
+224,Gym orientation,2026-01-05,10:30,14:30,Upcoming,Social,Person A,Service Centre,No,Monday,2026-01
+225,Work conference,2026-05-02,10:15,11:15,Done,Subscription|Cheer,Person B,Office,Yes,Saturday,2026-05
+226,Date night,2026-04-29,17:00,17:30,Done,Personal,Person C,Bank Branch,No,Wednesday,2026-04
+227,Neighbourhood watch meeting,2025-12-18,12:00,13:30,Done,Social,Person B|Person C|Person A,City Centre,Yes,Thursday,2025-12
+228,Property settlement meeting,2026-01-11,18:15,19:45,Done,Travel,Person A|Family,Sports Centre,No,Sunday,2026-01
+229,Home maintenance day,2025-12-04,10:15,11:15,Upcoming,Work,Person A,Community Hall,No,Thursday,2025-12
+230,Surf lesson,2026-02-14,19:30,21:00,Done,Cheer|Work,Person B,Local Park,Yes,Saturday,2026-02
+231,House open for inspection,2026-05-04,10:45,11:45,Done,Cheer,Person A,Cafe,Yes,Monday,2026-05
+232,Team standup,2026-02-14,13:45,17:45,Done,Personal,Person B,City Centre,No,Saturday,2026-02
+233,Tax meeting with accountant,2026-03-15,12:45,13:45,Done,Travel,Person A|Person C|Person B,Accountant Office,No,Sunday,2026-03
+234,Neighbourhood watch meeting,2026-02-28,14:45,15:45,Cancelled,Cheer,Person A,Office,No,Saturday,2026-02
+235,Dentist checkup,2026-02-04,14:15,15:15,Done,Social,Person A|Family|Person C,Service Centre,No,Wednesday,2026-02
+236,Family BBQ,2025-12-01,09:30,11:30,Upcoming,Travel,Person A,Community Hall,Yes,Monday,2025-12
+237,Cheer competition,2026-03-26,17:15,21:15,Done,Work,Person A,School Hall,No,Thursday,2026-03
+238,Gym orientation,2026-04-13,18:45,20:15,Done,Cheer,Person B|Person A|Person C,City Centre,Yes,Monday,2026-04
+239,Mortgage meeting,2026-03-16,14:30,15:30,Done,Work,Person A,Client Office,Yes,Monday,2026-03
+240,Community cleanup,2026-01-15,13:45,15:45,Cancelled,Cheer,Person B|Person A|Family,Bank Branch,No,Thursday,2026-01
+241,Mortgage meeting,2026-01-12,14:45,16:45,Done,School|Property,Person A|Person B,City Centre,No,Monday,2026-01
+242,Gym orientation,2026-03-23,17:30,18:30,Done,Personal|Social,Person A|Person C,Service Centre,Yes,Monday,2026-03
+243,Gym orientation,2026-03-31,07:45,09:15,Cancelled,Subscription,Person C|Person A|Person B,Medical Centre,No,Tuesday,2026-03
+244,Work conference,2026-01-08,16:00,18:00,Cancelled,Travel,Family,Office,No,Thursday,2026-01
+245,Property settlement meeting,2026-01-17,09:15,09:45,Upcoming,School,Person B,Cafe,No,Saturday,2026-01
+246,School parent-teacher night,2026-03-23,08:45,10:45,Done,Personal,Person A,School Oval,No,Monday,2026-03
+247,Weekend market,2025-11-25,15:30,16:30,Done,School,Person C|Person B,Medical Centre,No,Tuesday,2025-11
+248,School excursion,2026-05-25,18:45,19:45,Upcoming,Cheer,Person B,School Hall,Yes,Monday,2026-05
+249,School excursion,2025-11-01,13:15,15:15,Done,Personal,Person B,Office,No,Saturday,2025-11
+250,Weekend market,2025-12-08,14:45,16:15,Done,Social,Person A|Family,Client Office,Yes,Monday,2025-12

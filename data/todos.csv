@@ -1,0 +1,301 @@
+todo_id,subject,status,priority,tags,person,created_date,deadline,date_actioned,days_to_complete
+1,Research solar panels,Done,High,Cheer|Property,Person A,2026-02-11,2026-02-19,2026-02-13,2.0
+2,Book car service,Done,Medium,Work,Person A,2025-11-21,2025-12-19,2025-11-23,2.0
+3,Schedule dentist appointment,Done,Low,Property,Person A,2025-11-15,,2025-11-17,2.0
+4,Research after-school programs,Done,Medium,Cheer,Person A|Person B,2025-12-23,,2026-01-01,9.0
+5,Fix leaking tap,ToDo,Medium,Subscription,Person A,2026-03-14,,,
+6,Set up automated backups,Cancelled,High,Work,Person A,2026-02-03,2026-02-24,,
+7,Order birthday gift,Done,Medium,Work,Person A|Family,2025-11-24,,2025-12-01,7.0
+8,Renew gym membership,Done,Medium,Cheer|Routine,Person A|Person B,2026-04-12,,2026-04-21,9.0
+9,Research after-school programs,Done,Medium,Property|Work,Person C,2025-12-07,2025-12-21,2026-02-11,66.0
+10,Submit tax documents,OnHold,Medium,Routine,Person B,2025-11-15,,,
+11,Review tenant application,InProgress,Medium,Routine,Person B,2026-03-31,,,
+12,Research after-school programs,Done,Medium,Subscription|Work,Person A|Person C,2026-04-19,,2026-04-21,2.0
+13,Fix WiFi dead zone,Done,Medium,Subscription|Work,Person A,2026-03-09,2026-03-28,2026-03-11,2.0
+14,Organise photo backup,Done,Medium,Home|Routine,Person A|Person B,2025-12-29,2026-01-15,2025-12-31,2.0
+15,Plan family dinner,InProgress,Medium,Home,Person A|Person C,2026-05-06,,,
+16,Review rental yield,InProgress,High,Work,Person A|Family,2026-04-09,2026-04-25,,
+17,Update property insurance,Done,Medium,Work,Person B,2026-03-24,2026-03-27,2026-03-26,2.0
+18,Schedule dentist appointment,Cancelled,Medium,Subscription,Person B,2025-12-22,2026-01-01,,
+19,Organise photo backup,Done,High,Property|Home,Family|Person B,2026-02-07,,2026-02-17,10.0
+20,Clean garage,Done,Low,Subscription|Home,Person C|Family,2025-11-09,,2025-11-17,8.0
+21,Order birthday gift,OnHold,Medium,Work,Person B,2026-02-20,,,
+22,Compare health insurance,ToDo,High,Work,Person B,2026-04-18,,,
+23,Update LinkedIn profile,Done,High,Home,Family,2026-03-08,2026-03-30,2026-03-26,18.0
+24,Schedule dentist appointment,Done,Low,Property,Person A,2025-11-08,,2025-11-09,1.0
+25,Organise kids sports gear,Active,Low,Work,Person A|Family,2026-04-07,,,
+26,Call mortgage broker,Done,Medium,Home|Work,Family,2026-02-24,,2026-03-02,6.0
+27,Update investment spreadsheet,Backlog,Medium,Home,Person A,2026-02-12,2026-02-20,,
+28,Clean out wardrobe,ToDo,Low,Home,Person A,2026-04-10,,,
+29,Arrange carpet cleaning,Done,Medium,Cheer|School,Person C,2025-12-30,2026-01-27,2025-12-31,1.0
+30,Fix WiFi dead zone,Done,High,Subscription|Work,Person A,2026-01-25,2026-01-30,2026-02-16,22.0
+31,Submit council application,Done,Medium,Work,Person A,2025-11-08,2025-12-01,2025-11-12,4.0
+32,Order birthday gift,Done,High,Routine,Person B|Person A,2025-11-19,2025-11-20,2025-11-22,3.0
+33,Update household inventory,Done,High,Routine,Person A,2025-12-04,,2025-12-20,16.0
+34,Plan family dinner,Done,High,Home,Person A,2026-01-15,2026-02-04,2026-01-18,3.0
+35,Fix leaking tap,ToDo,Medium,Work,Person A,2026-03-24,,,
+36,Review quarterly budget,Cancelled,Medium,Routine,Person A,2026-01-08,,,
+37,Fix door handle,Backlog,Medium,Cheer,Person B|Person A,2025-11-16,,,
+38,Update resume,Done,Low,Subscription,Person A,2026-04-10,2026-04-22,2026-04-15,5.0
+39,Arrange carpet cleaning,Done,Medium,Home,Person A,2026-01-20,,2026-01-22,2.0
+40,Review rental yield,Done,Low,Subscription|Home,Person C,2026-02-22,,2026-02-26,4.0
+41,Update emergency contacts,Done,Low,Home|School,Person A,2026-02-04,,2026-02-08,4.0
+42,Fix leaking tap,Done,Medium,Work,Family,2026-01-01,,2026-01-07,6.0
+43,Plan weekend trip,Done,Medium,Work,Person B,2026-03-08,2026-03-29,2026-03-12,4.0
+44,Clean garage,Done,High,Routine|Work,Person A,2026-03-31,,2026-04-04,4.0
+45,Fix door handle,Done,Medium,Routine,Person A,2025-11-07,2025-11-15,2025-11-11,4.0
+46,Update emergency contacts,Done,Low,Routine|School,Person A,2026-02-17,,2026-02-18,1.0
+47,Submit tax documents,Done,Medium,Home,Person B,2026-01-29,,2026-02-13,15.0
+48,Organise photo backup,Done,Low,Routine,Person A,2026-03-07,,2026-03-12,5.0
+49,Replace smoke detector battery,InProgress,Low,Cheer,Person A,2026-04-13,,,
+50,Submit tax documents,Done,Low,Routine|Work,Person A,2026-02-26,2026-03-24,2026-03-02,4.0
+51,Organise filing cabinet,Done,Medium,Home,Person A,2026-01-31,2026-02-17,2026-02-02,2.0
+52,Organise filing cabinet,ToDo,High,Home|Cheer,Person A|Person C,2026-04-06,2026-04-11,,
+53,Update LinkedIn profile,Done,Low,Routine,Person B,2026-02-27,2026-03-26,2026-02-28,1.0
+54,Research schools nearby,Done,High,Work,Person A,2025-11-27,,2025-12-13,16.0
+55,Update property insurance,Done,Low,Subscription|Work,Person A,2025-11-03,,2025-11-08,5.0
+56,Book team lunch,Done,Medium,Home,Person B,2025-11-04,2025-11-26,2025-11-06,2.0
+57,Schedule pest inspection,Active,High,Cheer|Property,Person C,2025-12-24,,,
+58,Fix WiFi dead zone,Done,High,Home,Person A,2026-01-14,2026-01-16,2026-01-23,9.0
+59,Book car service,Done,Medium,Home|Property,Person C,2025-12-22,2026-01-08,2025-12-23,1.0
+60,Replace smoke detector battery,Active,Medium,Cheer,Person A,2026-01-08,2026-01-31,,
+61,Organise photo backup,Done,High,Work,Person C,2026-01-19,2026-02-17,2026-01-23,4.0
+62,Organise kids sports gear,ToDo,High,Work,Person A,2026-04-09,2026-04-10,,
+63,Meal prep for the week,Done,Medium,Property,Person A,2026-03-13,,2026-03-15,2.0
+64,Research solar panels,Done,Medium,Subscription,Person B,2026-02-02,,2026-02-07,5.0
+65,Book eye exam,Done,Medium,Home,Person B,2025-12-17,2026-01-10,2025-12-23,6.0
+66,Book holiday accommodation,OnHold,Medium,Property,Person A,2026-03-31,2026-04-05,,
+67,Review strata minutes,ToDo,Medium,Home,Person C,2025-11-28,2025-12-02,,
+68,Call mortgage broker,Done,Medium,Property,Person B,2026-03-18,2026-04-06,2026-03-20,2.0
+69,Update investment spreadsheet,Done,Medium,Property,Family,2025-12-12,,2025-12-15,3.0
+70,Fix garden fence,Done,High,Home,Person C,2026-01-09,2026-01-28,2026-01-12,3.0
+71,Update property insurance,Done,Low,Home,Person C|Person A,2025-12-01,2025-12-20,2025-12-08,7.0
+72,Set up bill reminders,OnHold,Low,Routine,Person A,2026-03-16,,,
+73,Order birthday gift,ToDo,Medium,Cheer,Person A,2026-03-20,2026-03-21,,
+74,Plan anniversary celebration,Backlog,High,Routine,Person C,2026-03-14,2026-03-19,,
+75,Meal prep for the week,Done,Medium,Home,Family,2026-01-12,,2026-01-20,8.0
+76,Organise photo backup,ToDo,Low,Work|Subscription,Person C,2026-04-27,2026-05-06,,
+77,Order birthday gift,Done,Low,Work,Family,2025-11-14,2025-11-24,2025-11-25,11.0
+78,Submit tax documents,Done,Low,Property,Person B,2025-12-09,2025-12-24,2025-12-12,3.0
+79,Replace smoke detector battery,Cancelled,Medium,Routine,Person A,2025-12-23,2026-01-07,,
+80,Fix leaking tap,Done,Medium,School|Work,Person A,2026-02-19,,2026-02-23,4.0
+81,Schedule pest inspection,Done,Low,Property,Person A,2025-11-10,,2025-11-13,3.0
+82,Research solar panels,Done,High,School,Person B,2025-11-15,,2025-11-16,1.0
+83,Book holiday accommodation,Done,Low,Work,Person A,2026-01-08,,2026-01-13,5.0
+84,Update resume,ToDo,High,School,Person A,2026-03-21,,,
+85,Book holiday accommodation,Cancelled,Low,Property,Person A,2026-03-13,,,
+86,Organise filing cabinet,Done,Low,Work,Person A,2025-12-10,,2025-12-11,1.0
+87,Clean garage,Done,Medium,Home,Person A|Person B,2026-02-23,2026-03-06,2026-02-24,1.0
+88,Set up bill reminders,Done,Medium,Property|Work,Person A,2025-12-08,2025-12-15,2025-12-18,10.0
+89,Fix leaking tap,ToDo,Medium,Routine,Person B,2026-03-30,,,
+90,Arrange carpet cleaning,Active,Medium,Work,Person A,2026-01-02,,,
+91,Review tenant application,Done,Medium,Subscription,Person A,2025-12-02,,2025-12-04,2.0
+92,Clean out wardrobe,Done,Medium,Work,Family|Person A,2026-02-21,2026-03-07,2026-03-06,13.0
+93,Fix garden fence,Done,Low,Work,Person A,2025-12-25,,2025-12-29,4.0
+94,Update LinkedIn profile,OnHold,Low,Cheer,Person A,2026-01-11,2026-01-25,,
+95,Research solar panels,Cancelled,Low,Cheer,Person A,2025-12-02,,,
+96,Update resume,Done,Low,Work|Subscription,Person B,2025-11-07,,2025-11-08,1.0
+97,Fix WiFi dead zone,Done,High,Home|School,Person C,2026-03-10,2026-04-05,2026-03-21,11.0
+98,Book team lunch,Done,High,Routine,Person A,2026-01-25,2026-02-11,2026-01-30,5.0
+99,Set up automated backups,Done,High,Routine|Property,Person A,2025-11-25,2025-12-13,2025-11-26,1.0
+100,Update resume,OnHold,Medium,Property,Person C,2026-03-08,2026-03-18,,
+101,Schedule pest inspection,InProgress,Low,Cheer|School,Family,2026-01-25,2026-02-22,,
+102,Replace smoke detector battery,Done,Medium,Work|Subscription,Person C,2026-03-02,2026-03-06,2026-03-04,2.0
+103,Fix leaking tap,Done,Medium,School|Work,Person A,2025-12-24,2026-01-04,2026-01-03,10.0
+104,Research solar panels,Done,Medium,School,Person A,2026-01-20,,2026-02-10,21.0
+105,Arrange carpet cleaning,Done,High,Work,Person A|Person B,2025-12-12,,2025-12-16,4.0
+106,Organise kids sports gear,InProgress,Low,Work,Person C,2025-12-19,,,
+107,Order birthday gift,Done,Low,Routine,Person B|Person A,2026-03-29,,2026-04-02,4.0
+108,Review tenant application,ToDo,Medium,Work|Cheer,Family,2026-03-25,,,
+109,Review energy bill,Done,High,Property,Person B,2026-01-21,2026-02-02,2026-01-23,2.0
+110,Plan anniversary celebration,OnHold,Low,Property,Person B,2026-05-07,,,
+111,Plan anniversary celebration,Done,Medium,Routine,Person A,2025-11-04,2025-11-14,2025-11-07,3.0
+112,Research investment options,Done,Low,School,Person A,2026-02-04,,2026-02-05,1.0
+113,Order birthday gift,ToDo,Medium,Home,Person B,2026-05-03,2026-05-16,,
+114,Update property insurance,ToDo,Low,Cheer|Home,Person A|Person B,2026-03-22,2026-04-18,,
+115,Review energy bill,Done,High,Subscription,Person A|Person B,2025-12-07,2025-12-27,2025-12-10,3.0
+116,Research new phone plan,Done,Medium,Work,Person A,2026-02-01,2026-02-04,2026-02-03,2.0
+117,Fix leaking tap,Done,High,Routine|Subscription,Person A,2026-02-28,,2026-03-02,2.0
+118,Fix garden fence,OnHold,Medium,Work|Routine,Person A|Person B,2026-04-09,2026-04-12,,
+119,Clean garage,Cancelled,High,Routine,Person A,2026-04-02,2026-04-08,,
+120,Review strata minutes,Done,High,Routine,Person C,2026-01-11,,2026-01-17,6.0
+121,Update investment spreadsheet,Done,Medium,Subscription,Person B,2026-02-22,2026-03-07,2026-02-27,5.0
+122,Review energy bill,Done,Low,School|Subscription,Person B,2026-01-19,,2026-02-05,17.0
+123,Clean garage,ToDo,Low,Property|Subscription,Person C,2026-04-15,2026-04-22,,
+124,Clean out wardrobe,ToDo,Medium,Home|Work,Person A,2026-04-08,2026-04-16,,
+125,Follow up with real estate agent,Done,Medium,Work|School,Family,2026-02-06,2026-03-06,2026-02-12,6.0
+126,Research new phone plan,Cancelled,Medium,Home,Person A,2025-11-22,2025-11-23,,
+127,Clean out wardrobe,Done,High,Routine|Cheer,Person C,2025-11-22,2025-12-03,2025-11-24,2.0
+128,Schedule pest inspection,Done,Medium,Cheer|Property,Family,2025-12-03,2025-12-16,2025-12-07,4.0
+129,Plan weekend trip,Done,Medium,Cheer,Person A,2025-11-29,,2025-12-10,11.0
+130,Research schools nearby,Backlog,Low,Cheer,Person A,2026-05-03,,,
+131,Renew gym membership,Done,Low,Work|Subscription,Person B,2025-11-01,2025-11-28,2025-11-06,5.0
+132,Set up automated backups,Done,Medium,School,Family,2026-01-18,,2026-01-24,6.0
+133,Research after-school programs,Done,Medium,Work,Person A,2026-03-28,2026-04-22,2026-04-03,6.0
+134,Organise kids sports gear,Done,Medium,Work|Property,Person A,2026-02-25,,2026-02-27,2.0
+135,Fix WiFi dead zone,ToDo,Medium,School|Work,Person A,2026-04-15,2026-05-10,,
+136,Research schools nearby,InProgress,Medium,School,Person A,2025-12-16,2025-12-18,,
+137,Research after-school programs,Cancelled,High,Home|Routine,Person B,2025-12-03,,,
+138,Plan family dinner,Done,High,School,Family,2026-02-14,2026-02-23,2026-02-21,7.0
+139,Review rental yield,InProgress,Low,Property,Person B,2026-04-27,2026-05-19,,
+140,Plan family dinner,OnHold,High,Property,Person B,2026-04-03,,,
+141,Research new phone plan,Cancelled,Medium,Home|Work,Person B,2025-11-25,2025-12-13,,
+142,Book holiday accommodation,InProgress,Medium,Property,Person A,2026-03-26,2026-04-17,,
+143,Order birthday gift,Done,High,Home|Subscription,Person B,2026-02-05,,2026-02-11,6.0
+144,Renew gym membership,ToDo,Low,Property,Person A,2026-05-07,,,
+145,Compare health insurance,Done,Medium,Home|Property,Person C,2026-04-11,2026-05-07,2026-04-17,6.0
+146,Follow up with real estate agent,Done,Medium,Home,Person A,2026-01-26,2026-02-24,2026-01-31,5.0
+147,Organise photo backup,Done,Medium,Work,Person A,2026-02-19,2026-02-22,2026-02-20,1.0
+148,Fix door handle,InProgress,Medium,Work,Person A|Person C,2026-04-17,,,
+149,Research investment options,Done,Medium,School,Person A,2026-02-13,2026-02-18,2026-02-24,11.0
+150,Book car service,InProgress,Medium,Subscription|Cheer,Person A|Person B,2026-04-24,2026-04-29,,
+151,Plan weekend trip,Backlog,Medium,Work,Person A,2025-11-20,2025-12-02,,
+152,Research solar panels,Active,Low,Routine,Person C,2025-11-20,2025-12-05,,
+153,Update resume,OnHold,Medium,Work,Person B,2026-04-20,2026-05-13,,
+154,Review tenant application,Active,High,Property,Person A|Person B,2025-11-08,,,
+155,Review rental yield,InProgress,Medium,Subscription,Person A,2026-04-20,,,
+156,Update LinkedIn profile,Cancelled,Medium,Subscription|Cheer,Person A,2025-12-16,2025-12-22,,
+157,Fix garden fence,Active,Medium,School|Property,Person C,2026-01-02,2026-01-16,,
+158,Replace smoke detector battery,Done,Low,School|Property,Person A|Person B,2026-03-12,2026-03-24,2026-03-23,11.0
+159,Replace smoke detector battery,Backlog,Medium,Home,Person A,2026-03-27,,,
+160,Update LinkedIn profile,Done,Low,Property,Person C|Family,2026-02-18,,2026-03-12,22.0
+161,Schedule pest inspection,Backlog,Medium,Property,Person C,2026-04-02,,,
+162,Renew passport,Active,High,Work,Person C,2026-02-16,2026-02-27,,
+163,Research schools nearby,Backlog,Low,Work,Person A,2025-12-21,2026-01-17,,
+164,Organise kids sports gear,Done,Medium,Cheer,Person A,2026-04-06,2026-05-01,2026-04-07,1.0
+165,Review quarterly budget,Done,Medium,Work|Property,Family,2026-02-16,2026-02-23,2026-02-20,4.0
+166,Review tenant application,Done,High,Routine,Person C,2025-12-24,,2025-12-26,2.0
+167,Book team lunch,Done,Medium,School|Property,Person A,2025-11-10,,2025-11-12,2.0
+168,Book car service,Done,Medium,Cheer,Person B,2026-02-08,2026-02-11,2026-02-12,4.0
+169,Review tenant application,ToDo,High,Cheer,Person A,2026-03-29,2026-04-27,,
+170,Fix WiFi dead zone,OnHold,Low,Cheer,Person A,2026-05-04,,,
+171,Fix door handle,OnHold,High,Property|Home,Person A,2025-11-24,,,
+172,Fix leaking tap,Done,Medium,Cheer,Person C,2026-03-11,,2026-03-21,10.0
+173,Plan anniversary celebration,ToDo,Medium,Cheer|Property,Person A,2026-04-21,,,
+174,Clean out wardrobe,InProgress,Medium,Property|Work,Family,2026-04-21,2026-05-06,,
+175,Update emergency contacts,Done,High,School,Person B,2025-12-25,,2025-12-26,1.0
+176,Book car service,Done,Low,Cheer,Person A,2025-11-05,,2025-11-08,3.0
+177,Meal prep for the week,OnHold,Low,School|Work,Person A,2025-12-02,2025-12-23,,
+178,Review rental yield,Cancelled,Medium,Home,Person B,2025-11-02,2025-11-05,,
+179,Update resume,OnHold,Low,Work|Routine,Person C,2026-03-30,2026-04-23,,
+180,Schedule pest inspection,InProgress,High,Subscription,Person A,2026-04-07,2026-04-10,,
+181,Review quarterly budget,Done,Low,Property,Person B,2025-11-20,2025-12-06,2025-11-22,2.0
+182,Book team lunch,Active,Low,Work,Person A,2026-03-11,2026-03-24,,
+183,Book team lunch,Done,High,Routine,Person A|Person C,2026-05-07,2026-05-18,2026-05-09,2.0
+184,Research schools nearby,Done,High,School,Person A,2026-03-10,,2026-03-15,5.0
+185,Compare health insurance,Done,High,Home|Work,Person B,2026-01-22,,2026-01-25,3.0
+186,Fix door handle,Done,Medium,Cheer,Person A,2025-12-10,2025-12-30,2025-12-27,17.0
+187,Review school report,Done,Medium,Home,Person A|Person B,2025-11-07,,2025-11-08,1.0
+188,Compare health insurance,Done,High,Work,Person A,2026-03-29,,2026-03-31,2.0
+189,Submit tax documents,InProgress,Medium,Work,Person C,2026-05-07,2026-05-25,,
+190,Research solar panels,Cancelled,Medium,Work|School,Person C|Person A,2026-04-29,2026-05-17,,
+191,Cancel unused subscription,Done,Low,Property|Home,Person A,2025-12-28,,2026-01-01,4.0
+192,Research solar panels,Done,High,Property|Cheer,Person A,2026-01-26,,2026-01-28,2.0
+193,Compare health insurance,Active,Low,School|Home,Person A,2026-02-18,,,
+194,Update LinkedIn profile,Done,High,Routine,Person C,2025-11-08,,2025-11-20,12.0
+195,Call mortgage broker,ToDo,Medium,Work,Person A|Person C,2026-04-27,2026-05-01,,
+196,Plan weekend trip,OnHold,High,Routine,Person B,2026-03-20,2026-03-30,,
+197,Book holiday accommodation,OnHold,Medium,Home,Person A,2025-11-15,2025-12-05,,
+198,Fix door handle,Active,Medium,Work,Person B|Person A,2026-04-07,,,
+199,Update resume,Cancelled,Medium,Property|Subscription,Person C,2025-11-12,,,
+200,Fix WiFi dead zone,Done,Medium,School,Person B,2026-01-25,2026-02-12,2026-01-29,4.0
+201,Plan anniversary celebration,Done,Medium,School|Cheer,Person A,2026-01-27,2026-02-08,2026-01-28,1.0
+202,Renew passport,Cancelled,Medium,Property,Person B|Person C,2026-02-19,2026-02-22,,
+203,Review quarterly budget,Done,Medium,School,Person A,2026-01-03,2026-01-16,2026-01-19,16.0
+204,Update LinkedIn profile,Done,Low,School,Person B,2026-01-29,,2026-03-06,36.0
+205,Review energy bill,Cancelled,Low,Property,Person C,2026-01-09,2026-01-14,,
+206,Follow up with real estate agent,Done,High,Home,Person A,2025-12-24,2025-12-28,2026-01-11,18.0
+207,Schedule dentist appointment,Done,Low,Property,Person B,2026-01-19,2026-02-07,2026-01-23,4.0
+208,Book car service,Done,High,School,Person A|Person C,2025-12-19,2026-01-01,2025-12-22,3.0
+209,Book holiday accommodation,ToDo,Medium,Subscription,Person B,2026-05-02,2026-05-03,,
+210,Cancel unused subscription,InProgress,Medium,Cheer,Person B|Family,2026-03-25,2026-04-14,,
+211,Set up automated backups,Active,High,Cheer|School,Person C|Person A,2025-12-31,,,
+212,Research investment options,Cancelled,Low,Subscription,Person A,2026-04-03,2026-04-07,,
+213,Set up automated backups,Done,Medium,School,Person A,2026-03-06,,2026-03-08,2.0
+214,Review strata minutes,Backlog,Low,Work,Person A,2026-05-07,2026-05-14,,
+215,Organise photo backup,ToDo,Low,Home|Subscription,Person A,2026-04-12,,,
+216,Organise photo backup,Backlog,Low,Property,Person A,2026-02-15,,,
+217,Book team lunch,InProgress,Low,Routine,Person A,2026-04-09,2026-05-04,,
+218,Follow up with real estate agent,Active,Medium,Work,Person A,2026-04-14,,,
+219,Fix garden fence,Active,High,School,Person A,2026-03-08,,,
+220,Fix door handle,Done,High,School|Work,Person A,2025-12-03,2025-12-09,2025-12-06,3.0
+221,Fix WiFi dead zone,Cancelled,Low,Property,Person B,2025-11-05,2025-11-29,,
+222,Plan anniversary celebration,ToDo,Medium,School|Property,Person C,2026-04-17,2026-04-21,,
+223,Renew gym membership,Done,High,Cheer,Person A,2026-02-18,,2026-03-01,11.0
+224,Renew gym membership,Active,Low,Work,Family,2026-04-17,2026-05-07,,
+225,Set up bill reminders,Done,Medium,Work,Person A,2025-11-06,2025-11-14,2025-11-15,9.0
+226,Prepare presentation slides,ToDo,Medium,Work,Person A|Person C,2026-04-13,2026-04-29,,
+227,Organise kids sports gear,Done,Low,Property,Person A,2026-03-11,2026-04-08,2026-03-13,2.0
+228,Update resume,ToDo,Medium,Work,Person C|Person A,2026-04-25,,,
+229,Research schools nearby,Done,High,Home|Routine,Person B|Person A,2026-01-02,,2026-01-04,2.0
+230,Renew passport,Active,Medium,Routine,Person C,2026-03-13,,,
+231,Update LinkedIn profile,InProgress,Medium,Subscription,Person A|Person B,2026-04-24,2026-04-25,,
+232,Review rental yield,ToDo,Medium,School,Person B,2026-04-12,2026-04-17,,
+233,Clean garage,Done,Low,Work,Person A,2026-02-16,,2026-02-23,7.0
+234,Fix WiFi dead zone,InProgress,High,Routine,Person A,2026-04-05,2026-05-01,,
+235,Fix door handle,ToDo,Medium,School,Person C,2026-04-02,,,
+236,Book team lunch,Done,Low,Home,Person B|Person A,2026-03-25,2026-03-31,2026-03-27,2.0
+237,Arrange carpet cleaning,Done,Low,Work,Person A,2025-12-05,,2025-12-06,1.0
+238,Call mortgage broker,Cancelled,Medium,School|Subscription,Family,2026-03-30,,,
+239,Update investment spreadsheet,Done,Medium,Work|School,Person A,2026-03-04,2026-03-05,2026-03-05,1.0
+240,Cancel unused subscription,Done,Medium,Work|Routine,Person B|Family,2025-12-23,2026-01-15,2025-12-26,3.0
+241,Research new phone plan,Done,Low,Cheer,Person C|Person A,2025-11-16,2025-12-06,2025-11-20,4.0
+242,Set up bill reminders,ToDo,Low,Routine,Person B,2026-05-08,2026-05-30,,
+243,Clean out wardrobe,Done,High,Work,Family,2026-01-15,2026-02-09,2026-01-16,1.0
+244,Book holiday accommodation,InProgress,Medium,Work,Family,2026-04-06,2026-04-30,,
+245,Update household inventory,OnHold,Low,Home,Person A|Person C,2026-04-11,,,
+246,Renew passport,Done,Medium,Cheer,Person A,2026-03-04,2026-03-21,2026-03-07,3.0
+247,Update household inventory,ToDo,Low,Home|Property,Person A,2025-12-16,2026-01-07,,
+248,Book car service,Done,Low,Subscription,Person C,2026-03-06,2026-03-13,2026-03-10,4.0
+249,Set up automated backups,InProgress,High,Routine,Person A,2026-03-21,,,
+250,Order birthday gift,Cancelled,Low,Home,Family|Person C,2026-01-11,2026-02-07,,
+251,Fix garden fence,ToDo,Medium,Cheer,Person A,2026-04-23,2026-04-27,,
+252,Update emergency contacts,Backlog,Medium,Routine,Person A,2026-01-21,,,
+253,Schedule dentist appointment,Done,Medium,Cheer,Person B,2025-11-02,,2025-11-11,9.0
+254,Plan family dinner,Done,Low,Subscription,Person C|Person B,2026-01-23,2026-02-03,2026-01-28,5.0
+255,Organise kids sports gear,Backlog,Medium,Subscription|Work,Person C,2026-01-04,2026-01-25,,
+256,Order birthday gift,Cancelled,Medium,Property,Person B|Person A,2026-05-01,2026-05-04,,
+257,Plan family dinner,InProgress,Low,Routine,Person A,2026-04-05,2026-05-03,,
+258,Order birthday gift,OnHold,Medium,Cheer,Person C,2026-04-10,,,
+259,Review quarterly budget,ToDo,Medium,Home,Person A,2025-11-19,2025-11-25,,
+260,Fix garden fence,Done,Medium,Routine,Person B,2026-01-03,2026-01-08,2026-01-04,1.0
+261,Update investment spreadsheet,ToDo,High,Work,Person C,2026-04-03,2026-04-13,,
+262,Research solar panels,OnHold,Low,Routine,Person C,2026-03-02,,,
+263,Research investment options,Done,High,Routine,Family,2026-01-16,2026-01-29,2026-01-20,4.0
+264,Order birthday gift,ToDo,Medium,Home|Subscription,Person A,2026-04-11,2026-04-23,,
+265,Fix garden fence,Active,Medium,Cheer,Person A,2025-11-21,,,
+266,Update property insurance,ToDo,Low,Home|Subscription,Person B,2026-03-19,2026-03-24,,
+267,Update emergency contacts,InProgress,Low,Cheer,Person A,2026-03-25,2026-04-16,,
+268,Fix garden fence,InProgress,Medium,Cheer,Person A,2026-03-29,,,
+269,Compare health insurance,Done,Low,Subscription,Person A,2026-02-23,2026-02-24,2026-02-24,1.0
+270,Set up automated backups,OnHold,Medium,Subscription,Person A|Person C,2026-04-04,,,
+271,Fix leaking tap,Done,Medium,Work|School,Person A,2025-11-04,2025-11-07,2025-11-25,21.0
+272,Set up bill reminders,ToDo,Low,School,Family,2026-05-06,2026-05-09,,
+273,Follow up with real estate agent,Done,Medium,Subscription,Person B,2025-12-24,2026-01-08,2026-01-04,11.0
+274,Clean garage,ToDo,Low,Cheer|School,Person B|Person A,2026-03-23,2026-04-06,,
+275,Fix WiFi dead zone,Done,High,Property,Person B,2026-03-08,,2026-03-09,1.0
+276,Renew gym membership,Active,Medium,Work,Person C,2025-12-15,,,
+277,Book team lunch,ToDo,Low,Work,Person A|Person B,2026-05-07,2026-05-29,,
+278,Review strata minutes,Done,Medium,Work,Person A,2025-12-23,,2025-12-30,7.0
+279,Review strata minutes,Done,Medium,Work,Person A,2025-12-02,,2025-12-04,2.0
+280,Prepare presentation slides,Done,Medium,Work,Person A,2025-12-23,2026-01-06,2025-12-25,2.0
+281,Set up automated backups,Done,High,Work,Person B,2025-12-19,2026-01-06,2025-12-28,9.0
+282,Prepare presentation slides,ToDo,Medium,Home|Work,Person A,2025-11-08,,,
+283,Submit council application,InProgress,Low,Home|Routine,Person A,2026-04-21,2026-05-20,,
+284,Call mortgage broker,Active,Low,Work,Person C,2026-04-10,2026-05-04,,
+285,Submit tax documents,OnHold,Medium,Home|Property,Family,2026-02-16,2026-03-10,,
+286,Submit tax documents,Done,Low,Work,Person C,2025-12-18,2025-12-25,2025-12-21,3.0
+287,Set up bill reminders,Backlog,Low,Subscription,Person B,2026-03-21,,,
+288,Review rental yield,Done,Medium,Cheer,Person A,2026-01-26,,2026-02-09,14.0
+289,Organise filing cabinet,InProgress,Medium,Work,Person B,2026-03-29,,,
+290,Review rental yield,Done,Medium,Work|Home,Person A,2025-12-24,2026-01-03,2025-12-31,7.0
+291,Submit council application,ToDo,Medium,Property|Cheer,Person C,2026-02-24,,,
+292,Schedule pest inspection,InProgress,Low,Work,Person A,2026-02-12,2026-02-19,,
+293,Book team lunch,Done,Medium,Home,Person A,2026-04-02,,2026-04-05,3.0
+294,Research investment options,Cancelled,Medium,Subscription,Person A,2026-03-15,2026-04-11,,
+295,Review tenant application,Cancelled,Low,Cheer|Property,Person B,2026-03-12,2026-03-20,,
+296,Clean out wardrobe,ToDo,Medium,Cheer,Person C,2026-03-17,2026-04-12,,
+297,Clean out wardrobe,Cancelled,Low,Home,Person A|Family,2026-02-14,2026-02-25,,
+298,Submit tax documents,Done,Low,Property,Person B|Person A,2026-01-04,2026-01-09,2026-01-05,1.0
+299,Research investment options,Done,Medium,Home|Routine,Person B|Family,2025-12-24,,2025-12-28,4.0
+300,Research new phone plan,Done,Medium,Work,Person A,2026-01-17,2026-01-18,2026-01-18,1.0
