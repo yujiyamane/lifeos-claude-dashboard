@@ -155,13 +155,24 @@ def page_command(todos, events, routines, rlog, journal):
         activity = activity.merge(t_daily, on="date", how="left").merge(e_daily, on="date", how="left")
         activity = activity.merge(r_daily, on="date", how="left").merge(j_daily, on="date", how="left").fillna(0)
 
+        def hex_to_rgba(hex_color, alpha=0.3):
+            """Convert hex color to rgba with alpha"""
+            if hex_color.startswith("#"):
+                hex_color = hex_color[1:]
+            r = int(hex_color[0:2], 16)
+            g = int(hex_color[2:4], 16)
+            b = int(hex_color[4:6], 16)
+            return f"rgba({r},{g},{b},{alpha})"
+
         fig = go.Figure()
         for col, name, color in [("routines", "Routines", TEAL), ("tasks", "Tasks", P), ("events", "Events", PU), ("journal", "Journal", A)]:
-            # Convert hex colors to rgba with alpha
+            # Convert to rgba with alpha
             if color.startswith("#"):
-                fill_color = color + "4D"  # 30% opacity in hex
+                fill_color = hex_to_rgba(color, 0.3)
+            elif "rgb" in color:
+                fill_color = color.replace(")", ",0.3)").replace("rgb", "rgba")
             else:
-                fill_color = color.replace(")", ",0.3)").replace("rgb", "rgba") if "rgb" in color else color
+                fill_color = f"rgba(0,0,0,0.3)"  # fallback
 
             fig.add_trace(go.Scatter(
                 x=activity["date"], y=activity[col].rolling(7).mean(),
