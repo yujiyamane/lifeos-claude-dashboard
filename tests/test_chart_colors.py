@@ -1,9 +1,13 @@
 import ast
 import re
 import pytest
+import os
 
 def get_app_source():
-    with open("app.py", "r") as f:
+    # Get the directory of this test file
+    test_dir = os.path.dirname(os.path.abspath(__file__))
+    app_path = os.path.join(test_dir, "..", "app.py")
+    with open(app_path, "r") as f:
         return f.read()
 
 BANNED_COLORS = [
@@ -46,4 +50,20 @@ def test_no_bare_hex_in_color_discrete_sequence():
     matches = re.findall(pattern, source, re.DOTALL)
     assert len(matches) == 0, (
         f"Found hardcoded hex in color_discrete_sequence — use CHART_SEQUENCE instead"
+    )
+
+def test_no_bare_hex_in_fillcolor():
+    source = get_app_source()
+    pattern = r'fillcolor\s*=\s*["\']#[0-9a-fA-F]{6}["\']'
+    matches = re.findall(pattern, source)
+    assert len(matches) == 0, (
+        f"Found hardcoded hex in fillcolor: {matches} — use PALETTE['...'] instead"
+    )
+
+def test_no_bare_hex_in_line_color_nested():
+    source = get_app_source()
+    pattern = r'line\s*=\s*dict\([^)]*color\s*=\s*["\']#[0-9a-fA-F]{6}["\']'
+    matches = re.findall(pattern, source)
+    assert len(matches) == 0, (
+        f"Found hardcoded hex in line.color: {matches} — use PALETTE['...'] instead"
     )
