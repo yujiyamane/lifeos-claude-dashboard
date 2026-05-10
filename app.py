@@ -73,9 +73,11 @@ def gauge_score(value, label, max_val=100):
 
 def chart_cfg(fig, h=380, mt=40, mb=30, ml=None):
     margin = dict(t=mt, b=mb, l=ml if ml else 60, r=20)
+    # Apply unified layout defaults first
+    fig.update_layout(**PLOTLY_LAYOUT_DEFAULTS)
+    # Then apply specific overrides
     fig.update_layout(template="plotly_white", height=h, margin=margin,
-                      font=dict(family="Inter", size=11),
-                      plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)")
+                      font=dict(family="Inter", size=11))
     return fig
 
 def hex_to_rgba(hex_color, alpha=0.3):
