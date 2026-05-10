@@ -162,3 +162,4 @@ lifeos-claude-dashboard/
 | Case 1 | Power BI × Healthcare KPI | [powerbi-claude-health](https://github.com/yujiyamane/powerbi-claude-health) |
 | Case 2 | Streamlit × ED Performance | [streamlit-claude-health](https://github.com/yujiyamane/streamlit-claude-health) |
 | **Case 3** | **Life OS × Personal Analytics** | **This repo** |
+# Chart colors unified with PALETTE system
