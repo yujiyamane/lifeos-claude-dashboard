@@ -7,51 +7,52 @@ import numpy as np
 from datetime import datetime, timedelta, date
 import calendar
 import os
+from color_theme import PALETTE, CHART_SEQUENCE, HEATMAP_SCALE, PLOTLY_LAYOUT_DEFAULTS
 
 st.set_page_config(page_title="Life OS", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
 
-P = "#002664"
-R = "#C00000"
-G = "#00843D"
-A = "#F7931E"
-PU = "#6B21A8"
-TEAL = "#0891B2"
-SLATE = "#475569"
-LIGHT = "#F8FAFC"
-MOOD_C = {"Great": "#00843D", "Good": "#4CAF50", "Okay": "#F7931E", "Low": "#FF6B35", "Bad": "#C00000"}
-MOOD_V = {"Great": 5, "Good": 4, "Okay": 3, "Low": 2, "Bad": 1}
-STATUS_C = {"Done": G, "InProgress": P, "ToDo": A, "Backlog": SLATE, "OnHold": "#94A3B8", "Cancelled": "#CBD5E1", "Active": PU}
+# Legacy color definitions - replace with PALETTE usage
+# P = "#002664"  -> PALETTE["primary"]
+# R = "#C00000"  -> PALETTE["alert"]
+# G = "#00843D"  -> Use PALETTE["teal"] for green charts
+# A = "#F7931E"  -> PALETTE["soft_pink"] for warnings
+# PU = "#6B21A8" -> PALETTE["secondary"]
+# TEAL = "#0891B2" -> PALETTE["teal"]
 
-st.markdown("""
+MOOD_C = {"Great": PALETTE["teal"], "Good": PALETTE["secondary"], "Okay": PALETTE["soft_pink"], "Low": PALETTE["alert"], "Bad": PALETTE["alert"]}
+MOOD_V = {"Great": 5, "Good": 4, "Okay": 3, "Low": 2, "Bad": 1}
+STATUS_C = {"Done": PALETTE["teal"], "InProgress": PALETTE["primary"], "ToDo": PALETTE["soft_pink"], "Backlog": PALETTE["neutral"], "OnHold": "#94A3B8", "Cancelled": "#CBD5E1", "Active": PALETTE["secondary"]}
+
+st.markdown(f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-* { font-family: 'Inter', sans-serif; }
-.main-title { font-size: 1.8rem; font-weight: 800; color: #002664; letter-spacing: -0.03em; margin: 0; }
-.main-sub { font-size: 0.85rem; color: #64748B; margin-bottom: 1.5rem; font-weight: 400; }
-.kpi-row { display: flex; gap: 12px; margin-bottom: 1.5rem; }
-.kpi {
+* {{ font-family: 'Inter', sans-serif; }}
+.main-title {{ font-size: 1.8rem; font-weight: 800; color: {PALETTE["primary"]}; letter-spacing: -0.03em; margin: 0; }}
+.main-sub {{ font-size: 0.85rem; color: {PALETTE["neutral"]}; margin-bottom: 1.5rem; font-weight: 400; }}
+.kpi-row {{ display: flex; gap: 12px; margin-bottom: 1.5rem; }}
+.kpi {{
     flex: 1; background: white; border-radius: 10px; padding: 16px 18px;
     border: 1px solid #E2E8F0; position: relative; overflow: hidden;
-}
-.kpi::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: #002664; }
-.kpi.green::before { background: #00843D; }
-.kpi.red::before { background: #C00000; }
-.kpi.purple::before { background: #6B21A8; }
-.kpi.amber::before { background: #F7931E; }
-.kpi-label { font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
-.kpi-value { font-size: 1.6rem; font-weight: 800; color: #1E293B; margin-top: 2px; }
-.kpi.green .kpi-value { color: #00843D; }
-.kpi.red .kpi-value { color: #C00000; }
-.kpi.purple .kpi-value { color: #6B21A8; }
-.section-title { font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin: 1.5rem 0 0.5rem 0; }
-.score-gauge { text-align: center; padding: 20px; background: white; border-radius: 10px; border: 1px solid #E2E8F0; }
-.score-number { font-size: 2.5rem; font-weight: 800; }
-.score-label { font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; }
-div[data-testid="stSidebar"] { background: linear-gradient(180deg, #002664 0%, #001845 100%); }
-div[data-testid="stSidebar"] .stMarkdown { color: rgba(255,255,255,0.9); }
-div[data-testid="stSidebar"] label { color: rgba(255,255,255,0.8) !important; font-size: 0.8rem; }
-div[data-testid="stSidebar"] .stRadio label { color: rgba(255,255,255,0.9) !important; }
-.divider { border: none; border-top: 1px solid #E2E8F0; margin: 1.5rem 0; }
+}}
+.kpi::before {{ content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: {PALETTE["primary"]}; }}
+.kpi.green::before {{ background: {PALETTE["teal"]}; }}
+.kpi.red::before {{ background: {PALETTE["alert"]}; }}
+.kpi.purple::before {{ background: {PALETTE["secondary"]}; }}
+.kpi.amber::before {{ background: {PALETTE["soft_pink"]}; }}
+.kpi-label {{ font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }}
+.kpi-value {{ font-size: 1.6rem; font-weight: 800; color: #1E293B; margin-top: 2px; }}
+.kpi.green .kpi-value {{ color: {PALETTE["teal"]}; }}
+.kpi.red .kpi-value {{ color: {PALETTE["alert"]}; }}
+.kpi.purple .kpi-value {{ color: {PALETTE["secondary"]}; }}
+.section-title {{ font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin: 1.5rem 0 0.5rem 0; }}
+.score-gauge {{ text-align: center; padding: 20px; background: white; border-radius: 10px; border: 1px solid #E2E8F0; }}
+.score-number {{ font-size: 2.5rem; font-weight: 800; }}
+.score-label {{ font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; }}
+div[data-testid="stSidebar"] {{ background: linear-gradient(180deg, {PALETTE["primary"]} 0%, #001845 100%); }}
+div[data-testid="stSidebar"] .stMarkdown {{ color: rgba(255,255,255,0.9); }}
+div[data-testid="stSidebar"] label {{ color: rgba(255,255,255,0.8) !important; font-size: 0.8rem; }}
+div[data-testid="stSidebar"] .stRadio label {{ color: rgba(255,255,255,0.9) !important; }}
+.divider {{ border: none; border-top: 1px solid #E2E8F0; margin: 1.5rem 0; }}
 </style>
 """, unsafe_allow_html=True)
 
@@ -63,7 +64,7 @@ def kpi_strip(items):
     st.markdown(html, unsafe_allow_html=True)
 
 def gauge_score(value, label, max_val=100):
-    color = G if value >= 70 else A if value >= 50 else R
+    color = PALETTE["teal"] if value >= 70 else PALETTE["soft_pink"] if value >= 50 else PALETTE["alert"]
     st.markdown(f'''
     <div class="score-gauge">
         <div class="score-number" style="color:{color}">{value:.0f}</div>
