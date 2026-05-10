@@ -21,7 +21,7 @@ st.set_page_config(page_title="Life OS", page_icon="🧠", layout="wide", initia
 
 MOOD_C = {"Great": PALETTE["teal"], "Good": PALETTE["secondary"], "Okay": PALETTE["soft_pink"], "Low": PALETTE["alert"], "Bad": PALETTE["alert"]}
 MOOD_V = {"Great": 5, "Good": 4, "Okay": 3, "Low": 2, "Bad": 1}
-STATUS_C = {"Done": PALETTE["teal"], "InProgress": PALETTE["primary"], "ToDo": PALETTE["soft_pink"], "Backlog": PALETTE["neutral"], "OnHold": "#94A3B8", "Cancelled": "#CBD5E1", "Active": PALETTE["secondary"]}
+STATUS_C = {"Done": PALETTE["teal"], "InProgress": PALETTE["primary"], "ToDo": PALETTE["soft_pink"], "Backlog": PALETTE["neutral"], "OnHold": PALETTE["neutral"], "Cancelled": PALETTE["neutral"], "Active": PALETTE["secondary"]}
 
 st.markdown(f"""
 <style>
@@ -32,27 +32,27 @@ st.markdown(f"""
 .kpi-row {{ display: flex; gap: 12px; margin-bottom: 1.5rem; }}
 .kpi {{
     flex: 1; background: white; border-radius: 10px; padding: 16px 18px;
-    border: 1px solid #E2E8F0; position: relative; overflow: hidden;
+    border: 1px solid {PALETTE["neutral"]}; position: relative; overflow: hidden;
 }}
 .kpi::before {{ content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: {PALETTE["primary"]}; }}
 .kpi.green::before {{ background: {PALETTE["teal"]}; }}
 .kpi.red::before {{ background: {PALETTE["alert"]}; }}
 .kpi.purple::before {{ background: {PALETTE["secondary"]}; }}
 .kpi.amber::before {{ background: {PALETTE["soft_pink"]}; }}
-.kpi-label {{ font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }}
-.kpi-value {{ font-size: 1.6rem; font-weight: 800; color: #1E293B; margin-top: 2px; }}
+.kpi-label {{ font-size: 0.7rem; color: {PALETTE["neutral"]}; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }}
+.kpi-value {{ font-size: 1.6rem; font-weight: 800; color: {PALETTE["primary"]}; margin-top: 2px; }}
 .kpi.green .kpi-value {{ color: {PALETTE["teal"]}; }}
 .kpi.red .kpi-value {{ color: {PALETTE["alert"]}; }}
 .kpi.purple .kpi-value {{ color: {PALETTE["secondary"]}; }}
-.section-title {{ font-size: 0.75rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin: 1.5rem 0 0.5rem 0; }}
-.score-gauge {{ text-align: center; padding: 20px; background: white; border-radius: 10px; border: 1px solid #E2E8F0; }}
+.section-title {{ font-size: 0.75rem; color: {PALETTE["neutral"]}; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin: 1.5rem 0 0.5rem 0; }}
+.score-gauge {{ text-align: center; padding: 20px; background: white; border-radius: 10px; border: 1px solid {PALETTE["neutral"]}; }}
 .score-number {{ font-size: 2.5rem; font-weight: 800; }}
-.score-label {{ font-size: 0.7rem; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; }}
-div[data-testid="stSidebar"] {{ background: linear-gradient(180deg, {PALETTE["primary"]} 0%, #001845 100%); }}
+.score-label {{ font-size: 0.7rem; color: {PALETTE["neutral"]}; text-transform: uppercase; letter-spacing: 0.08em; }}
+div[data-testid="stSidebar"] {{ background: linear-gradient(180deg, {PALETTE["primary"]} 0%, {PALETTE["primary"]} 100%); }}
 div[data-testid="stSidebar"] .stMarkdown {{ color: rgba(255,255,255,0.9); }}
 div[data-testid="stSidebar"] label {{ color: rgba(255,255,255,0.8) !important; font-size: 0.8rem; }}
 div[data-testid="stSidebar"] .stRadio label {{ color: rgba(255,255,255,0.9) !important; }}
-.divider {{ border: none; border-top: 1px solid #E2E8F0; margin: 1.5rem 0; }}
+.divider {{ border: none; border-top: 1px solid {PALETTE["neutral"]}; margin: 1.5rem 0; }}
 </style>
 """, unsafe_allow_html=True)
 
@@ -166,7 +166,7 @@ def page_command(todos, events, routines, rlog, journal):
         activity = activity.merge(r_daily, on="date", how="left").merge(j_daily, on="date", how="left").fillna(0)
 
         fig = go.Figure()
-        for col, name, color in [("routines", "Routines", TEAL), ("tasks", "Tasks", P), ("events", "Events", PU), ("journal", "Journal", A)]:
+        for col, name, color in [("routines", "Routines", PALETTE["teal"]), ("tasks", "Tasks", PALETTE["primary"]), ("events", "Events", PALETTE["secondary"]), ("journal", "Journal", PALETTE["soft_pink"])]:
             fig.add_trace(go.Scatter(
                 x=activity["date"], y=activity[col].rolling(7).mean(),
                 name=name, mode="lines", stackgroup="one",
@@ -190,9 +190,9 @@ def page_command(todos, events, routines, rlog, journal):
 
         mdf = pd.DataFrame(monthly_data)
         fig = go.Figure()
-        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["created"], name="Tasks Created", marker_color=P, opacity=0.7))
-        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["completed"], name="Completed", marker_color=G, opacity=0.7))
-        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["events"], name="Events", marker_color=PU, opacity=0.5))
+        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["created"], name="Tasks Created", marker_color=PALETTE["primary"], opacity=0.7))
+        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["completed"], name="Completed", marker_color=PALETTE["teal"], opacity=0.7))
+        fig.add_trace(go.Bar(x=mdf["month"], y=mdf["events"], name="Events", marker_color=PALETTE["secondary"], opacity=0.5))
         fig = chart_cfg(fig, h=320)
         fig.update_layout(barmode="group", legend=dict(orientation="h", y=1.08, font=dict(size=9)))
         st.plotly_chart(fig, use_container_width=True)
@@ -230,8 +230,8 @@ def page_productivity(todos):
             cum_completed.append(len(todos[(todos["status"] == "Done") & (todos["date_actioned"].notna()) & (todos["date_actioned"] <= d)]))
 
         fig = go.Figure()
-        fig.add_trace(go.Scatter(x=date_range, y=cum_created, name="Created (cumulative)", line=dict(color=P, width=2.5), fill="tozeroy", fillcolor=hex_to_rgba(P, 0.08)))
-        fig.add_trace(go.Scatter(x=date_range, y=cum_completed, name="Completed (cumulative)", line=dict(color=G, width=2.5), fill="tozeroy", fillcolor=hex_to_rgba(G, 0.08)))
+        fig.add_trace(go.Scatter(x=date_range, y=cum_created, name="Created (cumulative)", line=dict(color=PALETTE["primary"], width=2.5), fill="tozeroy", fillcolor=hex_to_rgba(PALETTE["primary"], 0.08)))
+        fig.add_trace(go.Scatter(x=date_range, y=cum_completed, name="Completed (cumulative)", line=dict(color=PALETTE["teal"], width=2.5), fill="tozeroy", fillcolor=hex_to_rgba(PALETTE["teal"], 0.08)))
         fig = chart_cfg(fig, h=350)
         fig.update_layout(legend=dict(orientation="h", y=1.08, font=dict(size=10)))
         st.plotly_chart(fig, use_container_width=True)
@@ -244,7 +244,7 @@ def page_productivity(todos):
 
         fig = go.Figure(go.Funnel(
             y=funnel_data["status"], x=funnel_data["count"],
-            marker_color=[STATUS_C.get(s, SLATE) for s in funnel_data["status"]],
+            marker_color=[STATUS_C.get(s, PALETTE["neutral"]) for s in funnel_data["status"]],
             textinfo="value+percent initial",
             textfont=dict(size=12)
         ))
@@ -265,7 +265,7 @@ def page_productivity(todos):
 
         fig = go.Figure(data=go.Heatmap(
             z=heat_pivot.values, x=["High", "Medium", "Low"], y=heat_pivot.index.tolist(),
-            colorscale=[[0, "#F8FAFC"], [0.5, "#8AAED6"], [1, P]],
+            colorscale=[[0, PALETTE["neutral"]], [0.5, PALETTE["teal"]], [1, PALETTE["primary"]]],
             hovertemplate="Tag: %{y}<br>Priority: %{x}<br>Count: %{z}<extra></extra>",
             showscale=False, text=heat_pivot.values.astype(int), texttemplate="%{text}"
         ))
@@ -277,7 +277,7 @@ def page_productivity(todos):
         completed = todos[todos["days_to_complete"].notna()].copy()
         if len(completed) > 0:
             fig = go.Figure()
-            for pri, color in [("High", R), ("Medium", P), ("Low", TEAL)]:
+            for pri, color in [("High", PALETTE["alert"]), ("Medium", PALETTE["primary"]), ("Low", PALETTE["teal"])]:
                 subset = completed[completed["priority"] == pri]["days_to_complete"]
                 if len(subset) > 0:
                     fig.add_trace(go.Box(y=subset, name=pri, marker_color=color, boxmean=True))
@@ -293,14 +293,14 @@ def page_productivity(todos):
     open_tasks["priority_num"] = open_tasks["priority"].map({"High": 3, "Medium": 2, "Low": 1})
 
     fig = go.Figure()
-    for pri, color, sym in [("High", R, "diamond"), ("Medium", P, "circle"), ("Low", TEAL, "square")]:
+    for pri, color, sym in [("High", PALETTE["alert"], "diamond"), ("Medium", PALETTE["primary"], "circle"), ("Low", PALETTE["teal"], "square")]:
         subset = open_tasks[open_tasks["priority"] == pri]
         fig.add_trace(go.Scatter(
             x=subset["age_days"], y=subset["priority_num"] + np.random.uniform(-0.2, 0.2, len(subset)),
             mode="markers", name=pri, marker=dict(color=color, size=10, symbol=sym, opacity=0.7),
             text=subset["subject"], hovertemplate="%{text}<br>Age: %{x} days<extra></extra>"
         ))
-    fig.add_vrect(x0=30, x1=open_tasks["age_days"].max() + 5, fillcolor=R, opacity=0.05, line_width=0, annotation_text="Danger Zone (>30d)", annotation_position="top right")
+    fig.add_vrect(x0=30, x1=open_tasks["age_days"].max() + 5, fillcolor=PALETTE["alert"], opacity=0.05, line_width=0, annotation_text="Danger Zone (>30d)", annotation_position="top right")
     fig = chart_cfg(fig, h=280)
     fig.update_layout(xaxis_title="Days Since Created", yaxis=dict(tickvals=[1, 2, 3], ticktext=["Low", "Medium", "High"], title="Priority"),
                       legend=dict(orientation="h", y=1.1, font=dict(size=10)))
@@ -353,7 +353,7 @@ def page_habits(routines, rlog):
 
         fig = go.Figure(data=go.Heatmap(
             z=pivot.values, x=[f"W{w+1}" for w in pivot.columns], y=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-            colorscale=[[0, "#F1F5F9"], [0.5, "#BBF7D0"], [1, G]],
+            colorscale=[[0, PALETTE["neutral"]], [0.5, PALETTE["teal"]], [1, PALETTE["teal"]]],
             showscale=False, hovertemplate="Week %{x}<br>%{y}<br>%{z}<extra></extra>",
             xgap=2, ygap=2
         ))
@@ -372,8 +372,8 @@ def page_habits(routines, rlog):
         st.markdown('<div class="section-title">Streak Leaderboard</div>', unsafe_allow_html=True)
         streak_data = routines.sort_values("current_streak", ascending=True)
         fig = go.Figure()
-        fig.add_trace(go.Bar(y=streak_data["subject"], x=streak_data["longest_streak"], orientation="h", name="Longest", marker_color=P, opacity=0.3))
-        fig.add_trace(go.Bar(y=streak_data["subject"], x=streak_data["current_streak"], orientation="h", name="Current", marker_color=G,
+        fig.add_trace(go.Bar(y=streak_data["subject"], x=streak_data["longest_streak"], orientation="h", name="Longest", marker_color=PALETTE["primary"], opacity=0.3))
+        fig.add_trace(go.Bar(y=streak_data["subject"], x=streak_data["current_streak"], orientation="h", name="Current", marker_color=PALETTE["teal"],
                              text=streak_data["current_streak"].astype(int), textposition="auto"))
         fig = chart_cfg(fig, h=400, ml=150)
         fig.update_layout(barmode="overlay", legend=dict(orientation="h", y=1.08, font=dict(size=10)))
@@ -391,8 +391,8 @@ def page_habits(routines, rlog):
             r=tod["rate"] * 100,
             theta=tod["time"],
             fill="toself",
-            fillcolor=hex_to_rgba(TEAL, 0.19),
-            line=dict(color=TEAL, width=3),
+            fillcolor=hex_to_rgba(PALETTE["teal"], 0.19),
+            line=dict(color=PALETTE["teal"], width=3),
             marker=dict(size=10),
             text=[f"{r:.0%}" for r in tod["rate"]],
             textposition="top center"
@@ -442,7 +442,7 @@ def page_wellbeing(journal, todos, rlog):
         z=pivot.values,
         x=[f"W{w+1}" for w in pivot.columns],
         y=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-        colorscale=[[0, "#F1F5F9"], [0.2, "#FEE2E2"], [0.4, "#FBBF24"], [0.6, "#FCD34D"], [0.8, "#86EFAC"], [1, G]],
+        colorscale=[[0, PALETTE["neutral"]], [0.2, PALETTE["alert"]], [0.4, PALETTE["soft_pink"]], [0.6, PALETTE["soft_pink"]], [0.8, PALETTE["teal"]], [1, PALETTE["teal"]]],
         showscale=True, colorbar=dict(title="Mood", tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Okay", "Good", "Great"], len=0.5),
         hovertemplate="Week %{x}<br>%{y}<br>Score: %{z}<extra></extra>",
         xgap=2, ygap=2
@@ -462,10 +462,10 @@ def page_wellbeing(journal, todos, rlog):
         fig = go.Figure()
         fig.add_trace(go.Scatter(
             x=j_sorted["date"], y=j_sorted["mood_score"], mode="markers", name="Daily",
-            marker=dict(color=[MOOD_C.get(m, SLATE) for m in j_sorted["mood"]], size=7, opacity=0.6)
+            marker=dict(color=[MOOD_C.get(m, PALETTE["neutral"]) for m in j_sorted["mood"]], size=7, opacity=0.6)
         ))
-        fig.add_trace(go.Scatter(x=j_sorted["date"], y=rolling, mode="lines", name="7-Day Avg", line=dict(color=P, width=3)))
-        fig.add_hline(y=3, line_dash="dot", line_color=SLATE, opacity=0.3)
+        fig.add_trace(go.Scatter(x=j_sorted["date"], y=rolling, mode="lines", name="7-Day Avg", line=dict(color=PALETTE["primary"], width=3)))
+        fig.add_hline(y=3, line_dash="dot", line_color=PALETTE["neutral"], opacity=0.3)
         fig = chart_cfg(fig, h=320)
         fig.update_layout(yaxis=dict(tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Okay", "Good", "Great"], range=[0.5, 5.5]),
                           legend=dict(orientation="h", y=1.08, font=dict(size=10)))
@@ -479,8 +479,8 @@ def page_wellbeing(journal, todos, rlog):
 
         fig = go.Figure(data=go.Scatterpolar(
             r=dow_mood["score"], theta=dow_mood["day"],
-            fill="toself", fillcolor=hex_to_rgba(PU, 0.13), line=dict(color=PU, width=2.5),
-            marker=dict(size=8, color=[G if s >= 3.5 else A if s >= 3.0 else R for s in dow_mood["score"]])
+            fill="toself", fillcolor=hex_to_rgba(PALETTE["secondary"], 0.13), line=dict(color=PALETTE["secondary"], width=2.5),
+            marker=dict(size=8, color=[PALETTE["teal"] if s >= 3.5 else PALETTE["soft_pink"] if s >= 3.0 else PALETTE["alert"] for s in dow_mood["score"]])
         ))
         fig = chart_cfg(fig, h=320)
         fig.update_layout(polar=dict(radialaxis=dict(range=[1, 5], tickvals=[1, 2, 3, 4, 5], ticktext=["Bad", "Low", "Ok", "Good", "Great"], tickfont=dict(size=8))))
@@ -502,7 +502,7 @@ def page_wellbeing(journal, todos, rlog):
         fig = go.Figure()
         fig.add_trace(go.Scatter(
             x=merged["tasks_done"], y=merged["mood_score"], mode="markers",
-            marker=dict(color=[MOOD_C.get(m, SLATE) for m in merged["mood"]], size=10, opacity=0.6),
+            marker=dict(color=[MOOD_C.get(m, PALETTE["neutral"]) for m in merged["mood"]], size=10, opacity=0.6),
             text=merged["date"].dt.strftime("%Y-%m-%d"),
             hovertemplate="Date: %{text}<br>Tasks: %{x}<br>Mood: %{y}<extra></extra>"
         ))
@@ -510,7 +510,7 @@ def page_wellbeing(journal, todos, rlog):
             z = np.polyfit(merged["tasks_done"], merged["mood_score"], 1)
             p = np.poly1d(z)
             x_line = np.linspace(merged["tasks_done"].min(), merged["tasks_done"].max(), 50)
-            fig.add_trace(go.Scatter(x=x_line, y=p(x_line), mode="lines", line=dict(color=P, dash="dash", width=2), name="Trend", showlegend=False))
+            fig.add_trace(go.Scatter(x=x_line, y=p(x_line), mode="lines", line=dict(color=PALETTE["primary"], dash="dash", width=2), name="Trend", showlegend=False))
 
         fig = chart_cfg(fig, h=320)
         fig.update_layout(xaxis_title="Tasks Completed That Day", yaxis_title="Mood Score", yaxis=dict(range=[0.5, 5.5]))
@@ -528,7 +528,7 @@ def page_wellbeing(journal, todos, rlog):
 
         fig = go.Figure()
         fig.add_trace(go.Bar(x=["With Journal Entry", "Without Entry"], y=[with_journal, without_journal],
-                             marker_color=[G, SLATE], text=[f"{with_journal:.2f}", f"{without_journal:.2f}"], textposition="auto",
+                             marker_color=[PALETTE["teal"], PALETTE["neutral"]], text=[f"{with_journal:.2f}", f"{without_journal:.2f}"], textposition="auto",
                              textfont=dict(size=16, color="white")))
         fig = chart_cfg(fig, h=320)
         fig.update_layout(yaxis=dict(range=[0, 5], title="Avg Mood Score"))
