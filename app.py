@@ -11,13 +11,7 @@ from color_theme import PALETTE, CHART_SEQUENCE, HEATMAP_SCALE, PLOTLY_LAYOUT_DE
 
 st.set_page_config(page_title="Life OS", page_icon="🧠", layout="wide", initial_sidebar_state="expanded")
 
-# Legacy color definitions - replace with PALETTE usage
-# P = "#002664"  -> PALETTE["primary"]
-# R = "#C00000"  -> PALETTE["alert"]
-# G = "#00843D"  -> Use PALETTE["teal"] for green charts
-# A = "#F7931E"  -> PALETTE["soft_pink"] for warnings
-# PU = "#6B21A8" -> PALETTE["secondary"]
-# TEAL = "#0891B2" -> PALETTE["teal"]
+# Color theme integration complete - using PALETTE for all colors
 
 MOOD_C = {"Great": PALETTE["teal"], "Good": PALETTE["secondary"], "Okay": PALETTE["soft_pink"], "Low": PALETTE["alert"], "Bad": PALETTE["alert"]}
 MOOD_V = {"Great": 5, "Good": 4, "Okay": 3, "Low": 2, "Bad": 1}
